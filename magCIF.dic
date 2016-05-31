@@ -1,17 +1,21 @@
 #\#CIF_2.0
 ######################################################################
-#    MAGNETIC CIF dictionary
+#                                                                    #
+#    MAGNETIC CIF DICTIONARY                                         #
+#                                                                    #
 ######################################################################
 
 data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9
+_dictionary.version                     0.9.1
+_dictionary.date                        2016-05-30
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
-This dictionary provides datanames to describe magnetic structures.
+      The magnetic CIF dictionary is an extension to the core CIF dictionary.
+      It defines datanames for describing magnetic structures.
 ;
 
 save_MAGNETIC
@@ -19,12 +23,13 @@ save_MAGNETIC
 _definition.id                          MAGNETIC
 _definition.scope                       Category
 _definition.class                       Head
+_name.object_id                         MAGNETIC
 _description.text 
 ;
    This category is the parent of all categories in the dictionary
    that are not children of categories found in other CIF dictionaries.
 ;
-_import.get  {"file":"cif_core" "save":""}
+_import.get  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full"}]
 save_
 
 
@@ -44,6 +49,9 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
+_category.key_id                        '_atom_site_moment.label'
+loop_
+    _category_key.name                  '_atom_site_moment.label'
 
 save_
 
@@ -63,7 +71,7 @@ _description.text
      completing a right-hand set.
 ;
 _type.container                         Matrix
-_units.code                             Bohr_magneton
+_units.code                             Bohr_magnetons
 loop_
   _method.purpose
   _method.expression
@@ -89,7 +97,7 @@ _description.text
      The x component of the atom-site magnetic moment vector
      (see _atom_site_moment.Cartn).
 ;
-_units.code                             Bohr_magneton
+_units.code                             Bohr_magnetons
 
 save_
 
@@ -107,7 +115,7 @@ _description.text
      (see _atom_site_moment.Cartn).
 
 ;
-_units.code                             Bohr_magneton
+_units.code                             Bohr_magnetons
 
 save_
 
@@ -125,7 +133,7 @@ _description.text
      (see _atom_site_moment.Cartn).
 
 ;
-_units.code                             Bohr_magneton
+_units.code                             Bohr_magnetons
 
 save_
 
@@ -389,13 +397,12 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
+_category.key_id                        '_atom_site_moment_Fourier.id'
 loop_
-  _description_example.case
-         
-;
-See examples for the analogous categories.
-; 
-
+    _category_key.name
+        '_atom_site_moment_Fourer.atom_site_label'
+        '_atom_site_moment_Fourer.axis'
+        '_atom_site_moment_Fourer.wave_vector_seq_id'
 save_
 
 
@@ -416,6 +423,7 @@ _description.text
      to the rules for _atom_site_label.
 ;
 _type.contents                          Text
+_name.linked_item_id                    '_atom_site_moment.label'
 
 save_
 
@@ -529,12 +537,12 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
+_category.key_id                        '_atom_site_moment_Fourier_param.id'
 loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
+    _category_key.name
+        '_atom_site_moment_Fourer_param.atom_site_label'
+        '_atom_site_moment_Fourer_param.axis'
+        '_atom_site_moment_Fourer_param.wave_vector_seq_id'
 
 save_
 
@@ -653,6 +661,7 @@ _description.text
      _atom_site_moment_Fourier loop.
 ;
 _type.contents                          Text
+_name.linked_item_id                    '_atom_site_moment_Fourier.id'
 
 save_
 
@@ -976,12 +985,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
+_category.key_id                        '_atom_site_moment_special_func.atom_site_label'
 
 save_
 
@@ -1001,7 +1005,7 @@ _description.text
      loop, and otherwise conform to the rules for _atom_site_label.
 ;
 _type.contents                          Text
-
+_name.linked_item_id                    '_atom_site.label'
 save_
 
 
@@ -1163,12 +1167,6 @@ _description.text
      _atom_site_occ_special_func.cresnel_
 ;
 _units.code                             Bohr_magnetons
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
 
 save_
 
@@ -1205,12 +1203,6 @@ _description.text
      _atom_site_occ_special_func.cresnel_
 ;
 _units.code                             Bohr_magnetons
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
 
 save_
 
@@ -1233,13 +1225,7 @@ _description.text
      _atom_sites_U_Fourier.[]
 ;
 _definition.scope                       Category
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous categories.
-; 
-
+_definition.class                       Set
 save_
 
 
@@ -1310,6 +1296,10 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
+_category.key_id                        '_space_group_symop_magn_centering.id'
+loop_
+    _category_key.name
+         '_space_group_symop_magn_centering.id'
 loop_
     _description_example.case
 ;
@@ -1411,7 +1401,11 @@ _description.text
      _space_group_symop_magn_operation loop.
 ;
 _definition.scope                       Category
-
+_definition.class                       Loop
+_category.key_id                        '_space_group_symop_magn_OG_centering.id'
+loop_
+    _category_key.name
+        '_space_group_symop_magn_OG_centering.id'
 save_
 
 
@@ -1497,6 +1491,10 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
+_category.key_id                        '_space_group_symop_magn_operation.id'
+loop_
+    _category_key.name
+         '_space_group_symop_magn_operation.id'
 
 save_
 
@@ -1603,6 +1601,11 @@ _description.text
      translations of a magnetic superspace-group.
 ;
 _definition.scope                       Category
+_definition.class                       Loop
+_category.key_id                        '_space_group_symop_magn_ssg_centering.id'
+loop_
+    _category_key.name
+        '_space_group_symop_magn_ssg_centering.id'
 
 save_
 
@@ -1689,7 +1692,10 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-
+_category.key_id                        '_space_group_symop_magn_ssg_operation.id'
+loop_
+    _category_key.name
+        '_space_group_symop_magn_ssg_operation.id'
 save_
 
 
@@ -2060,7 +2066,7 @@ _description.text
 ;
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2094,7 +2100,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2173,7 +2179,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstrom squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2266,7 +2272,7 @@ _description.text
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2298,7 +2304,7 @@ _description.text
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2330,7 +2336,7 @@ _description.text
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2379,7 +2385,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2472,7 +2478,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2488,7 +2494,7 @@ _description.text
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2504,7 +2510,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2537,7 +2543,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2553,7 +2559,7 @@ _description.text
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
-_units.code                             'Angstroms squared'
+_units.code                             'angstrom_squared'
 
 save_
 
@@ -2573,3 +2579,25 @@ _description.text
 
 
 save_
+
+#=============================================================================
+#  The dictionary's audit trail and creation history.
+#============================================================================
+
+loop_
+   _dictionary_audit.version
+   _dictionary_audit.date
+   _dictionary_audit.revision
+    0.1      2016-05-24
+;
+      Initial automatic conversion from draft magCIF format (James Hester)
+;
+    0.9      2016-05-27
+;
+      Manual editing of examples and definition text to remove conversion artefacts.
+      Reparenting of categories that are children of cif_core categories.
+;
+    0.9.1    2016-05-30
+;
+      Added import of cif_core dictionary.  Added category keys and linked items.
+;
