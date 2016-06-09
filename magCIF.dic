@@ -259,9 +259,9 @@ _type.contents                          Text
 loop_
   _enumeration_set.state
   _enumeration_set.detail
-   'yes'            'displacive modulation'
+   'yes'            'magnetic modulation'
    'y'              'abbreviation for "yes"'
-   'no'             'no displacive modulation'
+   'no'             'no magnetic modulation'
    'n'              'abbreviation for "no"'
 
 save_
@@ -379,6 +379,94 @@ loop_
 
 save_
 
+save_atom_site_Fourier.wave_vector_q1_coeff
+_definition.id                          'atom_site_Fourier.wave_vector_q1_coeff'
+_name.category_id                       atom_site_Fourier
+_name.object_id                         wave_vector_q1_coeff
+_definition.update                      2016-06-09
+_description.text                       
+;
+    For a given incommensurate modulation that contributes to the
+    structure, the wave vector of the modulation can be expressed as an
+    integer linear combination of the d independent wave vectors that
+    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
+    integer coefficient of the contribution of the first independent wave
+    vector, the q2_coeff tag holds the integer coefficient of the
+    contribution of the second independent wave vector, and so on.  At the
+    time of this writing, no examples with more than three independent
+    wave vectors are known, though there is no theoretical limit to the
+    number that could occur.  These tags are not explicity magnetic; they
+    are equally applicable to any incommensurate modulation.
+;
+_type.contents                          Integer
+loop_
+  _description_example.case
+  _description_example.detail
+;
+loop_
+_cell_wave_vector_seq_id
+_cell_wave_vector_x
+_cell_wave_vector_y
+_cell_wave_vector_z
+  1   0.30000   0.30000   0.00000
+  2  -0.60000   0.30000   0.00000
+loop_
+_atom_site_Fourier_wave_vector_seq_id
+_atom_site_Fourier_wave_vector_x
+_atom_site_Fourier_wave_vector_y
+_atom_site_Fourier_wave_vector_z
+_atom_site_Fourier_wave_vector_q1_coeff
+_atom_site_Fourier_wave_vector_q2_coeff
+1   -0.30000   0.60000   0.00000  1  1
+2   -0.60000   0.30000   0.00000  0  1
+3   -0.30000  -0.30000   0.00000 -1  0
+;
+
+save_
+
+save_atom_site_Fourier.wave_vector_q2_coeff
+_definition.id                          'atom_site_Fourier.wave_vector_q2_coeff'
+_name.category_id                       atom_site_Fourier
+_name.object_id                         wave_vector_q2_coeff
+_definition.update                      2016-06-09
+_description.text                       
+;
+    For a given incommensurate modulation that contributes to the
+    structure, the wave vector of the modulation can be expressed as an
+    integer linear combination of the d independent wave vectors that
+    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
+    integer coefficient of the contribution of the first independent wave
+    vector, the q2_coeff tag holds the integer coefficient of the
+    contribution of the second independent wave vector, and so on.  At the
+    time of this writing, no examples with more than three independent
+    wave vectors are known, though there is no theoretical limit to the
+    number that could occur.  These tags are not explicity magnetic; they
+    are equally applicable to any incommensurate modulation.
+;
+_type.contents                          Integer
+save_
+
+save_atom_site_Fourier.wave_vector_q3_coeff
+_definition.id                          'atom_site_Fourier.wave_vector_q3_coeff'
+_name.category_id                       atom_site_Fourier
+_name.object_id                         wave_vector_q3_coeff
+_definition.update                      2016-06-09
+_description.text                       
+;
+    For a given incommensurate modulation that contributes to the
+    structure, the wave vector of the modulation can be expressed as an
+    integer linear combination of the d independent wave vectors that
+    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
+    integer coefficient of the contribution of the first independent wave
+    vector, the q2_coeff tag holds the integer coefficient of the
+    contribution of the second independent wave vector, and so on.  At the
+    time of this writing, no examples with more than three independent
+    wave vectors are known, though there is no theoretical limit to the
+    number that could occur.  These tags are not explicity magnetic; they
+    are equally applicable to any incommensurate modulation.
+;
+_type.contents                          Integer
+save_
 
 save_atom_site_moment_Fourier
 
@@ -1391,12 +1479,13 @@ _description.text
      presentation of a BNS-supercell description.
      An integer translation in an OG setting of a type-4 magnetic
      space group may have  a time-reversal component of -1, in which
-     case it is an anti-translation vector rather than a lattice
-     vector.  The magnetic components of translations (fractional or
-     integer) are not listed explicity in an OG(k) description, but
-     are instead determined using the value of the
-     _space_group.magn_OG_wavevector_kxkykz tag.
-     Because the centering translations are listed in a separate loop,
+     case it is actually an anti-translation vector rather than a lattice
+     vector.   This loop should include all centering and anti-centering
+     translations, but does not include the time-reveral components,
+     which are instead determined
+     using the value of the _space_group.magn_OG_wavevector_kxkykz tag.
+     Because the centering translations are listed in a separate loop
+     in the OG(k) description,
      only representative point operations remain in the main
      _space_group_symop_magn_operation loop.
 ;
@@ -1520,14 +1609,6 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
-loop_
-  _description_example.case
-  _description_example.detail
-         "(1|1/2,1/2,0)'"     'Describes x+1/2,y+1/2,z,-1'
-         "(1'| 1/2,1/2,0)"    'Describes x+1/2,y+1/2,z,-1'
-         "(4_{001}|0,0,1/2)'" 'Describes -y,x,z+1/2,-1'
-         "(4'_{001}|0,0,1/2)" 'Describes -y,x,z+1/2,-1'
-         "4'_2(0,0,z)"        'Describe -y,x,z+1/2,-1'
 
 save_
 
@@ -1769,15 +1850,23 @@ _name.object_id                         magn_OG_wavevector_kxkykz
 _definition.update                      2016-05-24
 _description.text                       
 ;
-     The magnetic propagation vector (k) of the OG(k)-supercell
-     description, presented in unitless reciprocal-lattice
-     coordinates, which determines the time-reversal component of each
-     vector (h) of the primitive OG  reciprocal lattice according to
-     the expression cos(2*pi*k.h).  While k can contain rational
-     fractions,  it must be defined such that 2*k.h is an integer for
-     every vector of the primitive OG reciprocal lattice.
+    The magnetic propagation vector (k) of the OG(k)-supercell
+    description, which determines the time-reversal component of each
+    translation vector (x) of the OG lattice (including the centering
+    vectors if a centered setting is used) according to the expression
+    cos(2*pi*k.x) = +/-1, where x is defined in the unitless coordinates
+    of the direct-space OG lattice and k is defined in the unitless
+    coordinates of the corresponding reciprocal-space lattice.  If 2*k.x
+    has a non-integer value for any OG lattice (or centering) translation,
+    the definition of k is incorrect.  The value of OG wavevector is
+    essential to the OG(k) description of the magnetic space group
+    symmetry; it cannot be omitted from such a description without
+    ambiguity.
 ;
-_type.contents                          Text
+_type.container                         Matrix
+_type.contents                          Real
+_type.dimension                         [3]
+_type.purpose                           Number
 
 save_
 
@@ -2054,6 +2143,543 @@ loop_
 
 save_
 
+save_space_group_magn_ssg_transformloop
+
+_definition.id                          space_group_magn_ssg_transformloop
+_name.category_id                       MAGNETIC
+_name.object_id                         space_group_magn_ssg_transformloop
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     This loop provides a list of matrix transformations to one or
+     more settings of the magnetic  superspace group, including
+     transformations to both standard and non-standard settings.   A
+     transformation loop is particularly helpful for a magnetic
+     superspace groups,  which often have several reference settings
+     of interest.
+     Analogous tags: transform loops have not yet been approved in
+     other dictionaries.
+;
+_type.contents                          Text
+_definition.scope                       Category
+
+save_
+
+
+save__space_group_magn_ssg_transformloop.description
+
+_definition.id                          '_space_group_magn_ssg_transformloop.description'
+_name.category_id                       space_group_magn_ssg_transformloop
+_name.object_id                         description
+_definition.update                      2016-06-09
+_enumeration.range                      'ISOMAG-ISO(3+d)D":"ISO(3+d)D'
+_units.code                             none
+_description.text                       
+;
+     A string that describes the source of a reference setting for the
+     magnetic superspace group.
+     The value string "ISOMAG-ISO(3+d)D" refers a magnetic superspace-
+     group setting such that (1) the setting of the basic magnetic
+     space group matches the corresponding BNS setting in the Magnetic
+     Space Groups tables of Stokes and Campbell, and (2) the non-
+     magnetic superspace-group setting obtained by eliminating all
+     time-reversed operators from the group is related to that of the
+     corresponding setting in the ISO(3+d)D tables via a purely
+     external (three-dimensional) transformation.
+     The value string "ISO(3+d)D" refers to a magnetic superspace-
+     group setting such that eliminating all time-reversed operators
+     from the group results in a non-magnetic superspace-group setting
+     that matches that of the corresponding entry in the ISO(3+d)D
+     tables.
+     Arbitrary free text can be used to describe other reference
+     settings of interest, such as might appear in a specific
+     publication, though care should be taken to  make the description
+     clear and unambiguous.
+     Analogous tags: none
+     References: 'Magnetic Group Tables' of D.B. Litvin at
+     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu ISO(3+d)D tables
+     of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+;
+_type.contents                          Text
+
+save_
+
+
+save__space_group_magn_ssg_transformloop.id
+
+_definition.id                          '_space_group_magn_ssg_transformloop.id'
+_name.category_id                       space_group_magn_ssg_transformloop
+_name.object_id                         id
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     An arbitrary identifier that uniquely labels each setting
+     transformation of interest in a looped list of superspace-group
+     transformations. Most commonly, a sequence of positive integers
+     is used for this identification.
+     Analogous tags: transform loops have not yet been approved in
+     other dictionaries.
+;
+_type.contents                          Text
+
+save_
+
+
+save__space_group_magn_ssg_transformloop.Pp_superspace
+
+_definition.id                          '_space_group_magn_ssg_transformloop.Pp_superspace'
+_name.category_id                       space_group_magn_ssg_transformloop
+_name.object_id                         Pp_superspace
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     This item specifies the transformation (P,p) of the superspace
+     basis vectors  from the current setting (a1,...,a(3+d)) to a
+     reference setting (a1',...,a(3+d)') given by
+     _space_group_magn_ssg_transformloop.description. The origin shift
+     is presented in the unitless lattice coordinates of the current
+     setting.
+     The notation and usage are analogous to those of
+     _space_group.transform_Pp_abc, except that P now represents a
+     superspace point operation and p now represents a superspace
+     translation.
+     Analogous tags: symCIF:_space_group.transform_Pp_abc
+;
+_type.contents                          Text
+loop_
+  _description_example.case
+         a1        
+         a2        
+         a3        
+         a4        
+         
+;a5' is the identity transformation.
+'-a2+1/4
+;        
+         a1-1/4    
+         1/2a3     
+         -a1+a5+1/4          
+         
+;-1/2a3+a4' transforms from a supercentered setting
+  to the ISO(3+d)D setting of 65.2.43.64.m481.1  Cmmm(0
+;        
+         b1        
+         1/2)000(1           
+         0         
+         g2)0s0. 
+
+save_
+
+
+save_space_group_magn_transformloop
+
+_definition.id                          space_group_magn_transformloop
+_name.category_id                       MAGNETIC
+_name.object_id                         space_group_magn_transformloop
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     This loop provides a list of matrix transformations to multiple
+     settings of the magnetic space group, including transformations
+     to both standard and non-standard settings.  A transformation
+     loop is  particularly helpful for a magnetic space group, which
+     often have several reference settings of interest.
+     Analogous tags: transform loops have not yet been approved in
+     other dictionaries.
+;
+_type.contents                          Text
+_definition.scope                       Category
+loop_
+  _description_example.case
+         
+;_loop
+_space_group_magn_transformloop.id
+_space_group_magn_transformloop.Pp_abc
+_space_group_magn_transformloop.description
+1   a
+;        
+         b         
+         c;0       
+         0         
+         
+;0    "data_block_CURRENT"
+2   a/2
+;        
+         b         
+         c;0       
+         0         
+         
+;0  "data_block_205763"
+3   a
+;        
+         b         
+         c;0       
+         0         
+         
+;0    "ISOMAG_BNS"
+4   a/2
+;        
+         b         
+         c;0       
+         0         
+         
+;0  "Litvin-2013_OG"
+5   a/4
+;        
+         b         
+         c;0       
+         0         
+         '0  "literature citation to a nuclear parent structure' 
+
+save_
+
+
+save__space_group_magn_transformloop.description
+
+_definition.id                          '_space_group_magn_transformloop.description'
+_name.category_id                       space_group_magn_transformloop
+_name.object_id                         description
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     A string that describes the source of the magnetic-space-group
+     reference setting indicated by the
+     _space_group_magn_transformloop.Pp_abc tag.
+     The value string "data_block_CURRENT" refers to the setting used
+     in the current data block.  Obviously, the basis transformation
+     to this setting is the identity.  The ability to reference the
+     current setting can be useful when communicationg the same
+     magnetic propagation vector in multiple settings.
+     The value string "data_block_<blockname>" refers to the setting
+     used in a separate data block named "blockname" within the same
+     file.
+     The value string "Litvin-2013_OG" refers to the Opechowski-
+     Guccione group setting presented in the Magnetic Group Tables of
+     D.B. Litvin.
+     The value string "ISOMAG_BNS" refers to the Belov-Neronova-
+     Smirnova group setting presented in the ISO-MAG tables.
+     Arbitrary free text can be used to describe other reference
+     settings of interest, such as might appear  in a specific
+     publication, though care should be taken to make the description
+     clear and unambiguous.
+     Analogous tags: none
+     References: 'Magnetic Group Tables' by D.B. Litvin at
+     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu
+;
+_values                                 '"data_block_CURRENT","Litvin-2013_OG","ISOMAG_BNS"'
+_type.contents                          Text
+loop_
+  _description_example.case
+         
+;
+See _space_group_magn_transformloop.[] for an example.
+; 
+
+save_
+
+
+save__space_group_magn_transformloop.id
+
+_definition.id                          '_space_group_magn_transformloop.id'
+_name.category_id                       space_group_magn_transformloop
+_name.object_id                         id
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     An arbitrary identifier that uniquely labels each setting
+     transformation of interest in a looped list of space-group
+     transformations. Most commonly, a sequence of positive integers
+     is used for this identification.
+     Analogous tags: transform loops have not been approved in other
+     dictionaries.
+;
+_type.contents                          Text
+loop_
+  _description_example.case
+         
+;
+See _space_group_magn_transformloop.[] for an example.
+; 
+
+save_
+
+
+save__space_group_magn_transformloop.Pp_abc
+
+_definition.id                          '_space_group_magn_transformloop.Pp_abc'
+_name.category_id                       space_group_magn_transformloop
+_name.object_id                         Pp_abc
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     This item specifies the transformation (P,p) of the basis vectors
+     and origin in the current setting of the CIF file to the
+     reference setting described by the
+     _space_group_magn_transformloop.description tag, and should not
+     be used without the this description.  The basis vectors
+     (a',b',c') of the reference setting are described as  linear
+     combinations of the current basis vectors (a,b,c), and the origin
+     shift (ox,oy,oz)  is displayed in the lattice coordinates of the
+     current setting. The Jones-Faithful notation and possible values
+     are identical to those of symCIF:_space_group_transform_Pp_abc.
+     Analogous tags: _symCIF:_space_group.transform_Pp_abc
+;
+_type.contents                          Text
+loop_
+  _description_example.case
+         
+;
+See _space_group_magn_transformloop.[] for an example.
+; 
+
+save_
+
+
+save__space_group.magn_transform_BNS_Pp_abc
+
+_definition.id                          '_space_group.magn_transform_BNS_Pp_abc'
+_name.category_id                       space_group
+_name.object_id                         magn_transform_BNS_Pp_abc
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     This item specifies the transformation (P,p) of the basis vectors
+     and origin of the current setting to those of the Belov-Neronova-
+     Smirnova setting presented in the ISO-MAG tables. The basis
+     vectors (a',b',c') of the reference setting are described as
+     linear combinations of the current basis vectors (a,b,c), and the
+     origin shift (ox,oy,oz)  is displayed in the lattice coordinates
+     of the current setting. The Jones-Faithful notation and possible
+     values are identical to those of
+     symCIF:_space_group.transform_Pp_abc.
+     Analogous tags: _symCIF:_space_group.transform_Pp_abc
+     References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
+     http://iso.byu.edu
+;
+_type.contents                          Text
+
+save_
+
+
+save__space_group.magn_transform_OG_Pp_abc
+
+_definition.id                          '_space_group.magn_transform_OG_Pp_abc'
+_name.category_id                       space_group
+_name.object_id                         magn_transform_OG_Pp_abc
+_definition.update                      2016-06-09
+_description.text                       
+;
+     This item specifies the transformation (P,p) of the basis vectors
+     and origin of  the current setting to those of the Opechowski-
+     Guccione setting presented  in the Magnetic Group Tables of D.B.
+     Litvin. The basis vectors (a',b',c') of the reference setting are
+     described as  linear combinations of the current basis vectors
+     (a,b,c), and the origin shift (ox,oy,oz)  is displayed in the
+     lattice coordinates of the current setting. The Jones-Faithful
+     notation and possible values are identical to those of
+     symCIF:_space_group.transform_Pp_abc.
+     Analogous tags: _symCIF:_space_group.transform_Pp_abc
+     References: 'Magnetic Group Tables' by D.B. Litvin at
+     http://www.iucr.org/publ/978-0-9553602-2-0
+;
+_type.contents                          Text
+
+save_
+
+save_parent_magnetic_propagation_vector
+
+_definition.id                          parent_magnetic_propagation_vector
+_name.category_id                       MAGNETIC
+_name.object_id                         parent_magnetic_propagation_vector
+_definition.update                      2016-06-09
+_description.text                       
+;
+     This looped category allows for the presentation of the
+     fundamental magnetic wave vectors in the setting of the parent
+     structure.  In general, there can be more than one fundamental
+     magnetic wave vector. See the _parent_space_group.[] category for
+     more information about parent space groups.
+;
+_definition.scope                       Category
+loop_
+  _description_example.case
+         
+;
+loop_
+  _parent_magnetic_propagation_vector.id
+  _parent_magnetic_propagation_vector.kxkykz
+k1 [0 0 1]
+k2 [0 1 0]
+k3 [1 0 0]
+;
+save_
+
+
+save__parent_magnetic_propagation_vector.id
+
+_definition.id                          '_parent_magnetic_propagation_vector.id'
+_name.category_id                       parent_magnetic_propagation_vector
+_name.object_id                         id
+_definition.update                      2016-06-09
+_description.text                       
+;
+    A code that uniquely identifies a fundamental magnetic propagation vector.
+;
+_type.contents                          Text
+
+save_
+
+
+save__parent_magnetic_propagation_vector.kxkykz
+
+_definition.id                          '_parent_magnetic_propagation_vector.kxkykz'
+_name.category_id                       parent_magnetic_propagation_vector
+_name.object_id                         kxkykz
+_definition.update                      2016-06-09
+_description.text                       
+;
+     A fundamental magnetic propagation vector in unitless reciprocal-lattice units of 
+     the parent space group setting. The three indices of this vector should be 
+     presented as comma-separated rational fractions.
+
+;
+_type.contents                          Real
+_type.container                         Matrix
+_type.dimensions                        [3]
+
+save_
+
+
+save_parent_space_group
+
+_definition.id                          parent_space_group
+_name.category_id                       MAGNETIC
+_name.object_id                         parent_space_group
+_definition.update                      2016-06-09
+_description.text                       
+;
+     This category provides information about the space-group and
+     setting of  a non-magnetic parent structure which is related to
+     the present magnetic  structure by a group-subgroup relationship.
+     In general, the choice of a parent structure is not unique; it
+     could be the lowest-symmetry non-magnetic structure obtained by
+     simply setting all magnetic moments to zero, or a higher-symmetry
+     approximation to this structure which idealizes some of the
+     atomic coordinates.  The designation of a parent  structure is
+     common but optional for a magnetic-structure description. This
+     category could also be used to designate high-symmetry parent
+     structures  of low-symmetry non-magnetic structures. As an
+     alternative to this category, one can define a parent structure
+     in a separate data block, and then relate the parent and child
+     space-group settings by conveying an appropriate inter-data-block
+     basis transformation in each data block.
+     Analogous tags: none
+;
+_definition.scope                       Category
+
+save_
+
+
+save__parent_space_group.child_transform_Pp_abc
+
+_definition.id                          '_parent_space_group.child_transform_Pp_abc'
+_name.category_id                       parent_space_group
+_name.object_id                         child_transform_Pp_abc
+_definition.update                      2016-06-09
+_description.text                       
+;
+     This item specifies the transformation (P,p) of the basis vectors
+     and origin of the present setting of the parent space group to
+     those of the present setting of the  child space group. The basis
+     vectors (a',b',c') of the child are described as linear
+     combinations  of the basis vectors (a,b,c) of the parent, and the
+     origin shift (ox,oy,oz)  is displayed in the lattice coordinates
+     of the parent. The Jones-Faithful notation and possible values
+     are identical to those of  symCIF:_space_group.transform_Pp_abc.
+     Analogous tags: _symCIF:_space_group.transform_Pp_abc
+;
+_type.contents                          Text
+
+save_
+
+
+save__parent_space_group.IT_number
+
+_definition.id                          '_parent_space_group.IT_number'
+_name.category_id                       parent_space_group
+_name.object_id                         IT_number
+_definition.update                      2016-06-09
+_description.text                       
+;
+     Analogous tags: Perfectly analogous to
+     symCIF:_space_group.IT_number except that it applies to the
+     parent structure.
+;
+_type.contents                          Text
+
+save_
+
+
+save__parent_space_group.name_H-M_alt
+
+_definition.id                          '_parent_space_group.name_H-M_alt'
+_name.category_id                       parent_space_group
+_name.object_id                         name_H
+_definition.update                      2016-06-09
+_description.text                       
+;
+     Analogous tags: Perfectly analogous to symCIF:_space_group
+     .name_H-M_alt except that it applies to the parent structure.
+;
+_type.contents                          Text
+
+save_
+
+
+save__parent_space_group.reference_setting
+
+_definition.id                          '_parent_space_group.reference_setting'
+_name.category_id                       parent_space_group
+_name.object_id                         reference_setting
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     Analogous tags: Perfectly analogous to
+     symCIF:_space_group.reference_setting except that it applies to
+     the parent structure.
+;
+_type.contents                          Text
+
+save_
+
+
+save__parent_space_group.transform_Pp_abc
+
+_definition.id                          '_parent_space_group.transform_Pp_abc'
+_name.category_id                       parent_space_group
+_name.object_id                         transform_Pp_abc
+_definition.update                      2016-06-09
+_units.code                             none
+_description.text                       
+;
+     Analogous tags: Perfectly analogous to
+     symCIF:_space_group.transform_Pp_abc except that it applies to
+     the parent structure.
+;
+_type.contents                          Text
+
+save_
 
 save__atom_type_scat.neutron_magnetic_j2_b2
 
@@ -2579,6 +3205,7 @@ _description.text
 
 
 save_
+
 
 #=============================================================================
 #  The dictionary's audit trail and creation history.
