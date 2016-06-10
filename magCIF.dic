@@ -9,8 +9,8 @@ data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9.1
-_dictionary.date                        2016-05-30
+_dictionary.version                     0.9.2
+_dictionary.date                        2016-06-10
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -29,7 +29,8 @@ _description.text
    This category is the parent of all categories in the dictionary
    that are not children of categories found in other CIF dictionaries.
 ;
-_import.get  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full"}]
+_import.get  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full"}
+              {"file":"cif_ms.dic"   "save":"CIF_MS"   "mode":"Full"}]
 save_
 
 
@@ -62,14 +63,14 @@ _definition.id                          '_atom_site_moment.Cartn'
 _name.category_id                       atom_site_moment
 _name.object_id                         Cartn
 _definition.update                      2016-05-24
-_type.contents                          Real
-_type.dimension                         3
 _description.text                       
 ;
      The atom-site magnetic moment vector specified according to a set
      of orthogonal Cartesian axes where x||a and z||c* with y
      completing a right-hand set.
 ;
+_type.contents                          Real
+_type.dimension                         [3]
 _type.container                         Matrix
 _units.code                             Bohr_magnetons
 loop_
@@ -92,6 +93,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_x
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The x component of the atom-site magnetic moment vector
@@ -109,6 +111,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_y
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The y component of the atom-site magnetic moment vector
@@ -127,6 +130,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_z
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The z component of the atom-site magnetic moment vector
@@ -144,15 +148,15 @@ _definition.id                          '_atom_site_moment.crystalaxis'
 _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis
 _definition.update                      2016-05-24
-_type.contents                          Real
-_type.dimension                         3
 _description.text                       
 ;
      The atom-site magnetic moment vector specified as a projection
      onto the axes of the unit cell.  This is the recommended
      coordinate system for  most magnetic structures.
 ;
+_type.contents                          Real
 _type.container                         Matrix
+_type.dimension                         [3]
 _units.code                             Bohr_magnetons
 loop_
   _method.purpose
@@ -174,6 +178,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_x
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The x component of the atom-site magnetic moment vector projected
@@ -191,6 +196,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_y
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The y component of the atom-site magnetic moment vector projected
@@ -208,6 +214,7 @@ _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_z
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      The z component of the atom-site magnetic moment vector projected
@@ -223,24 +230,9 @@ save__atom_site_moment.label
 _definition.id                          '_atom_site_moment.label'
 _name.category_id                       atom_site_moment
 _name.object_id                         label
+_import.get [{"save":atom_site_id "file":templ_attr.cif}]
 _definition.update                      2016-05-24
 
-_description.text                       
-;
-     A code that uniquely identifies an atom for which the magnetic
-     moments are to be described.  It is only used when the
-     presentation of the magnetic moments are split off into a
-     separate loop, and its value must match one of the
-     _atom_site_label values from the _atom_site loop, and otherwise
-     conform to the rules for _atom_site_label.
-;
-_type.contents                          Text
-loop_
-  _description_example.case
-         Fe        
-         Fe1       
-         Fe1_1     
-         Fe2+ 
 save_
 
 
@@ -255,7 +247,8 @@ _description.text
      A code that signals whether the structural model includes the
      modulation of the magnetic moment of a given atom site.
 ;
-_type.contents                          Text
+_type.contents                          Code
+_type.container                         Single
 loop_
   _enumeration_set.state
   _enumeration_set.detail
@@ -313,6 +306,7 @@ _description.text
      around the +z axis starting from the +x side of the x-z plane.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -331,6 +325,7 @@ _description.text
      axes where x||a and z||c* with y completing a right-hand set.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -351,6 +346,7 @@ _description.text
      hand set. The polar angle is measured relative to the +z axis.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -361,7 +357,6 @@ _definition.id                          '_atom_site_moment.symmform'
 _name.category_id                       atom_site_moment
 _name.object_id                         symmform
 _definition.update                      2016-05-24
-
 _description.text                       
 ;
      A symbolic expression that indicates the symmetry-restricted form
@@ -370,6 +365,7 @@ _description.text
      has no translational component to be represented.
 ;
 _type.contents                          Text
+_type.container                         Single
 loop_
   _description_example.case
   _description_example.detail
@@ -399,9 +395,9 @@ _description.text
     are equally applicable to any incommensurate modulation.
 ;
 _type.contents                          Integer
+_type.container                         Single
 loop_
   _description_example.case
-  _description_example.detail
 ;
 loop_
 _cell_wave_vector_seq_id
@@ -444,6 +440,7 @@ _description.text
     are equally applicable to any incommensurate modulation.
 ;
 _type.contents                          Integer
+_type.container                         Single
 save_
 
 save_atom_site_Fourier.wave_vector_q3_coeff
@@ -466,6 +463,7 @@ _description.text
     are equally applicable to any incommensurate modulation.
 ;
 _type.contents                          Integer
+_type.container                         Single
 save_
 
 save_atom_site_moment_Fourier
@@ -510,7 +508,10 @@ _description.text
      _atom_site_label from the _atom_site loop, and otherwise conform
      to the rules for _atom_site_label.
 ;
-_type.contents                          Text
+_type.contents                          Code
+_type.container                         Single
+_type.purpose                           Encode
+_type.source                            Assigned
 _name.linked_item_id                    '_atom_site_moment.label'
 
 save_
@@ -522,9 +523,6 @@ _definition.id                          '_atom_site_moment_Fourier.axis'
 _name.category_id                       atom_site_moment_Fourier
 _name.object_id                         axis
 _definition.update                      2016-05-24
-_type.container                         Single
-
-_type.purpose                           State
 _description.text                       
 ;
      Specifies the coordinate system in which the Fourier modulation
@@ -535,6 +533,9 @@ _description.text
      msCIF:_atom_site_U_Fourier.tens_elem
 ;
 _type.contents                          Code
+_type.container                         Single
+_type.source                            Assigned
+_type.purpose                           State
 loop_
   _enumeration_set.state
   _enumeration_set.detail
@@ -570,6 +571,8 @@ _description.text
      integers could also be used.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 loop_
   _description_example.case
          K2_1_z    
@@ -599,6 +602,7 @@ _description.text
      msCIF:_atom_site_U_Fourier.wave_vector_seq_id
 ;
 _type.contents                          Text
+_type.container                         Single
 
 save_
 
@@ -655,6 +659,7 @@ _description.text
      Also see the technical descriptions of the analogous tags.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -666,6 +671,7 @@ _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         cos_symmform
 _definition.update                      2016-05-24
 _type.contents                          Text
+_type.container                         Single
 _description.text                       
 ;
      A symbolic expression that indicates symmetry-restricted form of
@@ -749,6 +755,8 @@ _description.text
      _atom_site_moment_Fourier loop.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Link
 _name.linked_item_id                    '_atom_site_moment_Fourier.id'
 
 save_
@@ -774,6 +782,7 @@ _description.text
      Also see the technical descriptions of the analogous tags.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -785,6 +794,7 @@ _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         modulus_symmform
 _definition.update                      2016-05-24
 _type.contents                          Text
+_type.container                         Single
 _description.text                       
 ;
      A symbolic expression that indicates symmetry-restricted form of
@@ -871,6 +881,7 @@ _description.text
      Also see the technical descriptions of the analogous tags.
 ;
 _type.contents                          Real
+_type.container                         Single
 
 save_
 
@@ -882,6 +893,7 @@ _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         phase_symmform
 _definition.update                      2016-05-24
 _type.contents                          Text
+_type.container                         Single
 _description.text                       
 ;
      A symbolic expression that indicates symmetry-restricted form of
@@ -966,6 +978,8 @@ _description.text
      Also see the technical descriptions of the analogous tags.
 ;
 _type.contents                          Real
+_type.container                         Single
+
 
 save_
 
@@ -977,6 +991,8 @@ _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         sin_symmform
 _definition.update                      2016-05-24
 _type.contents                          Text
+_type.container                         Single
+
 _description.text                       
 ;
      A symbolic expression that indicates symmetry-restricted form of
@@ -1084,16 +1100,7 @@ _definition.id                          '_atom_site_moment_special_func.atom_sit
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         atom_site_label
 _definition.update                      2016-05-24
-
-_description.text                       
-;
-     This string uniquely identifies an atom in a loop in which the
-     special function that describes its magnetic modulation is being
-     defined, and must match an _atom_site_label from the _atom_site
-     loop, and otherwise conform to the rules for _atom_site_label.
-;
-_type.contents                          Text
-_name.linked_item_id                    '_atom_site.label'
+_import.get [{'save':atom_site_id    'file':templ_attr.dic}]
 save_
 
 
@@ -1104,6 +1111,8 @@ _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_ax
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
+
 _description.text                       
 ;
      _atom_site_moment_special_func_sawtooth_ items are the
@@ -1146,6 +1155,8 @@ _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_ay
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
+
 _description.text                       
 ;
      _atom_site_moment_special_func_sawtooth_ items are the
@@ -1171,12 +1182,6 @@ _description.text
      _atom_site_occ_special_func.cresnel_
 ;
 _units.code                             Bohr_magnetons
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
 
 save_
 
@@ -1188,6 +1193,8 @@ _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_az
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
+
 _description.text                       
 ;
      _atom_site_moment_special_func_sawtooth_ items are the
@@ -1213,12 +1220,6 @@ _description.text
      _atom_site_occ_special_func.cresnel_
 ;
 _units.code                             Bohr_magnetons
-loop_
-  _description_example.case
-         
-;
-See examples for the analogous tags.
-; 
 
 save_
 
@@ -1230,6 +1231,8 @@ _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_c
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
+
 _description.text                       
 ;
      _atom_site_moment_special_func_sawtooth_ items are the
@@ -1266,6 +1269,8 @@ _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_w
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
+
 _description.text                       
 ;
      _atom_site_moment_special_func_sawtooth_ items are the
@@ -1335,6 +1340,8 @@ _description.text
      to imagine an _atom_sites_rot_Fourier.axes_description tag.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          
@@ -1415,6 +1422,8 @@ _description.text
      magnetic space group.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          
@@ -1440,6 +1449,8 @@ _description.text
      integers is used for this identification.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -1460,6 +1471,8 @@ _description.text
      the identity element.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Encode
 save_
 
 
@@ -1513,6 +1526,8 @@ _description.text
      dictionaries.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
   _description_example.detail
@@ -1537,6 +1552,8 @@ _description.text
      dictionaries.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -1560,6 +1577,8 @@ _description.text
      _space_group.magn_OG_wavevector_kxkykz tag.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Encode
 loop_
   _description_example.case
   _description_example.detail
@@ -1609,6 +1628,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -1634,6 +1655,8 @@ _description.text
      compatibility with the established magCIF prototype.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -1660,6 +1683,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Encode
 loop_
   _description_example.case
   _description_example.detail
@@ -1710,6 +1735,8 @@ _description.text
      description of the magnetic basic cell.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Encode
 loop_
   _description_example.case
   _description_example.detail
@@ -1756,6 +1783,8 @@ _description.text
      centering loops.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -1799,6 +1828,8 @@ _description.text
      Analogous tags: msCIF:_space_group_symop.ssg_operation_algebraic
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Describe
 loop_
   _description_example.case
   _description_example.detail
@@ -1836,6 +1867,8 @@ _description.text
      Analogous tags: msCIF:_space_group_symop_ssg_id
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -1906,6 +1939,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          "P 1"     
@@ -1947,6 +1982,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          1         
@@ -1959,33 +1996,6 @@ loop_
          "4' m m'" 
 
 save_
-
-
-
-
-save__atom_type_scat.neutron_magnetic_source
-
-_definition.id                          '_atom_type_scat.neutron_magnetic_source'
-_name.category_id                       atom_type_scat
-_name.object_id                         neutron_magnetic_source
-_definition.update                      2016-05-24
-
-_description.text                       
-;
-     Reference to the source of magnetic neutron scattering factors
-     for a given atom type.
-     Analogous tags: coreCIF:_atom_site.scat_source
-;
-_type.contents                          Text
-loop_
-  _description_example.case
-         
-;
-International Tables for Crystallography (2006). Vol. C, Section 4.4.5.
-; 
-
-save_
-
 
 save__space_group.magn_ssg_name
 
@@ -2019,6 +2029,8 @@ _description.text
      Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
   _description_example.detail
@@ -2045,6 +2057,8 @@ _description.text
      Analogous tags: msCIF:_space_group.ssg_number
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2080,6 +2094,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          1.1       
@@ -2130,6 +2146,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _description_example.case
          "P 1"    
@@ -2186,6 +2204,8 @@ _description.text
      of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 loop_
   _enumeration_set.state
   _enumeration_set.detail
@@ -2226,6 +2246,8 @@ _description.text
      other dictionaries.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -2251,6 +2273,9 @@ _description.text
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Encode
+
 loop_
   _description_example.case
   _description_example.detail
@@ -2281,7 +2306,11 @@ _description.text
      other dictionaries.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 _definition.scope                       Category
+_definition.class                       Loop
+_category.key_id                        '_space_group_magn_transformloop.id'
 loop_
   _description_example.case
 
@@ -2333,6 +2362,8 @@ _description.text
      Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2352,6 +2383,8 @@ _description.text
      dictionaries.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -2377,6 +2410,8 @@ _description.text
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2403,6 +2438,8 @@ _description.text
      http://iso.byu.edu
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2429,6 +2466,8 @@ _description.text
      http://www.iucr.org/publ/978-0-9553602-2-0
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2447,6 +2486,8 @@ _description.text
      more information about parent space groups.
 ;
 _definition.scope                       Category
+_definition.class                       Loop
+_category.key_id                        '_parent_magnetic_propagation_vector.id'
 loop_
   _description_example.case
          
@@ -2472,6 +2513,8 @@ _description.text
     A code that uniquely identifies a fundamental magnetic propagation vector.
 ;
 _type.contents                          Text
+_type.container                         Single
+_type.purpose                           Key
 
 save_
 
@@ -2567,6 +2610,8 @@ _description.text
      parent structure.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2583,6 +2628,8 @@ _description.text
      .name_H-M_alt except that it applies to the parent structure.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
 
@@ -2600,9 +2647,10 @@ _description.text
      the parent structure.
 ;
 _type.contents                          Text
+_type.container                         Single
+
 
 save_
-
 
 save__parent_space_group.transform_Pp_abc
 
@@ -2623,6 +2671,32 @@ _type.purpose                           Number
 _type.source                            Assigned
 
 save_
+
+save__atom_type_scat.neutron_magnetic_source
+
+_definition.id                          '_atom_type_scat.neutron_magnetic_source'
+_name.category_id                       atom_type_scat
+_name.object_id                         neutron_magnetic_source
+_definition.update                      2016-05-24
+
+_description.text                       
+;
+     Reference to the source of magnetic neutron scattering factors
+     for a given atom type.
+     Analogous tags: coreCIF:_atom_site.scat_source
+;
+_type.contents                          Text
+_type.container                         Single
+
+loop_
+  _description_example.case
+         
+;
+International Tables for Crystallography (2006). Vol. C, Section 4.4.5.
+; 
+
+save_
+
 
 save__atom_type_scat.neutron_magnetic_j2_b2
 
