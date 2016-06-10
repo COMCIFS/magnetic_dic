@@ -44,9 +44,9 @@ _description.text
 ;
      This category provides a loop for presenting the magnetic moments
      of atoms in one of several coordinate systems.  This is a child
-     category of the _atom_site category, so that the magnetic moments
+     category of the atom_site category, so that the magnetic moments
      can either be listed along side the non-magnetic atom properties
-     in the main _atom_site loop, or be listed in a separate loop.
+     in the main atom_site loop, or be listed in a separate loop.
 ;
 _definition.scope                       Category
 _definition.class                       Loop
@@ -505,7 +505,7 @@ _description.text
      modulation  components are to be specified.  The Fourier
      modulation components are always presented in a separate loop
      (not in the _atom_site loop).  This string must match an
-     _atom_site_label from the _atom_site loop, and otherwise conform
+     _atom_site.label from the _atom_site loop, and otherwise conform
      to the rules for _atom_site_label.
 ;
 _type.contents                          Code
@@ -593,13 +593,13 @@ _description.text
      An arbitrary code that uniquely identifies the wave vector for
      which magnetic Fourier modulation components are to be described
      within the _atom_site_moment_Fourier loop.  It must match one of
-     the _atom_site_Fourier_wave_vector_seq_id values in the
+     the _atom_site_Fourier_wave_vector.seq_id values in the
      _atom_site_Fourier_wave_vector loop.
      Analogous tags:
-     msCIF:_atom_site_displace_Fourier.wave_vector_seq_id,
-     msCIF:_atom_site_rot_Fourier.wave_vector_seq_id,
-     msCIF:_atom_site_occ_Fourier.wave_vector_seq_id,
-     msCIF:_atom_site_U_Fourier.wave_vector_seq_id
+     msCIF:_atom_site_displace_Fourier_wave_vector.seq_id,
+     msCIF:_atom_site_rot_Fourier_wave_vector.seq_id,
+     msCIF:_atom_site_occ_Fourier_wave_vector.seq_id,
+     msCIF:_atom_site_U_Fourier_wave_vector.seq_id
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -751,7 +751,7 @@ _description.text
      integers could also be used.  This tag is only used when the
      magnetic Fourier modulation components are split off into a
      separate loop, which is less typical.  When used, its value must
-     match one of the  _atom_site_moment_Fourier_id values in the
+     match one of the  _atom_site_moment_Fourier.id values in the
      _atom_site_moment_Fourier loop.
 ;
 _type.contents                          Text
@@ -1115,7 +1115,7 @@ _type.container                         Single
 
 _description.text                       
 ;
-     _atom_site_moment_special_func_sawtooth_ items are the
+     _atom_site_moment_special_func.sawtooth items are the
      adjustable parameters of a magnetic sawtooth function.    A
      magnetic sawtooth function is only used when working    in the
      crystal-axis coordinate system.  It is defined    along the
@@ -1159,7 +1159,7 @@ _type.container                         Single
 
 _description.text                       
 ;
-     _atom_site_moment_special_func_sawtooth_ items are the
+     _atom_site_moment_special_func.sawtooth_ items are the
      adjustable parameters of a magnetic sawtooth function.    A
      magnetic sawtooth function is only used when working    in the
      crystal-axis coordinate system.  It is defined    along the
@@ -1197,7 +1197,7 @@ _type.container                         Single
 
 _description.text                       
 ;
-     _atom_site_moment_special_func_sawtooth_ items are the
+     _atom_site_moment_special_func.sawtooth_ items are the
      adjustable parameters of a magnetic sawtooth function.    A
      magnetic sawtooth function is only used when working    in the
      crystal-axis coordinate system.  It is defined    along the
@@ -1235,7 +1235,7 @@ _type.container                         Single
 
 _description.text                       
 ;
-     _atom_site_moment_special_func_sawtooth_ items are the
+     _atom_site_moment_special_func.sawtooth_ items are the
      adjustable parameters of a magnetic sawtooth function.    A
      magnetic sawtooth function is only used when working    in the
      crystal-axis coordinate system.  It is defined    along the
@@ -1273,7 +1273,7 @@ _type.container                         Single
 
 _description.text                       
 ;
-     _atom_site_moment_special_func_sawtooth_ items are the
+     _atom_site_moment_special_func.sawtooth_ items are the
      adjustable parameters of a magnetic sawtooth function.    A
      magnetic sawtooth function is only used when working    in the
      crystal-axis coordinate system.  It is defined    along the
@@ -1334,7 +1334,7 @@ _description.text
      Describes a user-defined coordinate system for which magnetic
      Fourier  modulation components are to be presented.  Only used
      when different from those described by
-     _atom_site_moment_Fourier_axis.
+     _atom_site_moment_Fourier.axis.
      Analogous tags:
      msCIF:_atom_sites_displace_Fourier.axes_description It's not hard
      to imagine an _atom_sites_rot_Fourier.axes_description tag.
@@ -1466,7 +1466,7 @@ _description.text
      A parsable string giving one of the centering or anti-centering
      translations in the BNS-supercell description of a magnetic space
      group in algebraic form. The form of such a string is identical
-     to that expected for _space_group_symop.magn_operation_xyz,
+     to that expected for _space_group_symop_magn_operation.xyz,
      except that the rotational part of a translation must always be
      the identity element.
 ;
@@ -1569,7 +1569,7 @@ _description.text
      A parsable string giving one of the centering operations of the
      OG(k)-supercell  description of a magnetic space group in
      algebraic form.  The form of such a string  is identical to that
-     expected for _space_group_symop.operation_xyz, except that the
+     expected for _space_group_symop_operation.xyz, except that the
      rotational part of a translation must always be the identity
      element. The magnetic component of the centering vector is not
      given in the value of this tag, but should instead be separately
@@ -1727,10 +1727,10 @@ _description.text
      A parsable string giving one of the centering or anti-centering
      operations of the magnetic superspace group in algebraic form.
      The form of such a string is identical to that expected for
-     _space_group_symop.magn_ssg_operation_algebraic, except that the
+     _space_group_symop_magn_ssg_operation.algebraic, except that the
      rotational part of a translation must always be the identity
      element.  See the description of
-     _space_group_symop.magn_centering_id for  more information about
+     _space_group_symop_magn_centering.id for  more information about
      centering loops. This tag is intended for use with the BNS
      description of the magnetic basic cell.
 ;
@@ -1779,7 +1779,7 @@ _description.text
      dictionary allows the subgroup of time-reversed and non-time-
      reversed fractional translations of a magnetic superspace group
      to be split off into a separate loop.  See the description of
-     _space_group_symop.magn_centering_id for more information about
+     _space_group_symop_magn_centering.id for more information about
      centering loops.
 ;
 _type.contents                          Text
@@ -2707,6 +2707,7 @@ _definition.update                      2016-05-24
 _type.contents                          Real
 _description.text                       
 ;
+        See definition for _atom_type_scat.neutron_magnetic_j0_A1
 
 ;
 _units.code                             'angstrom_squared'
@@ -3244,4 +3245,9 @@ loop_
     0.9.1    2016-05-30
 ;
       Added import of cif_core dictionary.  Added category keys and linked items.
+;
+    0.9.2    2016-06-10
+;
+      Added missing transformation and parent space group items. Enhanced type
+      information
 ;
