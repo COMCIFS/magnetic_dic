@@ -2400,11 +2400,12 @@ loop_
 _space_group_magn_transforms.id
 _space_group_magn_transforms.Pp_abc
 _space_group_magn_transforms.description
-1   'a b c;0 0 0'     "data_block_CURRENT"
-2   'a/2 b c;0 0 0'   "data_block_205763"
-3   'a b c;0 0 0'     "ISOMAG_BNS"
-4   'a/2 b c;0 0 0'   "Litvin-2013_OG"
-5   'a/4 b  c;0 0 0'   "literature citation to a nuclear parent structure' 
+_space_group_magn_transforms.source
+1   'a b c;0 0 0'     .                     "data_block_CURRENT"
+2   'a/2 b c;0 0 0'   "data_block_205763"   .
+3   'a b c;0 0 0'     .                     "ISOMAG_BNS"
+4   'a/2 b c;0 0 0'   .                     "Litvin-2013_OG"
+5   'a/4 b  c;0 0 0'  "literature citation to a nuclear parent structure"   .
 ;
 save_
 
@@ -2418,36 +2419,67 @@ _definition.update                      2016-06-09
 _description.text                       
 ;
      A string that describes the source of the magnetic-space-group
-     reference setting indicated by the
-     _space_group_magn_transforms.Pp_abc tag.
-     The value string "data_block_CURRENT" refers to the setting used
-     in the current data block.  Obviously, the basis transformation
-     to this setting is the identity.  The ability to reference the
-     current setting can be useful when communicationg the same
-     magnetic propagation vector in multiple settings.
+     reference setting indicated by the 
+     _space_group_magn_transforms.Pp_abc tag. 
+     _space_group_magn_transforms.source
+     should be used if the reference source is one of those provided in
+     that definition.
      The value string "data_block_<blockname>" refers to the setting
      used in a separate data block named "blockname" within the same
-     file.
-     The value string "Litvin-2013_OG" refers to the Opechowski-
-     Guccione group setting presented in the Magnetic Group Tables of
-     D.B. Litvin.
-     The value string "ISOMAG_BNS" refers to the Belov-Neronova-
-     Smirnova group setting presented in the ISO-MAG tables.
-     Arbitrary free text can be used to describe other reference
+     file. Otherwise,
+     arbitrary free text can be used to describe other reference
      settings of interest, such as might appear  in a specific
      publication, though care should be taken to make the description
      clear and unambiguous.
-     Analogous tags: none
-     References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
 ;
 _type.contents                          Text
 _type.container                         Single
 
-
 save_
 
+save__space_group_magn_transforms.source
+
+_definition.id                          '_space_group_magn_transforms.source'
+_name.category_id                       space_group_magn_transforms
+_name.object_id                         source
+_definition.update                      2016-06-22
+_description.text                       
+;
+     A string that describes the source of the magnetic space group
+     reference indicated by the _space_group_magnetic_transforms.Pp_abc
+     tag. 
+     If the reference source does not appear in the list below, use
+     _space_group_magn_transforms.description
+     References: 'Magnetic Group Tables' of D.B. Litvin at
+     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu ISO(3+d)D tables
+     of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+;
+_type.contents                          Text
+_type.container                         Single
+_type.purpose                           State
+
+loop_
+  _enumeration_set.state
+  _enumeration_set.detail
+      "data_block_CURRENT"
+;
+     the setting used in the current data block.  Obviously, the basis transformation
+     to this setting is the identity.  The ability to reference the
+     current setting can be useful when communicating the same
+     magnetic propagation vector in multiple settings.
+;
+      'ISOMAG-BNS'
+;
+     The Belov-Neronova-Smirnova group setting presented in the ISO-MAG tables.
+;
+      'Litvin-2013_OG'
+;
+     The Opechowski-Guccione group setting presented in the Magnetic Group Tables of
+     D.B. Litvin.
+;
+
+save_
 
 save__space_group_magn_transforms.id
 
@@ -2481,7 +2513,7 @@ _description.text
      This item specifies the transformation (P,p) of the basis vectors
      and origin in the current setting of the CIF file to the
      reference setting described by the
-     _space_group_magn_transforms.description tag, and should not
+     _space_group_magn_transforms.description/source tag, and should not
      be used without the this description.  The basis vectors
      (a',b',c') of the reference setting are described as  linear
      combinations of the current basis vectors (a,b,c), and the origin
@@ -2507,7 +2539,7 @@ _description.text
      This item specifies the transformation (P,p) of the basis vectors
      and origin in the current setting of the CIF file to the
      reference setting described by the
-     _space_group_magn_transforms.description tag, and should not
+     _space_group_magn_transforms.description/source tag, and should not
      be used without this description. 
 ;
 _type.contents                          Text
@@ -2543,20 +2575,20 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_BNS_P
+save__space_group.magn_transform_BNS_Pp_mat
 
-_definition.id                          '_space_group.magn_transform_BNS_P'
+_definition.id                          '_space_group.magn_transform_BNS_Pp_mat'
 _name.category_id                       space_group
-_name.object_id                         magn_transform_BNS_P
+_name.object_id                         magn_transform_BNS_Pp_mat
 _definition.update                      2016-06-21
 _description.text                       
 ;
-     This item specifies the transformation matrix P of the basis vectors
+     This item specifies the transformation matrix Pp of the basis vectors
      and origin of the current setting to those of the Belov-Neronova-
      Smirnova setting presented in the ISO-MAG tables. The basis vectors
      (a',b',c') of the reference setting are obtained as
  
-     (a',b',c',1) = P (a,b,c,1) 
+     (a',b',c',1) = Pp (a,b,c,1) 
 
      where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
      References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
@@ -2581,7 +2613,6 @@ loop_
     [0  0 0 1   ]]
 
 "Transformation from OG 8.7.44 C_Pm' to BNS 7.31 P_Ac"
-
 
 save_
 
@@ -2636,11 +2667,11 @@ _type.dimension                         [4,4]
 
 save_
 
-save_parent_magnetic_propagation_vector
+save_parent_propagation_vector
 
-_definition.id                          parent_magnetic_propagation_vector
+_definition.id                          parent_propagation_vector
 _name.category_id                       MAGNETIC
-_name.object_id                         parent_magnetic_propagation_vector
+_name.object_id                         parent_propagation_vector
 _definition.update                      2016-06-09
 _description.text                       
 ;
@@ -2652,14 +2683,14 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_parent_magnetic_propagation_vector.id'
+_category.key_id                        '_parent_propagation_vector.id'
 loop_
   _description_example.case
          
 ;
 loop_
-  _parent_magnetic_propagation_vector.id
-  _parent_magnetic_propagation_vector.kxkykz
+  _parent_propagation_vector.id
+  _parent_propagation_vector.kxkykz
 k1 [0 0 1]
 k2 [0 1 0]
 k3 [1 0 0]
@@ -2667,10 +2698,10 @@ k3 [1 0 0]
 save_
 
 
-save__parent_magnetic_propagation_vector.id
+save__parent_propagation_vector.id
 
-_definition.id                          '_parent_magnetic_propagation_vector.id'
-_name.category_id                       parent_magnetic_propagation_vector
+_definition.id                          '_parent_propagation_vector.id'
+_name.category_id                       parent_propagation_vector
 _name.object_id                         id
 _definition.update                      2016-06-09
 _description.text                       
@@ -2684,10 +2715,10 @@ _type.purpose                           Key
 save_
 
 
-save__parent_magnetic_propagation_vector.kxkykz
+save__parent_propagation_vector.kxkykz
 
-_definition.id                          '_parent_magnetic_propagation_vector.kxkykz'
-_name.category_id                       parent_magnetic_propagation_vector
+_definition.id                          '_parent_propagation_vector.kxkykz'
+_name.category_id                       parent_propagation_vector
 _name.object_id                         kxkykz
 _definition.update                      2016-06-09
 _description.text                       
