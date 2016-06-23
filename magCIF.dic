@@ -9,8 +9,8 @@ data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9.2
-_dictionary.date                        2016-06-10
+_dictionary.version                     0.9.3
+_dictionary.date                        2016-06-23
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -2396,16 +2396,12 @@ _name.object_id                         space_group_magn_transforms
 _definition.update                      2016-06-09
 _description.text                       
 ;
-     This loop provides a list of matrix transformations to multiple
+     This category provides a list of matrix transformations to multiple
      settings of the magnetic space group, including transformations
      to both standard and non-standard settings.  A transformation
      loop is  particularly helpful for a magnetic space group, which
      often have several reference settings of interest.
-     Analogous tags: transform loops have not yet been approved in
-     other dictionaries.
 ;
-_type.contents                          Text
-_type.container                         Single
 
 _definition.scope                       Category
 _definition.class                       Loop
@@ -2546,19 +2542,24 @@ _type.container                         Single
 
 save_
 
-save__space_group_magn_transforms.P
+save__space_group_magn_transforms.Pp_mat
 
-_definition.id                          '_space_group_magn_transforms.P'
+_definition.id                          '_space_group_magn_transforms.Pp_mat'
 _name.category_id                       space_group_magn_transforms
-_name.object_id                         P
-_definition.update                      2016-06-21
+_name.object_id                         Pp_mat
+_definition.update                      2016-06-23
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
      and origin in the current setting of the CIF file to the
      reference setting described by the
      _space_group_magn_transforms.description/source tag, and should not
-     be used without this description. 
+     be used without this description.  The basis vectors
+     (a',b',c') of the reference setting are obtained as
+ 
+     (a',b',c',1) = Pp (a,b,c,1) 
+
+     where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
 ;
 _type.contents                          Text
 _type.container                         Matrix
@@ -2578,7 +2579,7 @@ _description.text
      This item specifies the transformation (P,p) of the basis vectors
      and origin of the current setting to those of the Belov-Neronova-
      Smirnova setting presented in the ISO-MAG tables. The basis
-     vectors (a',b',c') of the reference setting are described as
+     vectors (a',b',c') of the BNS setting are described as
      linear combinations of the current basis vectors (a,b,c), and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
      of the current setting. The Jones-Faithful notation and possible
@@ -2604,7 +2605,7 @@ _description.text
      This item specifies the transformation matrix Pp of the basis vectors
      and origin of the current setting to those of the Belov-Neronova-
      Smirnova setting presented in the ISO-MAG tables. The basis vectors
-     (a',b',c') of the reference setting are obtained as
+     (a',b',c') of the BNS setting are obtained as
  
      (a',b',c',1) = Pp (a,b,c,1) 
 
@@ -2661,21 +2662,23 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_OG_P
+save__space_group.magn_transform_OG_Pp_mat
 
-_definition.id                          '_space_group.magn_transform_OG_P'
+_definition.id                          '_space_group.magn_transform_OG_Pp_mat'
 _name.category_id                       space_group
-_name.object_id                         magn_transform_OG_P
+_name.object_id                         magn_transform_OG_Pp_mat
 _definition.update                      2016-06-21
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
      and origin of  the current setting to those of the Opechowski-
      Guccione setting presented  in the Magnetic Group Tables of D.B.
-     Litvin. The basis vectors (a',b',c') of the reference setting are
-     described as  linear combinations of the current basis vectors
-     (a,b,c), and the origin shift (ox,oy,oz)  is displayed in the
-     lattice coordinates of the current setting.
+     Litvin.  The basis vectors
+     (a',b',c') of the OG setting are obtained as
+ 
+     (a',b',c',1) = Pp (a,b,c,1) 
+
+     where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
      References: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
 ;
@@ -2742,13 +2745,11 @@ _definition.update                      2016-06-09
 _description.text                       
 ;
      A fundamental magnetic propagation vector in unitless reciprocal-lattice units of 
-     the parent space group setting. The three indices of this vector should be 
-     presented as comma-separated rational fractions.
-
+     the parent space group setting.
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimensions                        [3]
+_type.dimension                        [3]
 
 save_
 
@@ -2803,7 +2804,7 @@ _description.text
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Real
-_type.dimensions                        [4,4]
+_type.dimension                        [4,4]
 _type.container                         Matrix
 _type.purpose                           Number
 _type.source                            Assigned
@@ -2880,7 +2881,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimensions                        [4,4]
+_type.dimension                        [4,4]
 _type.purpose                           Number
 _type.source                            Assigned
 
@@ -2919,6 +2920,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_b2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -2935,6 +2937,7 @@ _definition.id                          '_atom_type_scat.neutron_magnetic_j2_B1'
 _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_B1
 _definition.update                      2016-05-24
+_type.container                         Single
 _type.contents                          Real
 _description.text                       
 ;
@@ -2953,6 +2956,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_c2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -2970,6 +2974,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_e
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -2987,6 +2992,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_C1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3002,6 +3008,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_D
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3017,6 +3024,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_e
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3032,6 +3040,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_a2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3049,6 +3058,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_A1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3064,6 +3074,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_D
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3079,6 +3090,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_e
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3094,6 +3106,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_D
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3110,6 +3123,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_e
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3126,6 +3140,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_c2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3142,6 +3157,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_C1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3158,6 +3174,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_c2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3174,6 +3191,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_C1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3190,6 +3208,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_a2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3206,6 +3225,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_A1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3221,6 +3241,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_A1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3238,6 +3259,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_a2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3255,6 +3277,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_A1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
      First, the parameters are used directly to approximate spatial
@@ -3282,6 +3305,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_D
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3298,6 +3322,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_B1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3314,6 +3339,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_C1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3331,6 +3357,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j2_c2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3348,6 +3375,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_b2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3363,6 +3391,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j0_a2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3379,10 +3408,10 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_B1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
-
 ;
 
 
@@ -3396,6 +3425,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j4_b2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3412,6 +3442,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_b2
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3429,6 +3460,7 @@ _name.category_id                       atom_type_scat
 _name.object_id                         neutron_magnetic_j6_B1
 _definition.update                      2016-05-24
 _type.contents                          Real
+_type.container                         Single
 _description.text                       
 ;
         See definition for _atom_type_scat.neutron_magnetic_j0_A1
@@ -3464,4 +3496,8 @@ loop_
 ;
       Added missing transformation and parent space group items. Enhanced type
       information
+;
+    0.9.3    2016-06-23
+;
+      Finalised outstanding issues from conversion.
 ;
