@@ -2542,11 +2542,11 @@ _type.container                         Single
 
 save_
 
-save__space_group_magn_transforms.Pp_mat
+save__space_group_magn_transforms.Pp
 
-_definition.id                          '_space_group_magn_transforms.Pp_mat'
+_definition.id                          '_space_group_magn_transforms.Pp'
 _name.category_id                       space_group_magn_transforms
-_name.object_id                         Pp_mat
+_name.object_id                         Pp
 _definition.update                      2016-06-23
 _description.text                       
 ;
@@ -2594,11 +2594,11 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_BNS_Pp_mat
+save__space_group.magn_transform_BNS_Pp
 
-_definition.id                          '_space_group.magn_transform_BNS_Pp_mat'
+_definition.id                          '_space_group.magn_transform_BNS_Pp'
 _name.category_id                       space_group
-_name.object_id                         magn_transform_BNS_Pp_mat
+_name.object_id                         magn_transform_BNS_Pp
 _definition.update                      2016-06-21
 _description.text                       
 ;
@@ -2662,11 +2662,11 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_OG_Pp_mat
+save__space_group.magn_transform_OG_Pp
 
-_definition.id                          '_space_group.magn_transform_OG_Pp_mat'
+_definition.id                          '_space_group.magn_transform_OG_Pp'
 _name.category_id                       space_group
-_name.object_id                         magn_transform_OG_Pp_mat
+_name.object_id                         magn_transform_OG_Pp
 _definition.update                      2016-06-21
 _description.text                       
 ;
