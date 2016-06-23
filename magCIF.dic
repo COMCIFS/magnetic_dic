@@ -72,6 +72,7 @@ _description.text
 _type.contents                          Real
 _type.dimension                         [3]
 _type.container                         Matrix
+_type.purpose                           Measurand
 _units.code                             Bohr_magnetons
 loop_
   _method.purpose
@@ -94,6 +95,7 @@ _name.object_id                         Cartn_x
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The x component of the atom-site magnetic moment vector
@@ -112,6 +114,7 @@ _name.object_id                         Cartn_y
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The y component of the atom-site magnetic moment vector
@@ -131,6 +134,7 @@ _name.object_id                         Cartn_z
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The z component of the atom-site magnetic moment vector
@@ -157,6 +161,7 @@ _description.text
 _type.contents                          Real
 _type.container                         Matrix
 _type.dimension                         [3]
+_type.purpose                           Measurand
 _units.code                             Bohr_magnetons
 loop_
   _method.purpose
@@ -179,6 +184,7 @@ _name.object_id                         crystalaxis_x
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The x component of the atom-site magnetic moment vector projected
@@ -197,6 +203,7 @@ _name.object_id                         crystalaxis_y
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The y component of the atom-site magnetic moment vector projected
@@ -215,6 +222,7 @@ _name.object_id                         crystalaxis_z
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 _description.text                       
 ;
      The z component of the atom-site magnetic moment vector projected
@@ -307,6 +315,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 save_
 
@@ -326,7 +335,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
-
+_type.purpose                           Measurand
 save_
 
 
@@ -347,6 +356,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 save_
 
@@ -723,6 +733,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 save_
 
@@ -846,6 +857,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 save_
 
@@ -945,6 +957,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 save_
 
@@ -1042,7 +1055,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Single
-
+_type.purpose                           Measurand
 
 save_
 
@@ -1175,6 +1188,7 @@ _name.object_id                         sawtooth_ax
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 _description.text                       
 ;
@@ -1219,6 +1233,7 @@ _name.object_id                         sawtooth_ay
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 _description.text                       
 ;
@@ -1257,6 +1272,7 @@ _name.object_id                         sawtooth_az
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 _description.text                       
 ;
@@ -1295,6 +1311,7 @@ _name.object_id                         sawtooth_c
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 _description.text                       
 ;
@@ -1333,6 +1350,7 @@ _name.object_id                         sawtooth_w
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
+_type.purpose                           Measurand
 
 _description.text                       
 ;
