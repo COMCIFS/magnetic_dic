@@ -9,8 +9,8 @@ data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9.3
-_dictionary.date                        2016-06-23
+_dictionary.version                     0.9.4
+_dictionary.date                        2016-06-28
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -62,6 +62,10 @@ save__atom_site_moment.Cartn
 _definition.id                          '_atom_site_moment.Cartn'
 _name.category_id                       atom_site_moment
 _name.object_id                         Cartn
+loop_
+  _alias.definition_id
+  '_atom_site_moment_Cartn'
+
 _definition.update                      2016-05-24
 _description.text                       
 ;
@@ -82,7 +86,7 @@ loop_
     with a as atom_site_moment
     a.Cartn = [a.Cartn_x,a.Cartn_y,a.Cartn_z]
 
-; 
+;
 
 save_
 
@@ -92,6 +96,8 @@ save__atom_site_moment.Cartn_x
 _definition.id                          '_atom_site_moment.Cartn_x'
 _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_x
+loop_
+  _alias.definition_id                  '_atom_site_moment_Cartn_x'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -111,6 +117,8 @@ save__atom_site_moment.Cartn_y
 _definition.id                          '_atom_site_moment.Cartn_y'
 _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_y
+loop_
+  _alias.definition_id                  '_atom_site_moment_Cartn_y'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -131,6 +139,8 @@ save__atom_site_moment.Cartn_z
 _definition.id                          '_atom_site_moment.Cartn_z'
 _name.category_id                       atom_site_moment
 _name.object_id                         Cartn_z
+loop_
+  _alias.definition_id                  '_atom_site_moment_Cartn_z'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -151,6 +161,8 @@ save__atom_site_moment.crystalaxis
 _definition.id                          '_atom_site_moment.crystalaxis'
 _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis
+loop_
+  _alias.definition_id                  '_atom_site_moment_crystalaxis'
 _definition.update                      2016-05-24
 _description.text                       
 ;
@@ -181,6 +193,8 @@ save__atom_site_moment.crystalaxis_x
 _definition.id                          '_atom_site_moment.crystalaxis_x'
 _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_x
+loop_
+  _alias.definition_id                  '_atom_site_moment_crystalaxis_x'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -200,6 +214,8 @@ save__atom_site_moment.crystalaxis_y
 _definition.id                          '_atom_site_moment.crystalaxis_y'
 _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_y
+loop_
+  _alias.definition_id                  '_atom_site_moment_crystalaxis_y'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -219,6 +235,8 @@ save__atom_site_moment.crystalaxis_z
 _definition.id                          '_atom_site_moment.crystalaxis_z'
 _name.category_id                       atom_site_moment
 _name.object_id                         crystalaxis_z
+loop_
+  _alias.definition_id                  '_atom_site_moment_crystalaxis_z'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -238,6 +256,8 @@ save__atom_site_moment.label
 _definition.id                          '_atom_site_moment.label'
 _name.category_id                       atom_site_moment
 _name.object_id                         label
+loop_
+  _alias.definition_id                  '_atom_site_moment_label'
 _import.get [{"save":atom_site_id "file":templ_attr.cif}]
 _definition.update                      2016-05-24
 
@@ -249,6 +269,8 @@ save__atom_site_moment.modulation_flag
 _definition.id                          '_atom_site_moment.modulation_flag'
 _name.category_id                       atom_site_moment
 _name.object_id                         modulation_flag
+loop_
+  _alias.definition_id                  '_atom_site_moment_modulation_flag'
 _definition.update                      2016-05-24
 _description.text                       
 ;
@@ -273,6 +295,8 @@ save__atom_site_moment.refinement_flags_magnetic
 _definition.id                          '_atom_site_moment.refinement_flags_magnetic'
 _name.category_id                       atom_site_moment
 _name.object_id                         refinement_flags_magnetic
+loop_
+  _alias.definition_id                  '_atom_site_moment_refinement_flags_magnetic'
 _definition.update                      2016-05-24
 _type.container                         Single
 _type.purpose                           State
@@ -302,6 +326,8 @@ save__atom_site_moment.spherical_azimuthal
 _definition.id                          '_atom_site_moment.spherical_azimuthal'
 _name.category_id                       atom_site_moment
 _name.object_id                         spherical_azimuthal
+loop_
+  _alias.definition_id                  '_atom_site_moment_spherical_azimuthal'
 _definition.update                      2016-05-24
 _enumeration.range                      0.0:6.2831854
 _units.code                             radians
@@ -325,6 +351,8 @@ save__atom_site_moment.spherical_modulus
 _definition.id                          '_atom_site_moment.spherical_modulus'
 _name.category_id                       atom_site_moment
 _name.object_id                         spherical_modulus
+loop_
+  _alias.definition_id                  '_atom_site_moment_spherical_modulus'
 _definition.update                      2016-05-24
 _units.code                             Bohr_magnetons
 _description.text                       
@@ -344,6 +372,8 @@ save__atom_site_moment.spherical_polar
 _definition.id                          '_atom_site_moment.spherical_polar'
 _name.category_id                       atom_site_moment
 _name.object_id                         spherical_polar
+loop_
+  _alias.definition_id                  '_atom_site_moment_spherical_polar'
 _definition.update                      2016-05-24
 _enumeration.range                      0.0:3.1415927
 _units.code                             radians
@@ -366,6 +396,8 @@ save__atom_site_moment.symmform
 _definition.id                          '_atom_site_moment.symmform'
 _name.category_id                       atom_site_moment
 _name.object_id                         symmform
+loop_
+  _alias.definition_id                  '_atom_site_moment_symmform'
 _definition.update                      2016-05-24
 _description.text                       
 ;
@@ -390,6 +422,8 @@ save_atom_site_Fourier_wave_vector.q_coeff
 _definition.id                          'atom_site_Fourier_wave_vector.q_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q_coeff
+loop_
+  _alias.definition_id                  '_atom_site_Fourier_wave_vector_q_coeff'
 _definition.update                      2016-06-21
 _description.text                       
 ;
@@ -434,6 +468,8 @@ save_atom_site_Fourier_wave_vector.q1_coeff
 _definition.id                          'atom_site_Fourier_wave_vector.q1_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q1_coeff
+loop_
+  _alias.definition_id                  '_atom_site_Fourier_wave_vector_q1_coeff'
 _definition.update                      2016-06-21
 _description.text                       
 ;
@@ -488,6 +524,8 @@ save_atom_site_Fourier_wave_vector.q2_coeff
 _definition.id                          'atom_site_Fourier_wave_vector.q2_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q2_coeff
+loop_
+  _alias.definition_id                  '_atom_site_Fourier_wave_vector_q2_coeff'
 _definition.update                      2016-06-21
 _description.text                       
 ;
@@ -520,6 +558,8 @@ save_atom_site_Fourier_wave_vector.q3_coeff
 _definition.id                          'atom_site_Fourier_wave_vector.q3_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q3_coeff
+loop_
+  _alias.definition_id                  '_atom_site_Fourier_wave_vector_q3_coeff'
 _definition.update                      2016-06-21
 _description.text                       
 ;
@@ -717,6 +757,8 @@ save__atom_site_moment_Fourier_param.cos
 _definition.id                          '_atom_site_moment_Fourier_param.cos'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         cos
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_cos'
 _definition.update                      2016-05-24
 _units.code                             Bohr_magnetons
 _description.text                       
@@ -743,6 +785,8 @@ save__atom_site_moment_Fourier_param.cos_symmform
 _definition.id                          '_atom_site_moment_Fourier_param.cos_symmform'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         cos_symmform
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_cos_symmform'
 _definition.update                      2016-05-24
 _type.contents                          Text
 _type.container                         Single
@@ -814,6 +858,8 @@ save__atom_site_moment_Fourier_param.id
 _definition.id                          '_atom_site_moment_Fourier_param.id'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         id
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_id'
 _definition.update                      2016-05-24
 
 _description.text                       
@@ -841,6 +887,8 @@ save__atom_site_moment_Fourier_param.modulus
 _definition.id                          '_atom_site_moment_Fourier_param.modulus'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         modulus
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_modulus'
 _definition.update                      2016-05-24
 _units.code                             Bohr_magnetons
 _description.text                       
@@ -867,6 +915,8 @@ save__atom_site_moment_Fourier_param.modulus_symmform
 _definition.id                          '_atom_site_moment_Fourier_param.modulus_symmform'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         modulus_symmform
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_modulus_symmform'
 _definition.update                      2016-05-24
 _type.contents                          Text
 _type.container                         Single
@@ -939,6 +989,8 @@ save__atom_site_moment_Fourier_param.phase
 _definition.id                          '_atom_site_moment_Fourier_param.phase'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         phase
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_phase'
 _definition.update                      2016-05-24
 _enumeration.range                      -1.0:1.0
 _units.code                             cycles
@@ -967,6 +1019,8 @@ save__atom_site_moment_Fourier_param.phase_symmform
 _definition.id                          '_atom_site_moment_Fourier_param.phase_symmform'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         phase_symmform
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_phase_symmform'
 _definition.update                      2016-05-24
 _type.contents                          Text
 _type.container                         Single
@@ -1039,6 +1093,8 @@ save__atom_site_moment_Fourier_param.sin
 _definition.id                          '_atom_site_moment_Fourier_param.sin'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         sin
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_sin'
 _definition.update                      2016-05-24
 _units.code                             Bohr_magnetons
 _description.text                       
@@ -1065,6 +1121,8 @@ save__atom_site_moment_Fourier_param.sin_symmform
 _definition.id                          '_atom_site_moment_Fourier_param.sin_symmform'
 _name.category_id                       atom_site_moment_Fourier_param
 _name.object_id                         sin_symmform
+loop_
+  _alias.definition_id                  '_atom_site_moment_Fourier_param_sin_symmform'
 _definition.update                      2016-05-24
 _type.contents                          Text
 _type.container                         Single
@@ -1185,6 +1243,8 @@ save__atom_site_moment_special_func.sawtooth_ax
 _definition.id                          '_atom_site_moment_special_func.sawtooth_ax'
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_ax
+loop_
+  _alias.definition_id                  '_atom_site_moment_special_func_sawtooth_ax'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -1230,6 +1290,8 @@ save__atom_site_moment_special_func.sawtooth_ay
 _definition.id                          '_atom_site_moment_special_func.sawtooth_ay'
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_ay
+loop_
+  _alias.definition_id                  '_atom_site_moment_special_func_sawtooth_ay'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -1269,6 +1331,8 @@ save__atom_site_moment_special_func.sawtooth_az
 _definition.id                          '_atom_site_moment_special_func.sawtooth_az'
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_az
+loop_
+  _alias.definition_id                  '_atom_site_moment_special_func_sawtooth_az'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -1308,6 +1372,8 @@ save__atom_site_moment_special_func.sawtooth_c
 _definition.id                          '_atom_site_moment_special_func.sawtooth_c'
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_c
+loop_
+  _alias.definition_id                  '_atom_site_moment_special_func_sawtooth_c'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -1347,6 +1413,8 @@ save__atom_site_moment_special_func.sawtooth_w
 _definition.id                          '_atom_site_moment_special_func.sawtooth_w'
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         sawtooth_w
+loop_
+  _alias.definition_id                  '_atom_site_moment_special_func_sawtooth_w'
 _definition.update                      2016-05-24
 _type.contents                          Real
 _type.container                         Single
@@ -3500,4 +3568,8 @@ loop_
     0.9.3    2016-06-23
 ;
       Finalised outstanding issues from conversion.
+;
+    0.9.4    2016-06-28
+;
+      Added underscore aliases for datanames already in common use
 ;
