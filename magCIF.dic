@@ -2103,11 +2103,11 @@ loop_
 
 save_
 
-save__space_group.magn_point_group
+save__space_group.magn_point_group_name
 
-_definition.id                          '_space_group.magn_point_group'
+_definition.id                          '_space_group.magn_point_group_name'
 _name.category_id                       space_group
-_name.object_id                         magn_point_group
+_name.object_id                         magn_point_group_name
 _definition.update                      2016-05-24
 
 _description.text                       
@@ -2127,8 +2127,7 @@ _description.text
      reversed generator.
      Analogous tags: symCIF:_space_group.point_group_H-M
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0 
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2144,6 +2143,33 @@ loop_
          "4' m' m"           
          "4' m m'" 
 
+save_
+
+save__space_group.magn_point_group_number
+
+_definition.id                          '_space_group.magn_point_group_number'
+_name.category_id                       space_group
+_name.object_id                         magn_point_group_number
+_definition.update                      2016-07-05
+_description.text                      
+;
+
+     Each of the 122 crystallographic magnetic point groups can be associated with exactly one
+     crystallographic non-magnetic space group by removing the time-reversal component from
+     each group operator.  The identifying number for each such group is taken from the
+     "Survey of 3-dimensional magnetic point group types" from the "Magnetic Group Tables"
+     Of D.B. Litvin.  This number is comprised of three integers: (1) an integer from 1 to 32 that
+     Corresponds to the non-magnetic point group, (2) an integer that runs sequentially over
+     each of the magnetic point groups associated with a given non-magnetic point group, and
+     (3) a redundant third integer that runs from 1 to 122.
+     References: 'Magnetic Group Tables' by D.B. Litvin at http://www.iucr.org/publ/978-0-9553602-2-0
+;
+_type.contents                          Text
+_type.container                         Single
+loop_
+  _description_example.case
+“1.1.1”
+“32.5.122”
 save_
 
 save__space_group.magn_ssg_name
@@ -3572,4 +3598,9 @@ loop_
     0.9.4    2016-06-28
 ;
       Added underscore aliases for datanames already in common use
+;
+    0.9.5    2016-07-05
+;
+      Added _space_group.magn_point_group_number; changed _space_group.magn_point_group
+      to _space_group.magn_point_group_name
 ;
