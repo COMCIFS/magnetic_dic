@@ -2403,31 +2403,19 @@ _type.purpose                           State
 loop_
   _enumeration_set.state
   _enumeration_set.detail
-      'ISOMAG'
+      'ISO(3+d)D-MAG'
 ;
-     This superspace transformation takes the setting of the basic magnetic
-     space group of the magnetic superspace group to the BNS setting of the
-     corresponding magnetic space group in the ISO-MAG tables.  Only the
-     external-space components of the transformation are non-trivial.
-;
-      'ISO(3+d)D'
-;
-     After eliminating all time-reversed operators from the magnetic
-     superspace group, this transformation will take the setting of the
-     resulting non-magnetic superspace-group to the setting of the
-     corresponding entry in the ISO(3+d)D tables.
-;
-      'ISOMAG-ISO(3+d)D'
-;
-     This superspace transformation is the the product of the 'ISO(3+d)D' 
-     and 'ISOMAG' transformations, with the 'ISOMAG' transformation being
-     applied last.  It takes the current setting of the magnetic superspace 
-     group to one where the basic magnetic space group has the setting
-     of the corresponding magnetic space group in the ISO-MAG tables, and
-     where the derived non-magnetic superspace group (obtained by setting
-     all magnetic moments to zero) is related by a purely external operation
-     to the setting of the corresponding superspace group in the ISO(3+d)D tables.
-     Such a transformation is unique for any setting of a magnetic superspace group.
+	This superspace transformation simultaneously takes setting of the 
+	basic magnetic space group (BMSG) to the setting of the corresponding 
+	entry in the ISO-MAG tables, and takes the setting of the
+	derived non-magnetic superspace group (DNMSG) to within a purely external 
+	operation of the setting of the corresponding entry in the ISO(3+d)D tables.
+	The external components of this superspace transformation are those that take
+	the setting of the BMSG to the setting of the corresponding entry
+	in the ISO-MAG tables, while the internal components are those of the
+	transformation that takes the setting of the DNMSG to the setting of the 
+	corresponding superspace group in the ISO(3+d)D tables.  Such a transformation 
+	is unique for any setting of a magnetic superspace group.
 ;
 
 save_
@@ -2520,8 +2508,8 @@ _space_group_magn_transforms.description
 _space_group_magn_transforms.source
 1   'a b c;0 0 0'     .                     "data_block_CURRENT"
 2   'a/2 b c;0 0 0'   "data_block_205763"   .
-3   'a b c;0 0 0'     .                     "ISOMAG_BNS"
-4   'a/2 b c;0 0 0'   .                     "Litvin-2013_OG"
+3   'a b c;0 0 0'     .                     "BNS"
+4   'a/2 b c;0 0 0'   .                     "OG"
 5   'a/4 b  c;0 0 0'  "literature citation to a nuclear parent structure"   .
 ;
 save_
