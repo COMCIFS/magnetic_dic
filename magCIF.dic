@@ -2458,8 +2458,9 @@ _description.text
      setting.
      The notation and usage are analogous to those of
      _space_group.transform_Pp_abc, except that P now represents a
-     superspace point operation and p now represents a superspace
-     translation.
+     superspace point operation, that p now represents a superspace
+     translation, and that the point and translational components
+     are now separated with a semicolon.
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
@@ -2469,8 +2470,8 @@ _type.purpose                           Encode
 loop_
   _description_example.case
   _description_example.detail
-         'a1        a2        a3        a4        a5'  "Identity transformation"
-         '-a2+1/4 a1-1/4  1/2a3  -a1+a5+1/4  -1/2a3+a4'
+         'a1,a2,a3,a4,a5;0,0,0,0,0'  "Identity transformation"
+         '-a2,a1,1/2a3,-a1+a5,-1/2a3+a4;1/4,-1/4,0,1/4,0'
 ;
                       Transforms from a supercentered setting to the ISO(3+d)D setting of
                       65.2.43.64.m481.1  Cmmm(0,b1,1/2)000(1,0,g2)0s0.
@@ -2506,11 +2507,11 @@ _space_group_magn_transforms.id
 _space_group_magn_transforms.Pp_abc
 _space_group_magn_transforms.description
 _space_group_magn_transforms.source
-1   'a b c;0 0 0'     .                     "data_block_CURRENT"
-2   'a/2 b c;0 0 0'   "data_block_205763"   .
-3   'a b c;0 0 0'     .                     "BNS"
-4   'a/2 b c;0 0 0'   .                     "OG"
-5   'a/4 b  c;0 0 0'  "literature citation to a nuclear parent structure"   .
+1   'a,b,c;0,0,0'     .                     "data_block_CURRENT"
+2   'a/2,b,c;0,0,0'   "data_block_205763"   .
+3   'a,b,c;0,0,0'     .                     "BNS"
+4   'a/2,b,c;0,0,0'   .                     "OG"
+5   'a/4,b,c;0,0,0'  "literature citation to a nuclear parent structure"   .
 ;
 save_
 
@@ -2624,7 +2625,10 @@ _description.text
      combinations of the current basis vectors (a,b,c), and the origin
      shift (ox,oy,oz)  is displayed in the lattice coordinates of the
      current setting. The Jones-Faithful notation and possible values
-     are identical to those of symCIF:_space_group_transform_Pp_abc.
+     are identical to those of symCIF:_space_group_transform_Pp_abc,
+     except that the point and translational components are separated
+     by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
@@ -2674,8 +2678,10 @@ _description.text
      linear combinations of the current basis vectors (a,b,c), and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
      of the current setting. The Jones-Faithful notation and possible
-     values are identical to those of
-     symCIF:_space_group.transform_Pp_abc.
+     values are identical to those of symCIF:_space_group.transform_Pp_abc,
+     except that the point and tranlational components are separated
+     by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
      References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
      http://iso.byu.edu
@@ -2742,7 +2748,9 @@ _description.text
      (a,b,c), and the origin shift (ox,oy,oz)  is displayed in the
      lattice coordinates of the current setting. The Jones-Faithful
      notation and possible values are identical to those of
-     symCIF:_space_group.transform_Pp_abc.
+     symCIF:_space_group.transform_Pp_abc, except that the point and 
+     tranlational components are separated by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
      References: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
@@ -2891,7 +2899,11 @@ _description.text
      combinations  of the basis vectors (a,b,c) of the parent, and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
      of the parent. The Jones-Faithful notation and possible values
-     are identical to those of  symCIF:_space_group.transform_Pp_abc.
+     are identical to those of  symCIF:_space_group.transform_Pp_abc,
+     except that the point and tranlational components are separated
+     by a semicolon.  If the child structure is incommensurate, the
+     transformation applies to the present setting of the basic
+     space group of the incommensurate structure.
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Real
@@ -2966,9 +2978,10 @@ _name.object_id                         transform_Pp_abc
 _definition.update                      2016-06-09
 _description.text                       
 ;
-     Analogous tags: Perfectly analogous to
+     Analogous tags: Notation and usage is analogous to
      symCIF:_space_group.transform_Pp_abc except that it applies to
-     the parent structure.
+     the parent structure, and that the point and tranlational
+     components are separated by a semicolon.
 ;
 _type.contents                          Real
 _type.container                         Matrix
