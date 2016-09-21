@@ -50,7 +50,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_atom_site_moment.label'
 loop_
     _category_key.name                  '_atom_site_moment.label'
 
@@ -599,9 +598,9 @@ _definition.class                       Loop
 _category.key_id                        '_atom_site_moment_Fourier.id'
 loop_
     _category_key.name
-        '_atom_site_moment_Fourer.atom_site_label'
-        '_atom_site_moment_Fourer.axis'
-        '_atom_site_moment_Fourer.wave_vector_seq_id'
+        '_atom_site_moment_Fourier.atom_site_label'
+        '_atom_site_moment_Fourier.axis'
+        '_atom_site_moment_Fourier.wave_vector_seq_id'
 save_
 
 
@@ -667,8 +666,7 @@ loop_
 
 save_
 
-
-save__atom_site_moment_Fourier.id
+save_atom_site_moment_Fourier.id
 
 _definition.id                          '_atom_site_moment_Fourier.id'
 _name.category_id                       atom_site_moment_Fourier
@@ -745,9 +743,9 @@ _definition.class                       Loop
 _category.key_id                        '_atom_site_moment_Fourier_param.id'
 loop_
     _category_key.name
-        '_atom_site_moment_Fourer_param.atom_site_label'
-        '_atom_site_moment_Fourer_param.axis'
-        '_atom_site_moment_Fourer_param.wave_vector_seq_id'
+        '_atom_site_moment_Fourier_param.atom_site_label'
+        '_atom_site_moment_Fourier_param.axis'
+        '_atom_site_moment_Fourier_param.wave_vector_seq_id'
 
 save_
 
@@ -851,7 +849,6 @@ _atom_site_moment_Fourier_param.sin_symmform
 ; 
 
 save_
-
 
 save__atom_site_moment_Fourier_param.id
 
@@ -1224,6 +1221,9 @@ _description.text
 _definition.scope                       Category
 _definition.class                       Loop
 _category.key_id                        '_atom_site_moment_special_func.atom_site_label'
+loop_
+    _category_key.name
+                                        '_atom_site_moment_special_func.atom_site_label'
 
 save_
 
@@ -1234,7 +1234,7 @@ _definition.id                          '_atom_site_moment_special_func.atom_sit
 _name.category_id                       atom_site_moment_special_func
 _name.object_id                         atom_site_label
 _definition.update                      2016-05-24
-_import.get [{'save':atom_site_id    'file':templ_attr.dic}]
+_import.get [{'save':atom_site_id    'file':templ_attr.cif}]
 save_
 
 
@@ -1540,7 +1540,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_symop_magn_centering.id'
 loop_
     _category_key.name
          '_space_group_symop_magn_centering.id'
@@ -1653,7 +1652,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_symop_magn_OG_centering.id'
 loop_
     _category_key.name
         '_space_group_symop_magn_OG_centering.id'
@@ -1748,7 +1746,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_symop_magn_operation.id'
 loop_
     _category_key.name
          '_space_group_symop_magn_operation.id'
@@ -1857,7 +1854,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_symop_magn_ssg_centering.id'
 loop_
     _category_key.name
         '_space_group_symop_magn_ssg_centering.id'
@@ -1951,7 +1947,6 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_symop_magn_ssg_operation.id'
 loop_
     _category_key.name
         '_space_group_symop_magn_ssg_operation.id'
@@ -2355,7 +2350,8 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_magn_ssg_transforms.id'
+loop_
+  _category_key.name                    '_space_group_magn_ssg_transforms.id'
 save_
 
 save__space_group_magn_ssg_transforms.description
@@ -2500,6 +2496,8 @@ _description.text
 _definition.scope                       Category
 _definition.class                       Loop
 _category.key_id                        '_space_group_magn_transforms.id'
+loop_
+  _category_key.name                    '_space_group_magn_transforms.id'
 loop_
   _description_example.case
 
@@ -2799,6 +2797,9 @@ _description.text
 _definition.scope                       Category
 _definition.class                       Loop
 _category.key_id                        '_parent_propagation_vector.id'
+loop_
+  _category_key.name                    '_parent_propagation_vector.id'
+  
 loop_
   _description_example.case
          
