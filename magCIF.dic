@@ -1770,8 +1770,8 @@ _description.text
      magnetic structure.
      Analogous tags: symCIF:_space_group_symop.operation_description
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -1825,8 +1825,8 @@ _description.text
      of a magnetic structure.
      Analogous tags: symCIF:_space_group_symop.operation_xyz
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2079,8 +2079,8 @@ _description.text
      MSGs of types 1-3, but differ substantially  for MSGs of type 4.
      Analogous tags: symCIF:_space_group.name_H-M_ref
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2195,8 +2195,8 @@ _description.text
 
      Analogous tags: msCIF:_space_group.ssg_name
      References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
-     http://iso.byu.edu ISO(3+d)D tables of H.T. Stokes and B.J.
-     Campbell at http://iso.byu.edu
+     http://iso.byu.edu. ISO(3+d)D tables of H.T. Stokes and B.J.
+     Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2260,8 +2260,8 @@ _description.text
      sense here.
      Analogous tags: symCIF:_space_group.number_IT
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2312,8 +2312,8 @@ _description.text
      of types 1-3, but differ substantially  for MSGs of type 4.
      Analogous tags: symCIF:_space_group.name_H-M_ref
      References: 'Magnetic Group Tables' by D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2388,9 +2388,9 @@ _description.text
      If the reference source does not appear in the list below, use
      _space_group_magn_ssg_transforms.description
      References: 'Magnetic Group Tables' of D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu ISO(3+d)D tables
-     of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu.
+     ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2399,22 +2399,19 @@ _type.purpose                           State
 loop_
   _enumeration_set.state
   _enumeration_set.detail
-      'ISOMAG-ISO(3+d)D'
+      'ISO(3+d)D-MAG'
 ;
-     a magnetic superspace- group setting such that (1) the setting of
-     the basic magnetic space group matches the corresponding BNS
-     setting in the Magnetic Space Groups tables of Stokes and
-     Campbell, and (2) the non- magnetic superspace-group setting
-     obtained by eliminating all time-reversed operators from the
-     group is related to that of the corresponding setting in the
-     ISO(3+d)D tables via a purely external (three-dimensional)
-     transformation.
-;
-      'ISO(3+d)D'
-;
-     After eliminating all time-reversed operators from the group a
-     non-magnetic superspace-group setting that matches that of the
-     corresponding entry in the ISO(3+d)D tables is obtained
+	This superspace transformation simultaneously takes setting of the 
+	basic magnetic space group (BMSG) to the setting of the corresponding 
+	entry in the ISO-MAG tables, and takes the setting of the
+	derived non-magnetic superspace group (DNMSG) to within a purely external 
+	operation of the setting of the corresponding entry in the ISO(3+d)D tables.
+	The external components of this superspace transformation are those that take
+	the setting of the BMSG to the setting of the corresponding entry
+	in the ISO-MAG tables, while the internal components are those of the
+	transformation that takes the setting of the DNMSG to the setting of the 
+	corresponding superspace group in the ISO(3+d)D tables.  Such a transformation 
+	is unique for any setting of a magnetic superspace group.
 ;
 
 save_
@@ -2457,8 +2454,9 @@ _description.text
      setting.
      The notation and usage are analogous to those of
      _space_group.transform_Pp_abc, except that P now represents a
-     superspace point operation and p now represents a superspace
-     translation.
+     superspace point operation, that p now represents a superspace
+     translation, and that the point and translational components
+     are now separated with a semicolon.
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
@@ -2468,8 +2466,8 @@ _type.purpose                           Encode
 loop_
   _description_example.case
   _description_example.detail
-         'a1        a2        a3        a4        a5'  "Identity transformation"
-         '-a2+1/4 a1-1/4  1/2a3  -a1+a5+1/4  -1/2a3+a4'
+         'a1,a2,a3,a4,a5;0,0,0,0,0'  "Identity transformation"
+         '-a2,a1,1/2a3,-a1+a5,-1/2a3+a4;1/4,-1/4,0,1/4,0'
 ;
                       Transforms from a supercentered setting to the ISO(3+d)D setting of
                       65.2.43.64.m481.1  Cmmm(0,b1,1/2)000(1,0,g2)0s0.
@@ -2507,11 +2505,11 @@ _space_group_magn_transforms.id
 _space_group_magn_transforms.Pp_abc
 _space_group_magn_transforms.description
 _space_group_magn_transforms.source
-1   'a b c;0 0 0'     .                     "data_block_CURRENT"
-2   'a/2 b c;0 0 0'   "data_block_205763"   .
-3   'a b c;0 0 0'     .                     "ISOMAG_BNS"
-4   'a/2 b c;0 0 0'   .                     "Litvin-2013_OG"
-5   'a/4 b  c;0 0 0'  "literature citation to a nuclear parent structure"   .
+1   'a,b,c;0,0,0'     .                     "data_block_CURRENT"
+2   'a/2,b,c;0,0,0'   "data_block_205763"   .
+3   'a,b,c;0,0,0'     .                     "BNS"
+4   'a/2,b,c;0,0,0'   .                     "OG"
+5   'a/4,b,c;0,0,0'  "literature citation to a nuclear parent structure"   .
 ;
 save_
 
@@ -2557,9 +2555,9 @@ _description.text
      If the reference source does not appear in the list below, use
      _space_group_magn_transforms.description
      References: 'Magnetic Group Tables' of D.B. Litvin at
-     http://www.iucr.org/publ/978-0-9553602-2-0 ISO-MAG tables of H.T.
-     Stokes and B.J. Campbell at http://iso.byu.edu ISO(3+d)D tables
-     of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
+     Stokes and B.J. Campbell at http://iso.byu.edu. ISO(3+d)D tables
+     of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2575,11 +2573,11 @@ loop_
      current setting can be useful when communicating the same
      magnetic propagation vector in multiple settings.
 ;
-      'ISOMAG-BNS'
+      'BNS'
 ;
      The Belov-Neronova-Smirnova group setting presented in the ISO-MAG tables.
 ;
-      'Litvin-2013_OG'
+      'OG'
 ;
      The Opechowski-Guccione group setting presented in the Magnetic Group Tables of
      D.B. Litvin.
@@ -2625,7 +2623,10 @@ _description.text
      combinations of the current basis vectors (a,b,c), and the origin
      shift (ox,oy,oz)  is displayed in the lattice coordinates of the
      current setting. The Jones-Faithful notation and possible values
-     are identical to those of symCIF:_space_group_transform_Pp_abc.
+     are identical to those of symCIF:_space_group_transform_Pp_abc,
+     except that the point and translational components are separated
+     by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Text
@@ -2675,8 +2676,10 @@ _description.text
      linear combinations of the current basis vectors (a,b,c), and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
      of the current setting. The Jones-Faithful notation and possible
-     values are identical to those of
-     symCIF:_space_group.transform_Pp_abc.
+     values are identical to those of symCIF:_space_group.transform_Pp_abc,
+     except that the point and tranlational components are separated
+     by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
      References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
      http://iso.byu.edu
@@ -2743,7 +2746,9 @@ _description.text
      (a,b,c), and the origin shift (ox,oy,oz)  is displayed in the
      lattice coordinates of the current setting. The Jones-Faithful
      notation and possible values are identical to those of
-     symCIF:_space_group.transform_Pp_abc.
+     symCIF:_space_group.transform_Pp_abc, except that the point and 
+     tranlational components are separated by a semicolon.
+     
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
      References: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
@@ -2895,7 +2900,11 @@ _description.text
      combinations  of the basis vectors (a,b,c) of the parent, and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
      of the parent. The Jones-Faithful notation and possible values
-     are identical to those of  symCIF:_space_group.transform_Pp_abc.
+     are identical to those of  symCIF:_space_group.transform_Pp_abc,
+     except that the point and tranlational components are separated
+     by a semicolon.  If the child structure is incommensurate, the
+     transformation applies to the present setting of the basic
+     space group of the incommensurate structure.
      Analogous tags: _symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Real
@@ -2970,9 +2979,10 @@ _name.object_id                         transform_Pp_abc
 _definition.update                      2016-06-09
 _description.text                       
 ;
-     Analogous tags: Perfectly analogous to
+     Analogous tags: Notation and usage is analogous to
      symCIF:_space_group.transform_Pp_abc except that it applies to
-     the parent structure.
+     the parent structure, and that the point and tranlational
+     components are separated by a semicolon.
 ;
 _type.contents                          Real
 _type.container                         Matrix
