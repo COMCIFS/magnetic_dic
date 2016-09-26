@@ -598,9 +598,7 @@ _definition.class                       Loop
 _category.key_id                        '_atom_site_moment_Fourier.id'
 loop_
     _category_key.name
-        '_atom_site_moment_Fourier.atom_site_label'
-        '_atom_site_moment_Fourier.axis'
-        '_atom_site_moment_Fourier.wave_vector_seq_id'
+        '_atom_site_moment_Fourier.id'
 save_
 
 
@@ -743,10 +741,7 @@ _definition.class                       Loop
 _category.key_id                        '_atom_site_moment_Fourier_param.id'
 loop_
     _category_key.name
-        '_atom_site_moment_Fourier_param.atom_site_label'
-        '_atom_site_moment_Fourier_param.axis'
-        '_atom_site_moment_Fourier_param.wave_vector_seq_id'
-
+       '_atom_site_moment_Fourier_param.id'
 save_
 
 
@@ -829,10 +824,10 @@ _atom_site_Fourier_wave_vector_q2_coeff
 2   -0.60000   0.30000   0.00000  0  1
 3   -0.30000  -0.30000   0.00000 -1  0
 loop_
-_atom_site_moment_Fourier_id
-_atom_site_moment_Fourier_atom_site_label
-_atom_site_moment_Fourier_wave_vector_seq_id
-_atom_site_moment_Fourier_axis
+_atom_site_moment_Fourier.id
+_atom_site_moment_Fourier.atom_site_label
+_atom_site_moment_Fourier.wave_vector_seq_id
+_atom_site_moment_Fourier.axis
 _atom_site_moment_Fourier_param.cos
 _atom_site_moment_Fourier_param.sin
 _atom_site_moment_Fourier_param.cos_symmform
