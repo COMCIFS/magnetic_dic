@@ -9,8 +9,8 @@ data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9.4
-_dictionary.date                        2016-06-28
+_dictionary.version                     0.9.6
+_dictionary.date                        2016-10-10
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -26,8 +26,8 @@ _definition.class                       Head
 _name.object_id                         MAGNETIC
 _description.text 
 ;
-   This category is the parent of all categories in the dictionary
-   that are not children of categories found in other CIF dictionaries.
+   This category is the parent of all categories in the dictionary. Head categories
+   from other dictionaries are reparented to this category.
 ;
 _import.get  [{"file":"cif_core.dic" "save":"CIF_CORE" "mode":"Full"}
               {"file":"cif_ms.dic"   "save":"CIF_MS"   "mode":"Full"}]
@@ -1639,7 +1639,7 @@ _description.text
      vector.   This loop should include all centering and anti-centering
      translations, but does not include the time-reveral components,
      which are instead determined
-     using the value of the _space_group.magn_OG_wavevector_kxkykz tag.
+     using the value of the _space_group_magn.OG_wavevector_kxkykz tag.
      Because the centering translations are listed in a separate loop
      in the OG(k) description,
      only representative point operations remain in the main
@@ -1716,7 +1716,7 @@ _description.text
      element. The magnetic component of the centering vector is not
      given in the value of this tag, but should instead be separately
      established using the value of the
-     _space_group.magn_OG_wavevector_kxkykz tag.
+     _space_group_magn.OG_wavevector_kxkykz tag.
 ;
 _type.contents                          Text
 _type.container                         Single
@@ -2011,14 +2011,28 @@ _type.purpose                           Key
 
 save_
 
+save_SPACE_GROUP_MAGN
+
+_definition.id                          space_group_magn
+_name.category_id                       MAGNETIC
+_name.object_id                         space_group_magn
+_definition.update                      2016-10-10
+_description.text                       
+;
+     Data items in the space_group_magn category are used
+     to uniquely identify the magnetic structure.
+;
+_definition.scope                       Category
+_definition.class                       Set
+save_
 
 
 
-save__space_group.magn_OG_wavevector_kxkykz
+save__space_group_magn.OG_wavevector_kxkykz
 
-_definition.id                          '_space_group.magn_OG_wavevector_kxkykz'
-_name.category_id                       space_group
-_name.object_id                         magn_OG_wavevector_kxkykz
+_definition.id                          '_space_group_magn.OG_wavevector_kxkykz'
+_name.category_id                       space_group_magn
+_name.object_id                         OG_wavevector_kxkykz
 _definition.update                      2016-05-24
 _description.text                       
 ;
@@ -2044,11 +2058,11 @@ save_
 
 
 
-save__space_group.magn_name_BNS
+save__space_group_magn.name_BNS
 
-_definition.id                          '_space_group.magn_name_BNS'
-_name.category_id                       space_group
-_name.object_id                         magn_name_BNS
+_definition.id                          '_space_group_magn.name_BNS'
+_name.category_id                       space_group_magn
+_name.object_id                         name_BNS
 _definition.update                      2016-05-24
 
 _description.text                       
@@ -2093,11 +2107,11 @@ loop_
 
 save_
 
-save__space_group.magn_point_group_name
+save__space_group_magn.point_group_name
 
-_definition.id                          '_space_group.magn_point_group_name'
-_name.category_id                       space_group
-_name.object_id                         magn_point_group_name
+_definition.id                          '_space_group_magn.point_group_name'
+_name.category_id                       space_group_magn
+_name.object_id                         point_group_name
 _definition.update                      2016-05-24
 
 _description.text                       
@@ -2135,12 +2149,12 @@ loop_
 
 save_
 
-save__space_group.magn_point_group_number
+save__space_group_magn.point_group_number
 
-_definition.id                          '_space_group.magn_point_group_number'
-_name.category_id                       space_group
-_name.object_id                         magn_point_group_number
-_definition.update                      2016-07-05
+_definition.id                          '_space_group_magn.point_group_number'
+_name.category_id                       space_group_magn
+_name.object_id                         point_group_number
+_definition.update                      2016-10-10
 _description.text                      
 ;
 
@@ -2162,12 +2176,12 @@ loop_
 “32.5.122”
 save_
 
-save__space_group.magn_ssg_name
+save__space_group_magn.ssg_name
 
-_definition.id                          '_space_group.magn_ssg_name'
-_name.category_id                       space_group
-_name.object_id                         magn_ssg_name
-_definition.update                      2016-05-24
+_definition.id                          '_space_group_magn.ssg_name'
+_name.category_id                       space_group_magn
+_name.object_id                         ssg_name
+_definition.update                      2016-10-10
 
 _description.text                       
 ;
@@ -2207,12 +2221,12 @@ loop_
           "Pmmm1'_a(0,0,g)ss0s" "type-4 MBSG P_ammm with superspace anti-centering"
 save_
 
-save__space_group.magn_ssg_number
+save__space_group_magn.ssg_number
 
-_definition.id                          '_space_group.magn_ssg_number'
-_name.category_id                       space_group
-_name.object_id                         magn_ssg_number
-_definition.update                      2016-05-24
+_definition.id                          '_space_group_magn.ssg_number'
+_name.category_id                       space_group_magn
+_name.object_id                         ssg_number
+_definition.update                      2016-10-10
 
 _description.text                       
 ;
@@ -2228,16 +2242,16 @@ _type.container                         Single
 save_
 
 
-save__space_group.magn_number_BNS
+save__space_group_magn.number_BNS
 
-_definition.id                          '_space_group.magn_number_BNS'
-_name.category_id                       space_group
-_name.object_id                         magn_number_BNS
-_definition.update                      2016-05-24
+_definition.id                          '_space_group_magn.number_BNS'
+_name.category_id                       space_group_magn
+_name.object_id                         number_BNS
+_definition.update                      2016-10-10
 
 _description.text                       
 ;
-     See _space_group.magn_number_OG for a description of magnetic
+     See _space_group_magn.number_OG for a description of magnetic
      space groups (MSGs). The Belov-Neronova-Smirnova (BNS) number for
      an MSG is comprised of two positive integers separated by a
      period. The first integer lies in the range [1-230] and indicates
@@ -2277,16 +2291,16 @@ save_
 
 
 
-save__space_group.magn_name_OG
+save__space_group_magn.name_OG
 
-_definition.id                          '_space_group.magn_name_OG'
-_name.category_id                       space_group
-_name.object_id                         magn_name_OG
+_definition.id                          '_space_group_magn.name_OG'
+_name.category_id                       space_group_magn
+_name.object_id                         name_OG
 _definition.update                      2016-05-24
 
 _description.text                       
 ;
-     See _space_group.magn_number_OG for more information on magnetic
+     See _space_group_magn.number_OG for more information on magnetic
      space groups (MSGs). The Opechowski-Guccione (OG) symbol for an
      MSG is based on the short Hermann-Mauguin space-group symbol of
      non-magnetic space group F.   For a type-1 MSG, the OG symbol for
@@ -2656,12 +2670,12 @@ _type.dimension                         [4,4]
 save_
 
 
-save__space_group.magn_transform_BNS_Pp_abc
+save__space_group_magn.transform_BNS_Pp_abc
 
-_definition.id                          '_space_group.magn_transform_BNS_Pp_abc'
-_name.category_id                       space_group
-_name.object_id                         magn_transform_BNS_Pp_abc
-_definition.update                      2016-06-09
+_definition.id                          '_space_group_magn.transform_BNS_Pp_abc'
+_name.category_id                       space_group_magn
+_name.object_id                         transform_BNS_Pp_abc
+_definition.update                      2016-10-10
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
@@ -2684,12 +2698,12 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_BNS_Pp
+save__space_group_magn.transform_BNS_Pp
 
-_definition.id                          '_space_group.magn_transform_BNS_Pp'
-_name.category_id                       space_group
-_name.object_id                         magn_transform_BNS_Pp
-_definition.update                      2016-06-21
+_definition.id                          '_space_group_magn.transform_BNS_Pp'
+_name.category_id                       space_group_magn
+_name.object_id                         transform_BNS_Pp
+_definition.update                      2016-10-10
 _description.text                       
 ;
      This item specifies the transformation matrix Pp of the basis vectors
@@ -2725,12 +2739,12 @@ loop_
 
 save_
 
-save__space_group.magn_transform_OG_Pp_abc
+save__space_group_magn.transform_OG_Pp_abc
 
-_definition.id                          '_space_group.magn_transform_OG_Pp_abc'
-_name.category_id                       space_group
-_name.object_id                         magn_transform_OG_Pp_abc
-_definition.update                      2016-06-09
+_definition.id                          '_space_group_magn.transform_OG_Pp_abc'
+_name.category_id                       space_group_magn
+_name.object_id                         transform_OG_Pp_abc
+_definition.update                      2016-10-10
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
@@ -2754,12 +2768,12 @@ _type.container                         Single
 
 save_
 
-save__space_group.magn_transform_OG_Pp
+save__space_group_magn.transform_OG_Pp
 
-_definition.id                          '_space_group.magn_transform_OG_Pp'
-_name.category_id                       space_group
-_name.object_id                         magn_transform_OG_Pp
-_definition.update                      2016-06-21
+_definition.id                          '_space_group_magn.transform_OG_Pp'
+_name.category_id                       space_group_magn
+_name.object_id                         transform_OG_Pp
+_definition.update                      2016-10-10
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
@@ -3609,4 +3623,8 @@ loop_
 ;
       Added _space_group.magn_point_group_number; changed _space_group.magn_point_group
       to _space_group.magn_point_group_name
+;
+    0.9.6    2016-10-10
+;
+      Moved _space_group.magn_ items to new category _space_group_magn
 ;
