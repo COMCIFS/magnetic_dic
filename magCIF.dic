@@ -2019,8 +2019,11 @@ _name.object_id                         space_group_magn
 _definition.update                      2016-10-10
 _description.text                       
 ;
-     Data items in the space_group_magn category are used
-     to uniquely identify the magnetic structure.
+
+        The data items in this category provide identifying and/or
+        descriptive information about the relevant magnetic symmetry
+        group and setting.
+
 ;
 _definition.scope                       Category
 _definition.class                       Set
