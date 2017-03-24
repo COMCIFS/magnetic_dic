@@ -652,8 +652,8 @@ _description.text
      This string uniquely identifies the atom for which the Fourier
      modulation  components are to be specified.  The Fourier
      modulation components are always presented in a separate loop
-     (not in the _atom_site loop).  This string must match an
-     _atom_site.label from the _atom_site loop, and otherwise conform
+     (not in the ATOM_SITE loop).  This string must match an
+     _atom_site.label from the ATOM_SITE loop, and otherwise conform
      to the rules for _atom_site_label.
 ;
 _type.contents                          Code
@@ -1211,7 +1211,7 @@ _description.text
         Calculated parameters mx, my and mz must be in Bohr-magneton
      units and can vary in the range (-infinity,infinity).
 
-     Reference: Petricek, V. & Dusek, M. (2000). JANA2000.
+     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
      The crystallographic computing system. Institute of Physics, Prague,
      Czech Republic.
 
@@ -1254,7 +1254,7 @@ _description.text
         Calculated parameters mx, my and mz must be in Bohr-magneton
      units and can vary in the range (-infinity,infinity).
 
-     Reference: Petricek, V. & Dusek, M. (2000). JANA2000.
+     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
      The crystallographic computing system. Institute of Physics, Prague,
      Czech Republic.
 
@@ -1297,7 +1297,7 @@ _description.text
         Calculated parameters mx, my and mz must be in Bohr-magneton
      units and can vary in the range (-infinity,infinity).
 
-     Reference: Petricek, V. & Dusek, M. (2000). JANA2000.
+     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
      The crystallographic computing system. Institute of Physics, Prague,
      Czech Republic.
 
@@ -1340,7 +1340,7 @@ _description.text
         Calculated parameters mx, my and mz must be in Bohr-magneton
      units and can vary in the range (-infinity,infinity).
 
-     Reference: Petricek, V. & Dusek, M. (2000). JANA2000.
+     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
      The crystallographic computing system. Institute of Physics, Prague,
      Czech Republic.
 
@@ -1383,7 +1383,7 @@ _description.text
         Calculated parameters mx, my and mz must be in Bohr-magneton
      units and can vary in the range (-infinity,infinity).
 
-     Reference: Petricek, V. & Dusek, M. (2000). JANA2000.
+     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
      The crystallographic computing system. Institute of Physics, Prague,
      Czech Republic.
 
@@ -1501,7 +1501,7 @@ _description.text
 
      Analogous tags: coreCIF:_atom_site.scat_Cromer_Mann_*
 
-     References: International Tables for Crystallography (2006). Vol.
+     Ref: International Tables for Crystallography (2006). Vol.
      C, Sections 4.4.5 and 6.1.2.3 (and references therein).
 ;
 
@@ -2332,7 +2332,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group.name_H-M_ref
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
@@ -2384,7 +2384,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group.name_H-M_ref
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
@@ -2433,7 +2433,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group.number_IT
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
@@ -2508,7 +2508,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group.point_group_H-M
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0 
 ;
 _type.contents                          Text
@@ -2549,7 +2549,7 @@ _description.text
      associated with a given non-magnetic point group; and (3) a
      redundant third integer that runs from 1 to 122.
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
 ;
 _type.contents                          Text
@@ -2590,7 +2590,7 @@ _description.text
 
      Analogous tags: msCIF:_space_group.ssg_name
 
-     References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
+     Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
      http://iso.byu.edu. ISO(3+d)D tables of H.T. Stokes and B.J.
      Campbell at http://iso.byu.edu.
 ;
@@ -2655,10 +2655,15 @@ _description.text
  
      (a',b',c',1) = Pp (a,b,c,1) 
 
-     where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
+     where (a,b,c) are the current basis vectors.
 
-     References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
+     Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
      http://iso.byu.edu
+
+     Wondratschek, H., Aroyo, M. I., Souvignier, B. and Chapuis, G.
+     Transformation of coordinate systems. In International Tables for
+     Crystallography (2016). Volume A, Space-group symmetry, edited
+     by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
 _type.contents                          Text
 _type.container                         Matrix
@@ -2706,7 +2711,7 @@ _description.text
      
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 
-     References: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
+     Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
      http://iso.byu.edu
 ;
 _type.contents                          Text
@@ -2731,10 +2736,15 @@ _description.text
  
      (a',b',c',1) = Pp (a,b,c,1) 
 
-     where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
+     where (a,b,c) are the current basis vectors.
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
+
+     Wondratschek, H., Maroto, M. I., Souvignier, B. and Chapuis, G.
+     Transformation of coordinate systems. In International Tables for
+     Crystallography (2016). Volume A, Space-group symmetry, edited
+     by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
 _type.contents                          Text
 _type.container                         Matrix
@@ -2765,7 +2775,7 @@ _description.text
      
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0
 ;
 _type.contents                          Text
@@ -2813,10 +2823,11 @@ _definition.update                      2016-06-21
 _description.text                       
 ;
      A string that describes the source of a reference setting for the
-     magnetic superspace group. _space_group_magn_ssg_transforms.source
-     should be used if the reference source is one of those provided in
-     that definition. Otherwise, arbitrary free text can be used to
-     describe reference settings of interest, such as might appear in a specific
+     magnetic superspace group. The item
+     _space_group_magn_ssg_transforms.source should be used if the
+     reference source is one of those provided in that
+     definition. Otherwise, arbitrary free text can be used to describe
+     reference settings of interest, such as might appear in a specific
      publication, though care should be taken to  make the description
      clear and unambiguous.
 ;
@@ -2902,7 +2913,7 @@ _description.text
      If the reference source does not appear in the list below, use
      _space_group_magn_ssg_transforms.description
 
-     References: 'Magnetic Group Tables' of D.B. Litvin at
+     Ref: 'Magnetic Group Tables' of D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
      ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
@@ -3046,7 +3057,12 @@ _description.text
  
      (a',b',c',1) = Pp (a,b,c,1) 
 
-     where (a,b,c) are the current basis vectors.  See IT Vol 1 Section 5.
+     where (a,b,c) are the current basis vectors.
+
+     Ref: Wondratschek, H., Maroto, M. I., Souvignier, B. and Chapuis, G.
+     Transformation of coordinate systems. In International Tables for
+     Crystallography (2016). Volume A, Space-group symmetry, edited
+     by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
 _type.contents                          Text
 _type.container                         Matrix
@@ -3099,7 +3115,7 @@ _description.text
      tag. If the reference source does not appear in the list below, use
      _space_group_magn_transforms.description
 
-     References: 'Magnetic Group Tables' of D.B. Litvin at
+     Ref: 'Magnetic Group Tables' of D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu. ISO(3+d)D tables
      of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
@@ -3147,13 +3163,13 @@ _description.text
      group.
      Keeping the centering and anti-centering translations in a
      separate loop leaves only representative point operations in the
-     main _space_group_symop_magn_operation loop. The direct sum of
+     main SPACE_GROUP_SYMOP_MAGN_OPERATION loop. The direct sum of
      the two loops produces the full set of representative operations
      of the magnetic space group.  This centering loop is optional, so
      that it is always possible to include all of the symmetry
      operations in the main loop.
      When this centering loop is employed, the representative point
-     operations in the main _space_group_symop_magn_operation loop may
+     operations in the main SPACE_GROUP_SYMOP_MAGN_OPERATION loop may
      not form a closed subgroup, but instead  generate some of the
      fractional translations of the centering loop.  Despite this
      annoyance, a separate centering loop is important because
@@ -3416,7 +3432,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group_symop.operation_description
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
@@ -3472,7 +3488,7 @@ _description.text
 
      Analogous tags: symCIF:_space_group_symop.operation_xyz
 
-     References: 'Magnetic Group Tables' by D.B. Litvin at
+     Ref: 'Magnetic Group Tables' by D.B. Litvin at
      http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
      Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
