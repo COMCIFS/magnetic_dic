@@ -166,8 +166,8 @@ loop_
 _definition.update                      2016-05-24
 _description.text                       
 ;
-     The atom-site magnetic moment vector specified as a projection
-     onto the axes of the unit cell.  This is the recommended
+     The atom-site magnetic moment vector specified using components 
+     parallel to each of the unit cell axes.  This is the recommended
      coordinate system for  most magnetic structures.
 ;
 _type.contents                          Real
@@ -201,8 +201,8 @@ _type.container                         Single
 _type.purpose                           Measurand
 _description.text                       
 ;
-     The x component of the atom-site magnetic moment vector projected
-     onto the unit cell axes.  See _atom_site_moment.crystalaxis.
+     The component of the atom-site magnetic-moment vector parallel to the first 
+     unit-cell axis.  See _atom_site_moment.crystalaxis.
 ;
 _units.code                             Bohr_magnetons
 
@@ -222,8 +222,8 @@ _type.container                         Single
 _type.purpose                           Measurand
 _description.text                       
 ;
-     The y component of the atom-site magnetic moment vector projected
-     onto the unit cell axes.  See _atom_site_moment.crystalaxis.
+     The component of the atom-site magnetic-moment vector parallel to the second
+     unit-cell axis.  See _atom_site_moment.crystalaxis.
 ;
 _units.code                             Bohr_magnetons
 
@@ -243,8 +243,8 @@ _type.container                         Single
 _type.purpose                           Measurand
 _description.text                       
 ;
-     The z component of the atom-site magnetic moment vector projected
-     onto the unit cell axes.  See _atom_site_moment.crystalaxis.
+     The component of the atom-site magnetic-moment vector parallel to the third
+     unit-cell axis.  See _atom_site_moment.crystalaxis.
 ;
 _units.code                             Bohr_magnetons
 
@@ -262,6 +262,24 @@ _import.get [{"save":atom_site_id "file":templ_attr.cif}]
 _definition.update                      2016-05-24
 
 save_
+
+
+save__atom_site_moment.magnitude
+
+_definition.id                          '_atom_site_moment.magnitude'
+_name.category_id                       atom_site_moment
+_name.object_id                         magnitude
+loop_
+  _alias.definition_id                  '_atom_site_moment_magnitude'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The magnitude of a magnetic moment vector.
+;
+_units.code                             Bohr_magnetons
 
 
 save__atom_site_moment.modulation_flag
@@ -416,6 +434,417 @@ loop_
          'mx,0,mz'           'Y component zero'
 
 save_
+
+
+save_atom_site_rotation
+
+_definition.id                          atom_site_rotation
+_name.category_id                       atom_site
+_name.object_id                         atom_site_rotation
+_definition.update                      2018-07-18
+_description.text                       
+;
+     This category provides a loop for presenting atom-site axial-vector
+     rotations in several coordinate systems.  Such axial vectors can
+     be applied to describe the rotations of molecular or polyhedral
+     rigid bodies about their pivot atoms or sites, though the use of this
+     category to describe patterns of rotations does not require the
+     that rigid bodies be explicitly defined.  Because magnetic moments 
+     and rotations are both axial rather than polar vectors, their 
+     descriptive requirements are highly analogous, except that static 
+     rotations are insensitive to time-reversal, so that normal (non-
+     magnetic) symmetry groups are appropriate.  This is a child category 
+     of the ATOM_SITE category, though pivot-site rotations will typically 
+     be listed in a separate loop; the category items mirror those of defined
+     for the _ATOM_SITE_MOMENT category.  
+;
+_definition.scope                       Category
+_definition.class                       Loop
+loop_
+    _category_key.name                  '_atom_site_rotation.label'
+
+save_
+
+
+save__atom_site_rotation.Cartn
+
+_definition.id                          '_atom_site_rotation.Cartn'
+_name.category_id                       atom_site_rotation
+_name.object_id                         Cartn
+loop_
+  _alias.definition_id
+  '_atom_site_rotation_Cartn'
+
+_definition.update                      2018-07-18
+_description.text                       
+;
+     The atom-site rotation vector specified according to a set
+     of orthogonal Cartesian axes where x||a and z||c* with y
+     completing a right-hand set.
+;
+_type.contents                          Real
+_type.dimension                         [3]
+_type.container                         Matrix
+_type.purpose                           Measurand
+_units.code                             radians
+loop_
+  _method.purpose
+  _method.expression
+         Evaluation          
+;
+    with a as atom_site_rotation
+    a.Cartn = [a.Cartn_x,a.Cartn_y,a.Cartn_z]
+
+;
+
+save_
+
+
+save__atom_site_rotation.Cartn_x
+
+_definition.id                          '_atom_site_rotation.Cartn_x'
+_name.category_id                       atom_site_rotation
+_name.object_id                         Cartn_x
+loop_
+  _alias.definition_id                  '_atom_site_rotation_Cartn_x'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The x component of the atom-site rotation vector
+     (see _atom_site_rotation.Cartn).
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.Cartn_y
+
+_definition.id                          '_atom_site_rotation.Cartn_y'
+_name.category_id                       atom_site_rotation
+_name.object_id                         Cartn_y
+loop_
+  _alias.definition_id                  '_atom_site_rotation_Cartn_y'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The y component of the atom-site rotation vector
+     (see _atom_site_rotation.Cartn).
+
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.Cartn_z
+
+_definition.id                          '_atom_site_rotation.Cartn_z'
+_name.category_id                       atom_site_rotation
+_name.object_id                         Cartn_z
+loop_
+  _alias.definition_id                  '_atom_site_rotation_Cartn_z'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The z component of the atom-site rotation vector
+     (see _atom_site_rotation.Cartn).
+
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.crystalaxis
+
+_definition.id                          '_atom_site_rotation.crystalaxis'
+_name.category_id                       atom_site_rotation
+_name.object_id                         crystalaxis
+loop_
+  _alias.definition_id                  '_atom_site_rotation_crystalaxis'
+_definition.update                      2018-07-18
+_description.text                       
+;
+     The atom-site rotation vector specified using the components parallel 
+     to each of the unit cell axes.  This is the recommended coordinate 
+     system for presenting axial rotation vectors.
+;
+_type.contents                          Real
+_type.container                         Matrix
+_type.dimension                         [3]
+_type.purpose                           Measurand
+_units.code                             radians
+loop_
+  _method.purpose
+  _method.expression
+         Evaluation          
+;
+    with a as atom_site_rotation
+    a.crystalaxis = [a.crystalaxis_x,a.crystalaxis_y,a.crystalaxis_z]
+
+; 
+
+save_
+
+
+save__atom_site_rotation.crystalaxis_x
+
+_definition.id                          '_atom_site_rotation.crystalaxis_x'
+_name.category_id                       atom_site_rotation
+_name.object_id                         crystalaxis_x
+loop_
+  _alias.definition_id                  '_atom_site_rotation_crystalaxis_x'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The component of the atom-site rotation vector parallel to the first unit-cell axis.  See _atom_site_rotation.crystalaxis.
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.crystalaxis_y
+
+_definition.id                          '_atom_site_rotation.crystalaxis_y'
+_name.category_id                       atom_site_rotation
+_name.object_id                         crystalaxis_y
+loop_
+  _alias.definition_id                  '_atom_site_rotation_crystalaxis_y'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The component of the atom-site rotation vector parallel to the second
+unit-cell axis.  See _atom_site_rotation.crystalaxis.
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.crystalaxis_z
+
+_definition.id                          '_atom_site_rotation.crystalaxis_z'
+_name.category_id                       atom_site_rotation
+_name.object_id                         crystalaxis_z
+loop_
+  _alias.definition_id                  '_atom_site_rotation_crystalaxis_z'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           radians
+_description.text                       
+;
+     The component of the atom-site rotation vector parallel to the third unit-cell axis.  See _atom_site_rotation.crystalaxis.
+;
+_units.code                             radians
+
+save_
+
+
+save__atom_site_rotation.label
+
+_definition.id                          '_atom_site_rotation.label'
+_name.category_id                       atom_site_rotation
+_name.object_id                         label
+loop_
+  _alias.definition_id                  '_atom_site_rotation_label'
+_import.get [{"save":atom_site_id "file":templ_attr.cif}]
+_definition.update                      2018-07-18
+
+save_
+
+
+save__atom_site_rotation.modulation_flag
+
+_definition.id                          '_atom_site_rotation.modulation_flag'
+_name.category_id                       atom_site_rotation
+_name.object_id                         modulation_flag
+loop_
+  _alias.definition_id                  '_atom_site_rotation_modulation_flag'
+_definition.update                      2018-07-18
+_description.text                       
+;
+     A code that signals whether the structural model includes the
+     modulation of the rotation of a given atom site.
+;
+_type.contents                          Code
+_type.container                         Single
+loop_
+  _enumeration_set.state
+  _enumeration_set.detail
+   'yes'            'rotational modulation'
+   'y'              'abbreviation for "yes"'
+   'no'             'no rotational modulation'
+   'n'              'abbreviation for "no"'
+
+save_
+
+
+save__atom_site_rotation.refinement_flags_rotational
+
+_definition.id                     '_atom_site_rotation.refinement_flags_rotational'
+_name.category_id                       atom_site_rotation
+_name.object_id                         refinement_flags_rotational
+loop_
+  _alias.definition_id        '_atom_site_rotation_refinement_flags_rotational'
+_definition.update                      2018-07-18
+_type.container                         Single
+_type.purpose                           State
+_description.text                       
+;
+    The constraints/restraints placed on the rotation vector during
+    model refinement.
+;
+_type.contents                          Code
+loop_
+  _enumeration_set.state
+  _enumeration_set.detail
+         .         'no constraint on rotation'      
+         S         'special position constraint on rotation'  
+         M         'modulus restraint on rotation'  
+         A         'direction restraints on rotation'         
+         SM        'superposition of S and M constraints/restraints'           
+         SA        'superposition of S and A constraints/restraints'           
+         MA        'superposition of M and A constraints/restraints'           
+         SMA       'superposition of S, M and A constraints/restraints' 
+
+save_
+
+
+save__atom_site_rotation.spherical_azimuthal
+
+_definition.id                          '_atom_site_rotation.spherical_azimuthal'
+_name.category_id                       atom_site_rotation
+_name.object_id                         spherical_azimuthal
+loop_
+  _alias.definition_id                  '_atom_site_rotation_spherical_azimuthal'
+_definition.update                      2018-07-18
+_enumeration.range                      0.0:6.2831854
+_units.code                             radians
+_description.text                       
+;
+     The azimuthal angle of the atom-site rotation vector
+     specified in spherical coordinates relative to a set of
+     orthogonal Cartesian axes where x||a and z||c* with y completing
+     a right-hand set.  The azimuthal angle is a right-handed rotation
+     around the +z axis starting from the +x side of the x-z plane.
+;
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+
+save_
+
+
+save__atom_site_rotation.spherical_modulus
+
+_definition.id                          '_atom_site_rotation.spherical_modulus'
+_name.category_id                       atom_site_rotation
+_name.object_id                         spherical_modulus
+loop_
+  _alias.definition_id                  '_atom_site_rotation_spherical_modulus'
+_definition.update                      2018-07-18
+_units.code                             radians
+_description.text                       
+;
+     The modulus of the atom-site rotation vector specified in
+     spherical coordinates relative to a set of orthogonal Cartesian
+     axes where x||a and z||c* with y completing a right-hand set.
+;
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+save_
+
+
+save__atom_site_rotation.spherical_polar
+
+_definition.id                          '_atom_site_rotation.spherical_polar'
+_name.category_id                       atom_site_rotation
+_name.object_id                         spherical_polar
+loop_
+  _alias.definition_id                  '_atom_site_rotation_spherical_polar'
+_definition.update                      2018-07-18
+_enumeration.range                      0.0:3.1415927
+_units.code                             radians
+_description.text                       
+;
+     The polar angle of the atom-site rotation vector specified
+     in spherical coordinates relative to a set of orthogonal
+     Cartesian axes where x||a and z||c* with y completing a
+     right-hand set. The polar angle is measured relative to the +z axis.
+;
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+
+save_
+
+
+save__atom_site_rotation.symmform
+
+_definition.id                          '_atom_site_rotation.symmform'
+_name.category_id                       atom_site_rotation
+_name.object_id                         symmform
+loop_
+  _alias.definition_id                  '_atom_site_rotation_symmform'
+_definition.update                      2018-07-18
+_description.text                       
+;
+     A symbolic expression that indicates the symmetry-restricted form
+     of the components of the rotation vector of the atom.
+     Unlike the positional coordinates of an atom, its rotation
+     has no translational component to be represented.
+;
+_type.contents                          Text
+_type.container                         Single
+loop_
+  _description_example.case
+  _description_example.detail
+         'rx,ry,rz'          'no symmetry restrictions'     
+         'rx,-rx,0'
+;                             y component equal and opposite to x component
+                              with z component zero
+;
+         'rx,0,rz'           'y component zero'
+
+save_
+
+
+save__atom_site_rotation.magnitude
+
+_definition.id                          '_atom_site_rotation.magnitude'
+_name.category_id                       atom_site_rotation
+_name.object_id                         magnitude
+loop_
+  _alias.definition_id                  '_atom_site_rotation_magnitude'
+_definition.update                      2018-07-18
+_type.contents                          Real
+_type.container                         Single
+_type.purpose                           Measurand
+_description.text                       
+;
+     The magnitude of a rotation vector.
+;
+_units.code                             radians
+
 
 save_atom_site_Fourier_wave_vector.q_coeff
 
@@ -800,12 +1229,13 @@ _description.text
      is "m" for magnetic. (2) The 2nd character is one of "x", "y", or
      "z", to indicate the magnetic component to be modulated. (3) The
      3rd character is one of "m" for modulus, "p" for phase, "c" for
-     cosine, or "s" for sine.
-     To use the same symbol with modulation components belonging to
-     symmetry related atoms and/or  symmetry-related wave vectors, is
-     to point out a symmetry relationship amongst them. Obviously,
-     modulation components belonging to either symmetry-distinct atoms
-     or symmetry-distinct wave vectors cannot be related by symmetry.
+     cosine, or "s" for sine. (4) The 4th character is an integer that
+     indicates the modulation vector. To use the same symbol with modulation 
+     components belonging to symmetry related axes and/or wave vectors, 
+     is to point out symmetry relationships amongst them. Obviously, 
+     modulation components belonging to symmetry-distinct atoms, 
+     axes, or wave vectors cannot be related by symmetry.
+     
      Analogous tags: none, though analogous tags are needed for
      displace, occ, U, and aniso waves.
 ;
@@ -839,15 +1269,15 @@ _atom_site_moment_Fourier_param.cos
 _atom_site_moment_Fourier_param.sin
 _atom_site_moment_Fourier_param.cos_symmform
 _atom_site_moment_Fourier_param.sin_symmform
-1  Fe_1 1 x   0.00000   0.84852   0				mxs
-2  Fe_1 1 y   0.00000   0.42426   0   			0.50000*mxs
-3  Fe_1 1 z   0.00000   0.00000   0   			0
-4  Fe_1 2 x   0.00000  -0.42426   0			   -0.50000*mxs
-5  Fe_1 2 y   0.00000  -0.84852   0			   -mxs
-6  Fe_1 2 z   0.00000   0.00000   0				0
-7  Fe_1 3 x  -0.42426   0.00000  -0.50000*mxs   0
-8  Fe_1 3 y   0.42426   0.00000   0.50000*mxs   0
-9  Fe_1 3 z   0.00000   0.00000   0				0
+1  Fe_1 1 x  0.00000  0.84852  0            mxs1
+2  Fe_1 1 y  0.00000  0.42426  0            0.50000*mxs1
+3  Fe_1 1 z  0.00000  0.00000  0            0
+4  Fe_1 2 x  0.00000 -0.42426  0           -0.50000*mxs1
+5  Fe_1 2 y  0.00000 -0.84852  0           -mxs1
+6  Fe_1 2 z  0.00000  0.00000  0            0
+7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs1 0
+8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs1 0
+9  Fe_1 3 z  0.00000  0.00000  0            0
 ; 
 
 save_
@@ -922,64 +1352,9 @@ _type.contents                          Text
 _type.container                         Single
 _description.text                       
 ;
-     A symbolic expression that indicates symmetry-restricted form of
-     this  modulation component for the affected Wyckoff site.  The
-     expression can either include a zero, a symbol, or a symbol
-     multiplied ("*") by a numerical prefactor. An allowed symbol is a
-     string that contains the following parts.  (1) The 1st character
-     is "m" for magnetic. (2) The 2nd character is one of "x", "y", or
-     "z", to indicate the magnetic component to be modulated. (3) The
-     3rd character is one of "m" for modulus, "p" for phase, "c" for
-     cosine, or "s" for sine.
-     To use the same symbol with modulation components belonging to
-     symmetry related atoms and/or  symmetry-related wave vectors, is
-     to point out a symmetry relationship amongst them. Obviously,
-     modulation components belonging to either symmetry-distinct atoms
-     or symmetry-distinct wave vectors cannot be related by symmetry.
-     Analogous tags: none, though analogous tags are needed for
-     displace, occ, U, and aniso waves.
+     See the description and example given for the
+     _atom_site_moment_Fourier_param.cos_symmform item.
 ;
-
-loop_
-  _description_example.case
-         
-;
-loop_
-_cell_wave_vector_seq_id
-_cell_wave_vector_x
-_cell_wave_vector_y
-_cell_wave_vector_z
-  1   0.30000   0.30000   0.00000
-  2  -0.60000   0.30000   0.00000
-loop_
-_atom_site_Fourier_wave_vector_seq_id
-_atom_site_Fourier_wave_vector_x
-_atom_site_Fourier_wave_vector_y
-_atom_site_Fourier_wave_vector_z
-_atom_site_Fourier_wave_vector_q1_coeff
-_atom_site_Fourier_wave_vector_q2_coeff
-1   -0.30000   0.60000   0.00000  1  1
-2   -0.60000   0.30000   0.00000  0  1
-3   -0.30000  -0.30000   0.00000 -1  0
-loop_
-_atom_site_moment_Fourier_id
-_atom_site_moment_Fourier_atom_site_label
-_atom_site_moment_Fourier_wave_vector_seq_id
-_atom_site_moment_Fourier_axis
-_atom_site_moment_Fourier_param.cos
-_atom_site_moment_Fourier_param.sin
-_atom_site_moment_Fourier_param.cos_symmform
-_atom_site_moment_Fourier_param.sin_symmform
-1  Fe_1 1 x   0.00000   0.84852   0				mxs
-2  Fe_1 1 y   0.00000   0.42426   0   			0.50000*mxs
-3  Fe_1 1 z   0.00000   0.00000   0   			0
-4  Fe_1 2 x   0.00000  -0.42426   0			   -0.50000*mxs
-5  Fe_1 2 y   0.00000  -0.84852   0			   -mxs
-6  Fe_1 2 z   0.00000   0.00000   0				0
-7  Fe_1 3 x  -0.42426   0.00000  -0.50000*mxs   0
-8  Fe_1 3 y   0.42426   0.00000   0.50000*mxs   0
-9  Fe_1 3 z   0.00000   0.00000   0				0
-; 
 
 save_
 
@@ -1026,64 +1401,9 @@ _type.contents                          Text
 _type.container                         Single
 _description.text                       
 ;
-     A symbolic expression that indicates symmetry-restricted form of
-     this  modulation component for the affected Wyckoff site.  The
-     expression can either include a zero, a symbol, or a symbol
-     multiplied ("*") by a numerical prefactor. An allowed symbol is a
-     string that contains the following parts.  (1) The 1st character
-     is "m" for magnetic. (2) The 2nd character is one of "x", "y", or
-     "z", to indicate the magnetic component to be modulated. (3) The
-     3rd character is one of "m" for modulus, "p" for phase, "c" for
-     cosine, or "s" for sine.
-     To use the same symbol with modulation components belonging to
-     symmetry related atoms and/or  symmetry-related wave vectors, is
-     to point out a symmetry relationship amongst them. Obviously,
-     modulation components belonging to either symmetry-distinct atoms
-     or symmetry-distinct wave vectors cannot be related by symmetry.
-     Analogous tags: none, though analogous tags are needed for
-     displace, occ, U, and aniso waves.
+     See the description and example given for the
+     _atom_site_moment_Fourier_param.cos_symmform item.
 ;
-
-loop_
-  _description_example.case
-         
-;
-loop_
-_cell_wave_vector_seq_id
-_cell_wave_vector_x
-_cell_wave_vector_y
-_cell_wave_vector_z
-  1   0.30000   0.30000   0.00000
-  2  -0.60000   0.30000   0.00000
-loop_
-_atom_site_Fourier_wave_vector_seq_id
-_atom_site_Fourier_wave_vector_x
-_atom_site_Fourier_wave_vector_y
-_atom_site_Fourier_wave_vector_z
-_atom_site_Fourier_wave_vector_q1_coeff
-_atom_site_Fourier_wave_vector_q2_coeff
-1   -0.30000   0.60000   0.00000  1  1
-2   -0.60000   0.30000   0.00000  0  1
-3   -0.30000  -0.30000   0.00000 -1  0
-loop_
-_atom_site_moment_Fourier_id
-_atom_site_moment_Fourier_atom_site_label
-_atom_site_moment_Fourier_wave_vector_seq_id
-_atom_site_moment_Fourier_axis
-_atom_site_moment_Fourier_param.cos
-_atom_site_moment_Fourier_param.sin
-_atom_site_moment_Fourier_param.cos_symmform
-_atom_site_moment_Fourier_param.sin_symmform
-1  Fe_1 1 x   0.00000   0.84852   0				mxs
-2  Fe_1 1 y   0.00000   0.42426   0   			0.50000*mxs
-3  Fe_1 1 z   0.00000   0.00000   0   			0
-4  Fe_1 2 x   0.00000  -0.42426   0			   -0.50000*mxs
-5  Fe_1 2 y   0.00000  -0.84852   0			   -mxs
-6  Fe_1 2 z   0.00000   0.00000   0				0
-7  Fe_1 3 x  -0.42426   0.00000  -0.50000*mxs   0
-8  Fe_1 3 y   0.42426   0.00000   0.50000*mxs   0
-9  Fe_1 3 z   0.00000   0.00000   0				0
-; 
 
 save_
 
@@ -1129,64 +1449,9 @@ _type.container                         Single
 
 _description.text                       
 ;
-     A symbolic expression that indicates symmetry-restricted form of
-     this  modulation component for the affected Wyckoff site.  The
-     expression can either include a zero, a symbol, or a symbol
-     multiplied ("*") by a numerical prefactor. An allowed symbol is a
-     string that contains the following parts.  (1) The 1st character
-     is "m" for magnetic. (2) The 2nd character is one of "x", "y", or
-     "z", to indicate the magnetic component to be modulated. (3) The
-     3rd character is one of "m" for modulus, "p" for phase, "c" for
-     cosine, or "s" for sine.
-     To use the same symbol with modulation components belonging to
-     symmetry related atoms and/or  symmetry-related wave vectors, is
-     to point out a symmetry relationship amongst them. Obviously,
-     modulation components belonging to either symmetry-distinct atoms
-     or symmetry-distinct wave vectors cannot be related by symmetry.
-     Analogous tags: none, though analogous tags are needed for
-     displace, occ, U, and aniso waves.
+     See the description and example given for the
+     _atom_site_moment_Fourier_param.cos_symmform item.
 ;
-
-loop_
-  _description_example.case
-         
-;
-loop_
-_cell_wave_vector_seq_id
-_cell_wave_vector_x
-_cell_wave_vector_y
-_cell_wave_vector_z
-  1   0.30000   0.30000   0.00000
-  2  -0.60000   0.30000   0.00000
-loop_
-_atom_site_Fourier_wave_vector_seq_id
-_atom_site_Fourier_wave_vector_x
-_atom_site_Fourier_wave_vector_y
-_atom_site_Fourier_wave_vector_z
-_atom_site_Fourier_wave_vector_q1_coeff
-_atom_site_Fourier_wave_vector_q2_coeff
-1   -0.30000   0.60000   0.00000  1  1
-2   -0.60000   0.30000   0.00000  0  1
-3   -0.30000  -0.30000   0.00000 -1  0
-loop_
-_atom_site_moment_Fourier_id
-_atom_site_moment_Fourier_atom_site_label
-_atom_site_moment_Fourier_wave_vector_seq_id
-_atom_site_moment_Fourier_axis
-_atom_site_moment_Fourier_param.cos
-_atom_site_moment_Fourier_param.sin
-_atom_site_moment_Fourier_param.cos_symmform
-_atom_site_moment_Fourier_param.sin_symmform
-1  Fe_1 1 x   0.00000   0.84852   0				mxs
-2  Fe_1 1 y   0.00000   0.42426   0   			0.50000*mxs
-3  Fe_1 1 z   0.00000   0.00000   0   			0
-4  Fe_1 2 x   0.00000  -0.42426   0			   -0.50000*mxs
-5  Fe_1 2 y   0.00000  -0.84852   0			   -mxs
-6  Fe_1 2 z   0.00000   0.00000   0				0
-7  Fe_1 3 x  -0.42426   0.00000  -0.50000*mxs   0
-8  Fe_1 3 y   0.42426   0.00000   0.50000*mxs   0
-9  Fe_1 3 z   0.00000   0.00000   0				0
-; 
 
 save_
 
