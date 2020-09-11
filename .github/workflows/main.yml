@@ -27,4 +27,5 @@ jobs:
       # Check syntax of all CIF files
         - name: check_syntax
           uses: COMCIFS/cif_syntax_check_action@master
-          id: cif_syntax_check# This is a basic workflow to help you get started with Actions
+          id: cif_syntax_check
+          
