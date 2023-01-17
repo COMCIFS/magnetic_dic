@@ -9,8 +9,8 @@ data_MAGNETIC_CIF
 
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
-_dictionary.version                     0.9.8
-_dictionary.date                        2018-08-24
+_dictionary.version                     0.9.9
+_dictionary.date                        2023-01-17
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -2574,7 +2574,7 @@ save__parent_space_group.child_transform_Pp_abc
 _definition.id                      '_parent_space_group.child_transform_Pp_abc'
 _name.category_id                       parent_space_group
 _name.object_id                         child_transform_Pp_abc
-_definition.update                      2016-06-09
+_definition.update                      2023-01-17
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis vectors
@@ -2583,7 +2583,7 @@ _description.text
      vectors (a',b',c') of the child are described as linear
      combinations  of the basis vectors (a,b,c) of the parent, and the
      origin shift (ox,oy,oz)  is displayed in the lattice coordinates
-     of the parent. The Jones-Faithful notation and possible values
+     of the parent. The Jones faithful notation and possible values
      are identical to those of  symCIF:_space_group.transform_Pp_abc,
      except that the point and translational components are separated
      by a semicolon.  If the child structure is incommensurate, the
@@ -3095,7 +3095,7 @@ save__space_group_magn.transform_BNS_Pp_abc
 _definition.id                          '_space_group_magn.transform_BNS_Pp_abc'
 _name.category_id                       space_group_magn
 _name.object_id                         transform_BNS_Pp_abc
-_definition.update                      2016-10-10
+_definition.update                      2023-01-17
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis
@@ -3105,7 +3105,7 @@ _description.text
      are described as linear combinations of the current basis
      vectors (a,b,c), and the origin shift (ox,oy,oz) is displayed
      in the lattice coordinates of the current setting. The
-     Jones-Faithful notation and possible values are identical
+     Jones faithful notation and possible values are identical
      to those of symCIF:_space_group.transform_Pp_abc,
      except that the point and translational components are separated
      by a semicolon.
@@ -3159,7 +3159,7 @@ save__space_group_magn.transform_OG_Pp_abc
 _definition.id                          '_space_group_magn.transform_OG_Pp_abc'
 _name.category_id                       space_group_magn
 _name.object_id                         transform_OG_Pp_abc
-_definition.update                      2016-10-10
+_definition.update                      2023-01-17
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis
@@ -3169,7 +3169,7 @@ _description.text
      (a',b',c') of the reference setting are
      described as  linear combinations of the current basis vectors
      (a,b,c), and the origin shift (ox,oy,oz) is displayed in the
-     lattice coordinates of the current setting. The Jones-Faithful
+     lattice coordinates of the current setting. The Jones faithful
      notation and possible values are identical to those of
      symCIF:_space_group.transform_Pp_abc, except that the point and 
      translational components are separated by a semicolon.
@@ -3477,7 +3477,7 @@ save__space_group_magn_transforms.Pp_abc
 _definition.id                          '_space_group_magn_transforms.Pp_abc'
 _name.category_id                       space_group_magn_transforms
 _name.object_id                         Pp_abc
-_definition.update                      2016-06-09
+_definition.update                      2023-01-17
 _description.text                       
 ;
      This item specifies the transformation (P,p) of the basis
@@ -3489,7 +3489,7 @@ _description.text
      (a',b',c') of the reference setting are described as  linear
      combinations of the current basis vectors (a,b,c), and the origin
      shift (ox,oy,oz)  is displayed in the lattice coordinates of the
-     current setting. The Jones-Faithful notation and possible values
+     current setting. The Jones faithful notation and possible values
      are identical to those of symCIF:_space_group_transform_Pp_abc,
      except that the point and translational components are separated
      by a semicolon.
@@ -4154,4 +4154,9 @@ loop_
       Added _atom_site_moment.magnitude, improved descriptions of _atom_site_moment
       .cartesion* items, corrected and improved *_symmform descriptions. Created
       the atom_site_rotation category. (B Campbell)
+;
+    0.9.9   2023-01-17
+;
+      Changed several instances of "Jones-Faithful notation" to
+      "Jones faithful notation".
 ;
