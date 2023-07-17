@@ -23,6 +23,7 @@ save_MAGNETIC
 _definition.id                          MAGNETIC
 _definition.scope                       Category
 _definition.class                       Head
+_name.category_id                       MAGNETIC_CIF
 _name.object_id                         MAGNETIC
 _description.text 
 ;
