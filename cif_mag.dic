@@ -1060,7 +1060,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_atom_site_moment_Fourier.id'
+
 loop_
     _category_key.name
         '_atom_site_moment_Fourier.id'
@@ -1211,7 +1211,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_atom_site_moment_Fourier_param.id'
+
 loop_
     _category_key.name
        '_atom_site_moment_Fourier_param.id'
@@ -1580,7 +1580,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                '_atom_site_moment_special_func.atom_site_label'
+
 loop_
     _category_key.name
                                 '_atom_site_moment_special_func.atom_site_label'
@@ -2481,7 +2481,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_parent_propagation_vector.id'
+
 loop_
   _category_key.name                    '_parent_propagation_vector.id'
   
@@ -3368,7 +3368,7 @@ _description.text
 
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_magn_transforms.id'
+
 loop_
   _category_key.name                    '_space_group_magn_transforms.id'
 loop_
