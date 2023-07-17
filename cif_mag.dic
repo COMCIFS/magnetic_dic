@@ -844,7 +844,7 @@ loop_
 _definition.update                      2018-07-18
 _type.contents                          Real
 _type.container                         Single
-_type.purpose                           radians
+_type.purpose                           Measurand
 _description.text                       
 ;
      The component of the atom-site rotation vector parallel to the third unit-cell axis.  See _atom_site_rotation.crystalaxis.
