@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
 _dictionary.version                     0.9.9
-_dictionary.date                        2023-01-17
+_dictionary.date                        2023-07-17
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -2624,8 +2624,8 @@ save__parent_space_group.name_H-M_alt
 
 _definition.id                          '_parent_space_group.name_H-M_alt'
 _name.category_id                       parent_space_group
-_name.object_id                         name_H-M_alt
-_definition.update                      2016-06-09
+_name.object_id                         name_H_M_alt
+_definition.update                      2023-07-17
 _description.text                       
 ;
      Analogous tags: Perfectly analogous to
@@ -4155,8 +4155,10 @@ loop_
       .cartesion* items, corrected and improved *_symmform descriptions. Created
       the atom_site_rotation category. (B Campbell)
 ;
-    0.9.9   2023-01-17
+    0.9.9   2023-07-17
 ;
       Changed several instances of "Jones-Faithful notation" to
       "Jones faithful notation".
+
+      Changed the object id of the _parent_space_group.name_H-M_alt data item.
 ;
