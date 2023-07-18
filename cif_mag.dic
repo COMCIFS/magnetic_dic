@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
 _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
 _dictionary.version                     0.9.9
-_dictionary.date                        2023-01-17
+_dictionary.date                        2023-07-17
 _dictionary.ddl_conformance             3.11.09
 _description.text
 ;
@@ -23,6 +23,7 @@ save_MAGNETIC
 _definition.id                          MAGNETIC
 _definition.scope                       Category
 _definition.class                       Head
+_name.category_id                       MAGNETIC_CIF
 _name.object_id                         MAGNETIC
 _description.text 
 ;
@@ -221,7 +222,7 @@ _description.text
 ;
 _type.contents                          Integer
 _type.container                         Array
-_type.dimension                         []
+_type.dimension                         '[]'
 save_
 
 ######################
@@ -267,7 +268,7 @@ _description.text
      completing a right-hand set.
 ;
 _type.contents                          Real
-_type.dimension                         [3]
+_type.dimension                         '[3]'
 _type.container                         Matrix
 _type.purpose                           Measurand
 _units.code                             Bohr_magnetons
@@ -365,7 +366,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimension                         [3]
+_type.dimension                         '[3]'
 _type.purpose                           Measurand
 _units.code                             Bohr_magnetons
 loop_
@@ -678,7 +679,7 @@ _description.text
      completing a right-hand set.
 ;
 _type.contents                          Real
-_type.dimension                         [3]
+_type.dimension                         '[3]'
 _type.container                         Matrix
 _type.purpose                           Measurand
 _units.code                             radians
@@ -776,7 +777,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimension                         [3]
+_type.dimension                         '[3]'
 _type.purpose                           Measurand
 _units.code                             radians
 loop_
@@ -843,7 +844,7 @@ loop_
 _definition.update                      2018-07-18
 _type.contents                          Real
 _type.container                         Single
-_type.purpose                           radians
+_type.purpose                           Measurand
 _description.text                       
 ;
      The component of the atom-site rotation vector parallel to the third unit-cell axis.  See _atom_site_rotation.crystalaxis.
@@ -1058,7 +1059,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_atom_site_moment_Fourier.id'
+
 loop_
     _category_key.name
         '_atom_site_moment_Fourier.id'
@@ -1081,9 +1082,9 @@ _description.text
      _atom_site.label from the ATOM_SITE loop, and otherwise conform
      to the rules for _atom_site_label.
 ;
-_type.contents                          Code
+_type.contents                          Word
 _type.container                         Single
-_type.purpose                           Encode
+_type.purpose                           Link
 _type.source                            Assigned
 _name.linked_item_id                    '_atom_site_moment.label'
 
@@ -1209,7 +1210,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_atom_site_moment_Fourier_param.id'
+
 loop_
     _category_key.name
        '_atom_site_moment_Fourier_param.id'
@@ -1578,7 +1579,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                '_atom_site_moment_special_func.atom_site_label'
+
 loop_
     _category_key.name
                                 '_atom_site_moment_special_func.atom_site_label'
@@ -2479,7 +2480,7 @@ _description.text
 ;
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_parent_propagation_vector.id'
+
 loop_
   _category_key.name                    '_parent_propagation_vector.id'
   
@@ -2527,7 +2528,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimension                        [3]
+_type.dimension                         '[3]'
 
 save_
 
@@ -2591,7 +2592,7 @@ _description.text
      Analogous tags: symCIF:_space_group.transform_Pp_abc
 ;
 _type.contents                          Real
-_type.dimension                        [4,4]
+_type.dimension                         '[4,4]'
 _type.container                         Matrix
 _type.purpose                           Number
 _type.source                            Assigned
@@ -2622,8 +2623,8 @@ save__parent_space_group.name_H-M_alt
 
 _definition.id                          '_parent_space_group.name_H-M_alt'
 _name.category_id                       parent_space_group
-_name.object_id                         name_H-M_alt
-_definition.update                      2016-06-09
+_name.object_id                         name_H_M_alt
+_definition.update                      2023-07-17
 _description.text                       
 ;
      Analogous tags: Perfectly analogous to
@@ -2670,7 +2671,7 @@ _description.text
 ;
 _type.contents                          Real
 _type.container                         Matrix
-_type.dimension                        [4,4]
+_type.dimension                         '[4,4]'
 _type.purpose                           Number
 _type.source                            Assigned
 
@@ -2876,7 +2877,7 @@ _description.text
 ;
 _type.container                         Matrix
 _type.contents                          Real
-_type.dimension                         [3]
+_type.dimension                         '[3]'
 _type.purpose                           Number
 
 save_
@@ -3066,7 +3067,7 @@ _description.text
 ;
 _type.contents                          Text
 _type.container                         Matrix
-_type.dimension                         [4,4]
+_type.dimension                         '[4,4]'
 loop_
    _description_example.case
    _description_example.detail
@@ -3147,7 +3148,7 @@ _description.text
 ;
 _type.contents                          Text
 _type.container                         Matrix
-_type.dimension                         [4,4]
+_type.dimension                         '[4,4]'
 
 save_
 
@@ -3366,7 +3367,7 @@ _description.text
 
 _definition.scope                       Category
 _definition.class                       Loop
-_category.key_id                        '_space_group_magn_transforms.id'
+
 loop_
   _category_key.name                    '_space_group_magn_transforms.id'
 loop_
@@ -3465,7 +3466,7 @@ _description.text
 ;
 _type.contents                          Text
 _type.container                         Matrix
-_type.dimension                         [4,4]
+_type.dimension                         '[4,4]'
 
 save_
 
@@ -4153,8 +4154,10 @@ loop_
       .cartesion* items, corrected and improved *_symmform descriptions. Created
       the atom_site_rotation category. (B Campbell)
 ;
-    0.9.9   2023-01-17
+    0.9.9   2023-07-17
 ;
       Changed several instances of "Jones-Faithful notation" to
       "Jones faithful notation".
+
+      Changed the object id of the _parent_space_group.name_H-M_alt data item.
 ;
