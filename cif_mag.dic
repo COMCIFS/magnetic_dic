@@ -3067,7 +3067,7 @@ _description.text
      Crystallography (2016). Volume A, Space-group symmetry, edited
      by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
-_type.contents                          Text
+_type.contents                          Real
 _type.container                         Matrix
 _type.dimension                         '[4,4]'
 loop_
@@ -3148,7 +3148,7 @@ _description.text
      Crystallography (2016). Volume A, Space-group symmetry, edited
      by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
-_type.contents                          Text
+_type.contents                          Real
 _type.container                         Matrix
 _type.dimension                         '[4,4]'
 
@@ -3466,7 +3466,7 @@ _description.text
      Crystallography (2016). Volume A, Space-group symmetry, edited
      by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
 ;
-_type.contents                          Text
+_type.contents                          Real
 _type.container                         Matrix
 _type.dimension                         '[4,4]'
 
