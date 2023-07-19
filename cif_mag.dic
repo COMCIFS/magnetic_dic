@@ -11,7 +11,10 @@ _dictionary.title                       MAGNETIC_CIF
 _dictionary.class                       Instance
 _dictionary.version                     0.9.9
 _dictionary.date                        2023-07-17
+_dictionary.uri
+      https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
 _dictionary.ddl_conformance             3.11.09
+_dictionary.namespace                   CifCore
 _description.text
 ;
       The magnetic CIF dictionary is an extension to the core CIF dictionary.
