@@ -1184,6 +1184,9 @@ _description.text
 ;
 _type.contents                          Text
 _type.container                         Single
+_type.purpose                           Link
+_type.source                            Assigned
+_name.linked_item_id                    '_atom_site_Fourier_wave_vector.seq_id'
 
 save_
 
