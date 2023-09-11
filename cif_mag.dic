@@ -110,7 +110,7 @@ _atom_site_Fourier_wave_vector_q2_coeff
 save_
 
 
-save__atom_site_Fourier_wave_vector.q1_coeff
+save_atom_site_Fourier_wave_vector.q1_coeff
 _definition.id                         '_atom_site_Fourier_wave_vector.q1_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q1_coeff
@@ -143,7 +143,7 @@ loop_
 ;
 save_
 
-save__atom_site_Fourier_wave_vector.q2_coeff
+save_atom_site_Fourier_wave_vector.q2_coeff
 _definition.id                         '_atom_site_Fourier_wave_vector.q2_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q2_coeff
@@ -177,7 +177,7 @@ loop_
 
 save_
 
-save__atom_site_Fourier_wave_vector.q3_coeff
+save_atom_site_Fourier_wave_vector.q3_coeff
 _definition.id                         '_atom_site_Fourier_wave_vector.q3_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
 _name.object_id                         q3_coeff
@@ -203,7 +203,7 @@ _type.container                         Single
 save_
 
 
-save__atom_site_Fourier_wave_vector.q_coeff
+save_atom_site_Fourier_wave_vector.q_coeff
 
 _definition.id                          '_atom_site_Fourier_wave_vector.q_coeff'
 _name.category_id                       atom_site_Fourier_wave_vector
