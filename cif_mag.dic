@@ -3677,6 +3677,7 @@ _description.text
 _type.contents                          Text
 _type.container                         Single
 _type.purpose                           Encode
+_type.source                            Recorded
 save_
 
 
@@ -3788,6 +3789,7 @@ _description.text
 _type.contents                          Text
 _type.container                         Single
 _type.purpose                           Encode
+_type.source                            Recorded
 loop_
   _description_example.case
   _description_example.detail
@@ -3900,6 +3902,7 @@ _description.text
 _type.contents                          Text
 _type.container                         Single
 _type.purpose                           Encode
+_type.source                            Recorded
 loop_
   _description_example.case
   _description_example.detail
@@ -3957,6 +3960,7 @@ _description.text
 _type.contents                          Text
 _type.container                         Single
 _type.purpose                           Encode
+_type.source                            Recorded
 loop_
   _description_example.case
   _description_example.detail
@@ -4053,7 +4057,9 @@ _description.text
 ;
 _type.contents                          Text
 _type.container                         Single
-_type.purpose                           Describe
+_type.purpose                           Encode
+_type.source                            Recorded
+
 loop_
   _description_example.case
   _description_example.detail
