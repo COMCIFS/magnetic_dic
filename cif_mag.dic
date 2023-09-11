@@ -493,7 +493,9 @@ _description.text
      A code that signals whether the structural model includes the
      modulation of the magnetic moment of a given atom site.
 ;
-_type.contents                          Code
+_type.contents                          Word
+_type.purpose                           State
+_type.source                            Assigned
 _type.container                         Single
 loop_
   _enumeration_set.state
@@ -521,7 +523,8 @@ _description.text
     The constraints/restraints placed on the magnetic moment during
     model refinement.
 ;
-_type.contents                          Code
+_type.contents                          Word
+_type.source                            Assigned
 loop_
   _enumeration_set.state
   _enumeration_set.detail
@@ -884,8 +887,10 @@ _description.text
      A code that signals whether the structural model includes the
      modulation of the rotation of a given atom site.
 ;
-_type.contents                          Code
+_type.contents                          Word
 _type.container                         Single
+_type.purpose                           State
+_type.source                            Assigned
 loop_
   _enumeration_set.state
   _enumeration_set.detail
@@ -912,7 +917,8 @@ _description.text
     The constraints/restraints placed on the rotation vector during
     model refinement.
 ;
-_type.contents                          Code
+_type.contents                          Word
+_type.source                            Assigned
 loop_
   _enumeration_set.state
   _enumeration_set.detail
