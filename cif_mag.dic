@@ -4110,11 +4110,11 @@ loop_
    _dictionary_audit.version
    _dictionary_audit.date
    _dictionary_audit.revision
-    0.1      2016-05-24
+    0.1.0    2016-05-24
 ;
       Initial automatic conversion from draft magCIF format (James Hester)
 ;
-    0.9      2016-05-27
+    0.9.0    2016-05-27
 ;
       Manual editing of examples and definition text to remove
         conversion artefacts.
