@@ -1150,9 +1150,10 @@ _description.text
      wave-vector id, and a coordinate axis. A sequence of positive
      integers could also be used.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 loop_
   _description_example.case
          K2_1_z    
@@ -1393,9 +1394,10 @@ _description.text
      match one of the  _atom_site_moment_Fourier.id values in the
      ATOM_SITE_MOMENT_FOURIER loop.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Link
+_type.source                            Related
 _name.linked_item_id                    '_atom_site_moment_Fourier.id'
 
 save_
@@ -2513,9 +2515,10 @@ _description.text
 ;
     A code that uniquely identifies a fundamental magnetic propagation vector.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -3258,9 +3261,10 @@ _description.text
      Analogous tags: transform loops have not yet been approved in
      other dictionaries.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -3437,9 +3441,10 @@ _description.text
      Analogous tags: transform loops have not been approved in other
      dictionaries.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -3652,9 +3657,10 @@ _description.text
      magnetic space group. Most commonly, a sequence of positive
      integers is used for this identification.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -3760,9 +3766,10 @@ _description.text
      Analogous tags: centering loops have not been approved for other
      dictionaries.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -3867,9 +3874,10 @@ _description.text
      The _space_group_symop_magn.id alias provides backwards
      compatibility with the established magCIF prototype.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -4002,9 +4010,10 @@ _description.text
      _space_group_symop_magn_centering.id for more information about
      centering loops.
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
@@ -4097,9 +4106,10 @@ _description.text
 
      Analogous tags: msCIF:_space_group_symop_ssg_id
 ;
-_type.contents                          Text
+_type.contents                          Word
 _type.container                         Single
 _type.purpose                           Key
+_type.source                            Assigned
 
 save_
 
