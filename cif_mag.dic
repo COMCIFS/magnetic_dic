@@ -3589,7 +3589,7 @@ save_space_group_symop_magn_centering.xyz
     _name.category_id             space_group_symop_magn_centering
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3694,7 +3694,7 @@ save_space_group_symop_magn_og_centering.xyz
     _name.category_id             space_group_symop_magn_OG_centering
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
     _description_example.case     x+1/2,y+1/2,z
@@ -3797,7 +3797,7 @@ save_space_group_symop_magn_operation.xyz
     _name.category_id             space_group_symop_magn_operation
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3857,7 +3857,7 @@ save_space_group_symop_magn_ssg_centering.algebraic
     _name.category_id             space_group_symop_magn_ssg_centering
     _name.object_id               algebraic
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3955,8 +3955,8 @@ save_space_group_symop_magn_ssg_operation.algebraic
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               algebraic
-    _type.purpose                 Describe
-    _type.source                  Assigned
+    _type.purpose                 Encode
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
