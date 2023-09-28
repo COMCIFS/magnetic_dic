@@ -2893,7 +2893,7 @@ save_
 save_space_group_magn.ssg_name
 
     _definition.id                '_space_group_magn.ssg_name'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
      The symbol for a magnetic superspace group (MSSG) is based on the UNI
