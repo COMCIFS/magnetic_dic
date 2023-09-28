@@ -2896,28 +2896,27 @@ save_space_group_magn.ssg_name
     _definition.update            2016-10-10
     _description.text
 ;
-    The Belov-Neronova-Smirnova (BNS) symbol for a magnetic
-    superspace group (MSSG) is based on the symbol of the
-    non-magnetic superspace group (SSG) obtained by eliminating all
-    time-reversed operators from the group, as listed in the ISO(3+d)D
-    tables of Stokes and Campbell. If the magnetic basic space group
-    (MBSG) is of type-1 or type-3 (also known as type-3a), its BNS symbol
-    merely replaces that of the basic space-group (BSG).  If the MBSG
-    is of type-2 or type-4  (also known as type-3b), an additional
-    phase-shift symbol associated with the time-reversal generator is added
-    to each modulation vector.  If the MBSG is of type-4, the BNS
-    symbol of the MSSG is further modified to explicitly show the
-    time-reversal generator (1') at the end, and the anti-centering
-    subscript is moved from the lattice symbol to the 1' so as to
-    clearly indicate the fractional external-space translation of
-    this generator.
-    The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
+     The symbol for a magnetic superspace group (MSSG) is based on the UNI
+     symbol of the basic magnetic space group (BMSG), realized in the limit
+     that all modulation amplitudes go to zero, and on the ISO(3+D) symbol
+     of the corresponding non-magnetic superspace group (SSG).  The
+     corresponding SSG symbol is obtained by removing the time-reversal from
+     each time-reversed operation of a type-1 or type-2 MSSG, or by eliminating
+     all time-reversed operations for a type-3 or type-4 MSSG.  For a type-1
+     or type-3 MSSG, the MSSG symbol is obtained from the SSG symbol by
+     simply replacing the symbol of the non-magnetic basic space group (BSG)
+     with the UNI symbol of the BMSG.  For a type-2 or type-4 MSSG, one must
+     further communicate each of the modulation phase shifts associated
+     with the time-reversal generator of the magnetic point group (MPG).
+     The _space_group_magn.ssg_number tag should always be used as the
+     unique MSSG identifier rather than relying on the MSSG symbol alone.
+     The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
 
     Analogous tags: msCIF:_space_group.ssg_name
 
-    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
-    http://iso.byu.edu. ISO(3+d)D tables of H.T. Stokes and B.J.
-    Campbell at http://iso.byu.edu.
+    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_name
@@ -2933,25 +2932,25 @@ save_space_group_magn.ssg_name
 ;
          type-1 MBSG Pmmm
 ;
-         Pmmm1'(0,0,g)ss00
+         Pmmm.1'(0,0,g)ss00
 ;
-         type-2 MBSG Pmmm1', with no basic-cell or
+         type-2 MBSG Pmmm.1', with no basic-cell or
           modulated moments allowed
 ;
-         Pmmm1'(0,0,g)ss0s
+         Pmmm.1'(0,0,g)ss0s
 ;
-         type-2 MBSG Pmmm1', with magnetic modulations
+         type-2 MBSG Pmmm.1', with magnetic modulations
           allowed, but not basic-cell moments
 ;
          Pm'm'm(0,0,g)ss0
 ;
          type-3 MBSG Pm'm'm
 ;
-         Pmmm1'_a(0,0,g)ss00
+         Pmmm.1'_a(0,0,g)ss00
 ;
          type-4 MBSG P_ammm with purely external anti-centering
 ;
-         Pmmm1'_a(0,0,g)ss0s
+         Pmmm.1'_a(0,0,g)ss0s
 ;
          type-4 MBSG P_ammm with superspace anti-centering
 ;
