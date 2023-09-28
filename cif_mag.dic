@@ -327,7 +327,7 @@ save_atom_site_moment.spherical_azimuthal
 
     _definition.id                '_atom_site_moment.spherical_azimuthal'
     _alias.definition_id          '_atom_site_moment_spherical_azimuthal'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
     The azimuthal angle of the atom-site magnetic moment vector
@@ -342,8 +342,8 @@ save_atom_site_moment.spherical_azimuthal
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:6.2831854
-    _units.code                   radians
+    _enumeration.range            0.0:360
+    _units.code                   degrees
 
 save_
 
@@ -372,7 +372,7 @@ save_atom_site_moment.spherical_polar
 
     _definition.id                '_atom_site_moment.spherical_polar'
     _alias.definition_id          '_atom_site_moment_spherical_polar'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
     The polar angle of the atom-site magnetic moment vector specified
@@ -386,8 +386,8 @@ save_atom_site_moment.spherical_polar
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:3.1415927
-    _units.code                   radians
+    _enumeration.range            0.0:180.0
+    _units.code                   degrees
 
 save_
 
@@ -727,7 +727,7 @@ save_atom_site_rotation.spherical_azimuthal
 
     _definition.id                '_atom_site_rotation.spherical_azimuthal'
     _alias.definition_id          '_atom_site_rotation_spherical_azimuthal'
-    _definition.update            2018-07-18
+    _definition.update            2023-06-01
     _description.text
 ;
     The azimuthal angle of the atom-site rotation vector
@@ -742,8 +742,8 @@ save_atom_site_rotation.spherical_azimuthal
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:6.2831854
-    _units.code                   radians
+    _enumeration.range            0.0:360.0
+    _units.code                   degrees
 
 save_
 
@@ -772,7 +772,7 @@ save_atom_site_rotation.spherical_polar
 
     _definition.id                '_atom_site_rotation.spherical_polar'
     _alias.definition_id          '_atom_site_rotation_spherical_polar'
-    _definition.update            2018-07-18
+    _definition.update            2023-06-01
     _description.text
 ;
     The polar angle of the atom-site rotation vector specified
@@ -786,8 +786,8 @@ save_atom_site_rotation.spherical_polar
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:3.1415927
-    _units.code                   radians
+    _enumeration.range            0.0:180.0
+    _units.code                   degrees
 
 save_
 
