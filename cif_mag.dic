@@ -2766,6 +2766,71 @@ save_space_group_magn.name_og
 
 save_
 
+save_space_group_magn.name_uni
+
+    _definition.id                '_space_group_magn.name_UNI'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The Unified (UNI) symbol for an MSG is an improvement of the
+    corresponding BNS symbol, and is therefore associated with a BNS
+    setting of the MSG, but also captures some essential features of
+    the OG symbol.  See the entries on _space_group_magn.name_BNS and
+    _space_group_magn.name_OG for more information about those symbols.
+    Like the BNS symbol, the UNI symbol of an MSG is based on the symbol
+    of a non-magnetic space group F (for types 1-3) or of an index-2
+    subgroup D of F (for type4).  The UNI symbol of a type-3 MSG is
+    identical to the corresponding BNS and OG symbols.
+
+    The time-reversal group consists of the identity operation 1
+    and the time-reversal operation 1’.  For type-1, type-2, and
+    type-4 MSGs, the appropriate generator of the time-reversal group
+    is always explicitly displayed after the space-group generators
+    of F, and separated from the generators of F by a dot (".").
+    Furthermore, for a type-4 MSG, the anti-translation subscript is
+    attached to the 1’ generator at the end of the UNI symbol rather
+    than to the lattice symbol at the front, and always conveys an
+    unambiguous translation.
+
+    The complete UNI symbol of a type-4 MSG includes the symbol of
+    space group F in square brackets at the end.  In the extension,
+    the symbol of F is presented in same BNS setting used for subgroup
+    D in the main part of the UNI symbol, when possible, or else in a
+    setting rotated by 45 degrees relative to the BNS setting of D.
+
+    The UNI MPG symbol is obtained directly from the truncated UNI MSG
+    symbol by dropping the lattice symbol at the front, eliminating any
+    subscripts, and replacing each glide-plane symbols with mirror-plane
+    symbol "m".  The explicit presence of the time-reversal generator at
+    the end of the UNI symbol of a type-4 MSG makes it clear that the
+    MPG is of type 2 (grey).
+
+    Analogous tags: symCIF:_space_group.name_H-M_ref
+
+    Ref: Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+;
+    _name.category_id             space_group_magn
+    _name.object_id               name_UNI
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         "P1.1"
+         "P1.1'"
+         "P1.1'_c[P1] or P1.1'_c"
+         "P-1.1"
+         "P-1.1'"
+         "P-1'"
+         "P-1.1'_c[P-1] or P1.1'_c"
+         "P2.1'_C[C2] or P2.1'_C"
+         "Ia'-3d'"
+
+save_
+
 save_space_group_magn.number_bns
 
     _definition.id                '_space_group_magn.number_BNS'
@@ -2926,6 +2991,62 @@ save_space_group_magn.point_group_name
          "4 m m"
          "4' m' m"
          "4' m m'"
+
+save_
+
+save_space_group_magn.point_group_name_uni
+
+    _definition.id                '_space_group_magn.point_group_name_UNI'
+    _definition.update            2023-06-01
+    _description.text
+;
+    Any magnetic point group (MPG) can be constructed by starting
+    with a non-magnetic point group P, and then by adding a time-reversal
+    component to some or all or none of its elements. For a
+    type-1 MPG, M = P, there are no time-reversed elements. For a
+    type-2 MPG, M = P + P1', there is both a time-reversed and a
+    non-time-reversed  copy of each element in P. For a type-3 MPG,
+    M = Q + (P - Q)1', there is a subgroup Q of P of index 2 whose
+    elements are not time reversed, whereas the remaining elements
+    in P-Q are time reversed.
+
+    The time-reversal group consists of the identity operation 1
+    and the time-reversal operation 1’.  The UNI symbol of an MPG is a slight
+    modification of the earlier H-M MPG symbol, and only differs from
+    the H-M MPG symbol for type-1 and type2 MPGs, so that
+    the appropriate generator of the time-reversal group
+    is always explicitly displayed after the space-group generators
+    of P, and separated from the generators of P by a dot (".").
+    For a type-1 MPG or type-2 MPG, the UNI symbol is that of
+    non-magnetic point group P, followed by ".1" or ".1’", respectively.
+    For a type-3 MPG, the UNI MPG symbol is that of P with a prime added to each
+    time-reversed generator.
+
+    Analogous tags: symCIF:_space_group.point_group_H-M
+
+    Ref: 'Magnetic Group Tables' by D.B. Litvin at
+    http://www.iucr.org/publ/978-0-9553602-2-0
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+;
+    _name.category_id             space_group_magn
+    _name.object_id               point_group_name_UNI
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         1.1
+         1.1'
+         -1.1
+         -1.1'
+         -1'
+         4mm.1
+         4'm'm
+         4'mm'
 
 save_
 
