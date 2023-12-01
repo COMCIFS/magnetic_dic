@@ -2662,11 +2662,9 @@ save_
 save_space_group_magn.name_bns
 
     _definition.id                '_space_group_magn.name_BNS'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn_number_OG for a description of magnetic
-    space groups (MSGs).
     The Belov-Neronova-Smirnova (BNS) symbol for a MSG is based on
     the short Hermann-Mauguin space-group symbol of non-magnetic
     space group F for MSGs of types 1-3 or its subgroup D for MSGs of
@@ -2682,14 +2680,16 @@ save_space_group_magn.name_bns
     point group of the MSG. The value of this subscript indicates the
     magnetic lattice of the MSG, and specifically indicates the
     translational part of the generator whose point part is the pure
-    time reversal. Note that OG and BNS symbols are identical for
-    MSGs of types 1-3, but differ substantially  for MSGs of type 4.
+    time reversal.
 
     Analogous tags: symCIF:_space_group.name_H-M_ref
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_BNS
@@ -2700,25 +2700,25 @@ save_space_group_magn.name_bns
 
     loop_
       _description_example.case
-         "P 1"
-         "P 1 1'"
-         "P_S 1"
-         "P -1"
-         "P -1 1'"
-         "P -1'"
-         "P_2s -1"
-         "I a' -3 d'"
+         P1
+         P11'
+         P_S1
+         P-1
+         P-11'
+         P-1'
+         P_S-1
+         P_C2
+         Ia'-3d'
 
 save_
 
 save_space_group_magn.name_og
 
     _definition.id                '_space_group_magn.name_OG'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn.number_OG for more information on magnetic
-    space groups (MSGs). The Opechowski-Guccione (OG) symbol for an
+    The Opechowski-Guccione (OG) symbol for an
     MSG is based on the short Hermann-Mauguin space-group symbol of
     non-magnetic space group F.   For a type-1 MSG, the OG symbol for
     the MSG is identical with the unprimed symbol of F.  For a type-2
@@ -2734,14 +2734,16 @@ save_space_group_magn.name_og
     character of the symbol of a type-4 MSG, and communicates that a
     pure time-reversal element is included in the point group of the
     MSG. The value of this subscript indicates the magnetic lattice
-    of the MSG. Note that OG and BNS symbols are identical for MSGs
-    of types 1-3, but differ substantially  for MSGs of type 4.
+    of the MSG.
 
     Analogous tags: symCIF:_space_group.name_H-M_ref
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_OG
@@ -2752,25 +2754,25 @@ save_space_group_magn.name_og
 
     loop_
       _description_example.case
-         "P 1"
-         "P 1 1'"
-         "P_S 1"
-         "P -1"
-         "P -1 1'"
-         "P -1'"
-         "P_2s -1"
-         "I a' -3' d'"
+         P1
+         P11'
+         P_S1
+         P-1
+         P-11'
+         P-1'
+         P_2s-1
+         C_P2
+         Ia'-3'd'
 
 save_
 
 save_space_group_magn.number_bns
 
     _definition.id                '_space_group_magn.number_BNS'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn.number_OG for a description of magnetic
-    space groups (MSGs). The Belov-Neronova-Smirnova (BNS) number for
+    The Belov-Neronova-Smirnova (BNS) number for
     an MSG is composed of two positive integers separated by a
     period. The first integer lies in the range [1-230] and indicates
     the non-magnetic space group F for MSGs of types 1-3 or the
@@ -2789,8 +2791,12 @@ save_space_group_magn.number_bns
     Analogous tags: symCIF:_space_group.number_IT
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Belov, Neronova & Smirnova, Sov. Phys. Crystallogr. 2, 311–322 (1957).
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               number_BNS
@@ -2808,6 +2814,7 @@ save_space_group_magn.number_bns
          2.5
          2.6
          2.7
+         3.6
          230.149
 
 save_
@@ -2942,6 +2949,9 @@ save_space_group_magn.point_group_number
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
     http://www.iucr.org/publ/978-0-9553602-2-0
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_number
