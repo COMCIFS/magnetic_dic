@@ -2616,12 +2616,43 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2016-10-10
+    _definition.update            2023-09-13
     _description.text
 ;
     The data items in this category provide identifying and/or
-    descriptive information about the relevant magnetic symmetry
-    group and setting.
+    descriptive information about the relevant space group (MSG) or
+    magnetic superspace group (MSSG) and its setting.
+
+    There are 1651 distinct equivalence classes of MSGs, each of
+    which can be referred to as an MSG "type" following the usage of
+    this word in the International Tables of Crystallography.  Similarly,
+    there are over 300000 distinct equivalence classes of MSSGs with
+    up to 3 independent modulations, each of which can be referred to
+    as an MSSG "type".
+
+    However, it is important to appreciate that the word “type” is commonly
+    used in an entirely different way in the context of MSGs and MSSGs.
+    Any magnetic group can be constructed by starting with
+    a non-magnetic space group F, and then by adding the time-reversal
+    operation to half or all or none of its elements.  The
+    four ways of doing this give rise to four distinct "construct types",
+    which we refer to simply as type-1, type-2, type-3, and type-4,
+    though some refer to type-3 as type-3a and type-4 as and type3b.
+
+    For a type-1 MSG/MSSG, M = F, so that there are no time-reversed elements.
+    For a type-2 MSG/MSSG, M = F + F1', so that there is both a time-reversed
+    and a non-time-reversed copy of each element in F.
+    For a type-3 or type-4 MSG/MSSG, M = D + (F - D)1', where D is an index-2
+    subgroup of F whose elements are not time reversed, whereas every
+    element in F – D (the complement of D in F) is time reversed.
+    For a type-3 MSG/MSSG, F and D have the same translation subgroup (lattice)
+    but different point groups.
+    For a type-4 MSG/MSSG, F and D and the same point groups but different
+    translation subgroups.
+
+    Ref: 'Magnetic Group Tables' by D.B. Litvin at
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               SPACE_GROUP_MAGN
