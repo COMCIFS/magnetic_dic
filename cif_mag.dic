@@ -2738,7 +2738,7 @@ save_space_group_magn.name_uni
     _definition.update            2023-06-01
     _description.text
 ;
-    The Unified (UNI) symbol for a MSG is an improvement of the
+    The Unified (UNI) symbol for an MSG is an improvement of the
     corresponding BNS symbol, and is therefore associated with a BNS
     setting of the MSG, but also captures some essential features of
     the OG symbol.  See the entries on _space_group_magn.name_BNS and
