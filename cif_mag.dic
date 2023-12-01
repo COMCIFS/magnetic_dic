@@ -2812,6 +2812,42 @@ save_space_group_magn.number_bns
 
 save_
 
+save_space_group_magn.number_og
+
+    _definition.id                '_space_group_magn.number_OG'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The Opechowski-Guccione (OG) number for a MSG comprises three positive
+    integers separated by periods.  The first integer lies in the range
+    [1-230] and indicates the space group F.  The second integer is
+    sequential over all MSGs associated with the same space group F. The
+    third integer is sequential over all MSGs, and therefore lies in the
+    range [1-1651], but is not necessary for uniqueness.
+
+    Analogous tags: symCIF:_space_group.number_IT
+;
+    _name.category_id             space_group_magn
+    _name.object_id               number_OG
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Word
+
+    loop_
+      _description_example.case
+         1.1.1
+         1.2.2
+         1.3.3
+         2.1.4
+         2.2.5
+         2.3.6
+         2.4.7
+         5.5.23
+         230.5.1651
+
+save_
+
 save_space_group_magn.og_wavevector_kxkykz
 
     _definition.id                '_space_group_magn.OG_wavevector_kxkykz'
