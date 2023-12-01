@@ -2953,6 +2953,8 @@ save_space_group_magn.point_group_name_uni
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
     http://www.iucr.org/publ/978-0-9553602-2-0
     Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_name_UNI
