@@ -3158,14 +3158,45 @@ save_
 save_space_group_magn.ssg_number
 
     _definition.id                '_space_group_magn.ssg_number'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
-    The Belov-Neronova-Smirnova (BNS) number for a magnetic
-    superspace group. This tag is being held in reserve until a
-    future numbering scheme is approved.
+    The magnetic superspace group (MSSG) number has six parts,
+    separated by periods:
+    (1-4) the four parts of the superspace group (SSG) number of its
+    family superspace group (FSSG) or maximal superspace subgroup (XSSG),
+    (5) the letter ‘m’ followed by the second part of the BNS number
+    of its basic magnetic space group (BMSG), and
+    (6) an integer that enumerates the MSSGs derived from the same
+    combination of BMSG and FSSG/XSSG.
+
+    The SSG number has four parts, separated by periods:
+    (1) the space group number of its basic space group (BSG) from
+    the International Tables for Crystallography Vol. A (2016),
+    (2) the number d of independent incommensurate modulations,
+    (3) an integer specifying the (3+d)D Bravais class, and
+    (4) an integer that enumerates SSGs that share the same BSG
+    and same number d of independent modulations.
+
+    The BNS number of the BMSG has two parts, separated by a period:
+    (1) the SG number of its FSG/XSG, and
+    (2) an integer that enumerates distinct MSGs of the same crystal system,
+    which was tabulated by Stokes and Campbell (2022).
+
+    Because it is common to employ a user-defined superspace setting for an
+    MSSG, it is strongly recommended that the MSSG number be accompanied by
+    the transformation to the standard MSSG setting of Stokes and Campbell
+    (2022), which is specified with
+    _space_group_magn_ssg_transforms.Pp_superspace.
 
     Analogous tags: msCIF:_space_group.ssg_number
+
+    Ref:
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes, B.J. Campbell, and S. van Smaalen, Acta Cryst. A67,
+    45–55 (2011).
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_number
@@ -3173,6 +3204,17 @@ save_space_group_magn.ssg_number
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         47.1.9.3.m249.1   "Pmmm.1(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.249"
+         47.1.9.3.m250.1'  "Pmmm.1'(0,0,g)ss00   SSG = 47.1.9.3, BMSG = 47.250"
+         47.1.9.3.m250.2   "Pmmm.1'(0,0,g)ss0s   SSG = 47.1.9.3, BMSG = 47.250"
+         47.1.9.3.m252.1   "Pm'm'm(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.252"
+         47.1.9.3.m254.1   "Pmmm.1'_a(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         47.1.9.3.m254.2   "Pmmm.1'_c(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         47.1.9.3.m254.3   "Pmmm.1'_a(0,0,g)ss0s SSG = 47.1.9.3, BMSG = 47.254"
 
 save_
 
@@ -3438,7 +3480,7 @@ save_
 save_space_group_magn_ssg_transforms.source
 
     _definition.id                '_space_group_magn_ssg_transforms.source'
-    _definition.update            2016-06-21
+    _definition.update            2023-06-01
     _description.text
 ;
     A string that describes the source of a reference setting for the
@@ -3450,6 +3492,7 @@ save_space_group_magn_ssg_transforms.source
     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
     Stokes and B.J. Campbell at http://iso.byu.edu.
     ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               source
@@ -3460,17 +3503,19 @@ save_space_group_magn_ssg_transforms.source
     _enumeration_set.state        ISO(3+d)D-MAG
     _enumeration_set.detail
 ;
-    This superspace transformation simultaneously takes the setting of the
-    basic magnetic space group (BMSG) to the setting of the corresponding entry
-    in the ISO-MAG tables, and takes the setting of the derived non-magnetic
-    superspace group (DNMSG) to within a purely external operation of the
-    setting of the corresponding entry in the ISO(3+d)D tables. The external
-    components of this superspace transformation are those that take the
-    setting of the BMSG to the setting of the corresponding entry in the
-    ISO-MAG tables, while the internal components are those of the
-    transformation that takes the setting of the DNMSG to the setting of the
-    corresponding superspace group in the ISO(3+d)D tables. Such a
-    transformation is unique for any setting of a magnetic superspace group.
+    For any magnetic superspace group (MSSG), as enumerated by Stokes and
+    Campbell (2022), this superspace transformation simultaneously takes the
+    setting of the basic magnetic space group (BMSG) to the setting of the
+    corresponding entry in the ISO-MAG tables, and takes the setting of its
+    family superspace group (FSSG) or maximal superspace subgroup (XSSG) to
+    within a purely external operation of the setting of the corresponding
+    entry in the ISO(3+d)D tables. The external components of this superspace
+    transformation are those that take the setting of the BMSG to the setting
+    of the corresponding entry in the ISO-MAG tables, while the internal
+    components are those of the transformation that takes the setting of the
+    FSSG/XSSG to the setting of the corresponding superspace group in the
+    ISO(3+d)D tables. Such a transformation is unique for any setting of a
+    magnetic superspace group.
 ;
 
 save_
