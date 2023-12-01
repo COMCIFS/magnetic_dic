@@ -2659,6 +2659,50 @@ save_SPACE_GROUP_MAGN
 
 save_
 
+save__space_group_magn.hall_symbol
+
+    _definition.id                '_space_group_magn.Hall_symbol'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The magnetic Hall symbol provides an unambiguous representation
+    of the generators of a three-dimensional MSG, and largely follows
+    the conventions developed for non-magnetic Hall symbols, except
+    that the prime symbol "’" has been replaced by the carat symbol
+    "^" in order to reserve the prime symbol to indicate
+    time-reversal.  For a type-2 or type-4 MSG, the time reversal
+    element is listed separately as "1’" at the end of the magnetic
+    Hall symbol, along with a character to indicate the non-lattice
+    translational component of the anti-translation in the case of a
+    type-4 MSG.
+
+    Ref: González-Platas, Katcho & Rodríguez-Carvajal, J. Appl. Cryst 54,
+    338-342 (2020).
+    Hall, Acta Cryst. A37, 517-525 (1981).
+    Campbell et al., Acta Cryst. A78, 99–106 (2022), Table S3.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               hall_symbol
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         "P 1"                    "BNS = 1.1   UNI = P1.1"
+         "P 1'"                   "BNS = 1.2   UNI = P1.1'"
+         "P 1 1'c"                "BNS = 1.3   UNI = P1.1'_c"
+         "-P 1"                   "BNS = 2.4   UNI = P-1.1"
+         "-P 1'"                  "BNS = 2.5   UNI = P-1.1'"
+         "P -1'"                  "BNS = 2.6   UNI = P -1'"
+         "-P 1 1'c"               "BNS = 2.7   UNI = P-1.1'_c"
+         "P 2y 1'C"               "BNS = 3.6   UNI = P2.1'_C"
+         "I 4bd 2c 3 -1'"         "BNS = 230.1 UNI = Ia'-3'd'"
+
+save_
+
 save_space_group_magn.name_bns
 
     _definition.id                '_space_group_magn.name_BNS'
