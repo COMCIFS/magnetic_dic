@@ -2937,7 +2937,7 @@ save_space_group_magn.point_group_name_uni
     in P-Q are time reversed.
 
     The time-reversal group consists of the identity operation 1
-    and the time-reversal operation 1’.  The UNI symbol of a MPG is a slight
+    and the time-reversal operation 1’.  The UNI symbol of an MPG is a slight
     modification of the earlier H-M MPG symbol, and only differs from
     the H-M MPG symbol for type-1 and type2 MPGs, so that the
     the appropriate generator of the time-reversal group
