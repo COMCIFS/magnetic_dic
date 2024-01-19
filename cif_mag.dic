@@ -2996,7 +2996,39 @@ save_
 save_space_group_magn.point_group_name
 
     _definition.id                '_space_group_magn.point_group_name'
-    _definition.update            2016-05-24
+    _definition_replaced.id       1
+    _definition_replaced.by       '_space_group_magn.point_group_name_H-M'
+    _definition.update            2024-01-19
+    _description.text
+;
+    This data name is deprecated. Use '_space_group_magn.point_group_name_H-M'
+    instead.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               point_group_name
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         "1"
+         "1 1'"
+         "-1"
+         "-1 1'"
+         "-1'"
+         "4 m m"
+         "4' m' m"
+         "4' m m'"
+
+save_
+
+save_space_group_magn.point_group_name_h-m
+
+    _definition.id                '_space_group_magn.point_group_name_H-M'
+    _alias.definition_id          '_space_group_magn.point_group_name'
+    _definition.update            2024-01-19
     _description.text
 ;
     Any magnetic point group (MPG) can be constructed by starting
@@ -3019,7 +3051,7 @@ save_space_group_magn.point_group_name
     http://www.iucr.org/publ/978-0-9553602-2-0
 ;
     _name.category_id             space_group_magn
-    _name.object_id               point_group_name
+    _name.object_id               point_group_name_H_M
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
@@ -3097,7 +3129,33 @@ save_
 save_space_group_magn.point_group_number
 
     _definition.id                '_space_group_magn.point_group_number'
-    _definition.update            2016-10-10
+    _definition_replaced.id       1
+    _definition_replaced.by       '_space_group_magn.point_group_number_Litvin'
+    _definition.update            2024-01-19
+    _description.text
+;
+    This definition is deprecated. Use
+    '_space_group_magn.point_group_number_Litvin' instead.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               point_group_number
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         1.1.1
+         32.5.122
+
+save_
+
+save_space_group_magn.point_group_number_litvin
+
+    _definition.id                '_space_group_magn.point_group_number_Litvin'
+    _alias.definition_id          '_space_group_magn.point_group_number'
+    _definition.update            2024-01-19
     _description.text
 ;
     Each of the 122 crystallographic magnetic point groups can be
@@ -3119,7 +3177,7 @@ save_space_group_magn.point_group_number
     https://www.iucr.org/paper?ib5106
 ;
     _name.category_id             space_group_magn
-    _name.object_id               point_group_number
+    _name.object_id               point_group_number_Litvin
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
