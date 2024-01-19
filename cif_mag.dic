@@ -4357,6 +4357,6 @@ save_
        Changed the object id of the _parent_space_group.name_H-M_alt data item.
 
        Corrected definitions of _parent_space_group.child_transform_pp_abc and
-       _parent_space_group.transform_pp_abc. Change the purpose of all *_pp_abc
+       _parent_space_group.transform_pp_abc. Changed the purpose of all *_pp_abc
        items to 'Encode'.
 ;
