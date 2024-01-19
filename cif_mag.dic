@@ -2525,7 +2525,7 @@ save_parent_space_group.child_transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -2602,7 +2602,7 @@ save_parent_space_group.transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3309,7 +3309,7 @@ save_
 save_space_group_magn.transform_bns_pp_abc
 
     _definition.id                '_space_group_magn.transform_BNS_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3331,7 +3331,7 @@ save_space_group_magn.transform_bns_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_BNS_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3375,7 +3375,7 @@ save_
 save_space_group_magn.transform_og_pp_abc
 
     _definition.id                '_space_group_magn.transform_OG_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3397,7 +3397,7 @@ save_space_group_magn.transform_og_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_OG_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3479,7 +3479,7 @@ save_space_group_magn_ssg_transforms.pp_superspace
 
     _definition.id
         '_space_group_magn_ssg_transforms.Pp_superspace'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the superspace
@@ -3704,7 +3704,7 @@ save_space_group_magn_transforms.pp_abc
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -4357,5 +4357,6 @@ save_
        Changed the object id of the _parent_space_group.name_H-M_alt data item.
 
        Corrected definitions of _parent_space_group.child_transform_pp_abc and
-       _parent_space_group.transform_pp_abc.
+       _parent_space_group.transform_pp_abc. Change the purpose of all *_pp_abc
+       items to 'Encode'.
 ;
