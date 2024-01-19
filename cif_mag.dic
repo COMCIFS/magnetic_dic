@@ -2227,7 +2227,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
     structural model. This category is fully defined in the modulated
     structures dictionary.
 ;
-    _name.category_id             MS_GROUP
+    _name.category_id             MAGNETIC
     _name.object_id               ATOM_SITE_FOURIER_WAVE_VECTOR
     _category_key.name            '_atom_site_Fourier_wave_vector.seq_id'
 
