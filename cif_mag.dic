@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2023-07-17
+    _dictionary.date              2024-01-19
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -2505,7 +2505,7 @@ save_
 save_parent_space_group.child_transform_pp_abc
 
     _definition.id                '_parent_space_group.child_transform_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis vectors
@@ -2525,11 +2525,10 @@ save_parent_space_group.child_transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Describe
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -2593,7 +2592,7 @@ save_
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     Analogous tags: Notation and usage is analogous to
@@ -2603,11 +2602,10 @@ save_parent_space_group.transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Describe
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -4351,10 +4349,13 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2023-07-17
+         0.9.9                    2024-01-19
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
 
        Changed the object id of the _parent_space_group.name_H-M_alt data item.
+
+       Corrected definitions of _parent_space_group.child_transform_pp_abc and
+       _parent_space_group.transform_pp_abc.
 ;
