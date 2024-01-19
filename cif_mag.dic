@@ -3001,7 +3001,7 @@ save_space_group_magn.point_group_name
     _definition.update            2024-01-19
     _description.text
 ;
-    This data name is deprecated. Use '_space_group_magn.point_group_name_H-M'
+    This data name is deprecated. Use _space_group_magn.point_group_name_H-M
     instead.
 ;
     _name.category_id             space_group_magn
@@ -3135,7 +3135,7 @@ save_space_group_magn.point_group_number
     _description.text
 ;
     This definition is deprecated. Use
-    '_space_group_magn.point_group_number_Litvin' instead.
+    _space_group_magn.point_group_number_Litvin instead.
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_number
