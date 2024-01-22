@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2023-07-17
+    _dictionary.date              2024-01-19
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -133,6 +133,7 @@ save_atom_site_fourier_wave_vector.q1_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -167,6 +168,7 @@ save_atom_site_fourier_wave_vector.q2_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -201,6 +203,7 @@ save_atom_site_fourier_wave_vector.q3_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -228,6 +231,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _type.container               Array
     _type.dimension               '[]'
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -1840,6 +1844,7 @@ save_atom_type_scat.neutron_magnetic_j0_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1875,6 +1880,7 @@ save_atom_type_scat.neutron_magnetic_j0_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1910,6 +1916,7 @@ save_atom_type_scat.neutron_magnetic_j0_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1945,6 +1952,7 @@ save_atom_type_scat.neutron_magnetic_j0_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1962,6 +1970,7 @@ save_atom_type_scat.neutron_magnetic_j0_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1979,6 +1988,7 @@ save_atom_type_scat.neutron_magnetic_j2_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2014,6 +2024,7 @@ save_atom_type_scat.neutron_magnetic_j2_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2049,6 +2060,7 @@ save_atom_type_scat.neutron_magnetic_j2_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2084,6 +2096,7 @@ save_atom_type_scat.neutron_magnetic_j2_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2101,6 +2114,7 @@ save_atom_type_scat.neutron_magnetic_j2_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2118,6 +2132,7 @@ save_atom_type_scat.neutron_magnetic_j4_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2153,6 +2168,7 @@ save_atom_type_scat.neutron_magnetic_j4_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2188,6 +2204,7 @@ save_atom_type_scat.neutron_magnetic_j4_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2223,6 +2240,7 @@ save_atom_type_scat.neutron_magnetic_j4_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2240,6 +2258,7 @@ save_atom_type_scat.neutron_magnetic_j4_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2257,6 +2276,7 @@ save_atom_type_scat.neutron_magnetic_j6_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2292,6 +2312,7 @@ save_atom_type_scat.neutron_magnetic_j6_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2327,6 +2348,7 @@ save_atom_type_scat.neutron_magnetic_j6_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2362,6 +2384,7 @@ save_atom_type_scat.neutron_magnetic_j6_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2379,6 +2402,7 @@ save_atom_type_scat.neutron_magnetic_j6_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2468,6 +2492,7 @@ save_parent_propagation_vector.kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2505,7 +2530,7 @@ save_
 save_parent_space_group.child_transform_pp_abc
 
     _definition.id                '_parent_space_group.child_transform_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis vectors
@@ -2525,11 +2550,10 @@ save_parent_space_group.child_transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Encode
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -2593,7 +2617,7 @@ save_
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     Analogous tags: Notation and usage is analogous to
@@ -2603,11 +2627,10 @@ save_parent_space_group.transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Encode
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -2990,6 +3013,7 @@ save_space_group_magn.og_wavevector_kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -3293,6 +3317,7 @@ save_space_group_magn.transform_bns_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
     loop_
       _description_example.case
@@ -3311,7 +3336,7 @@ save_
 save_space_group_magn.transform_bns_pp_abc
 
     _definition.id                '_space_group_magn.transform_BNS_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3333,7 +3358,7 @@ save_space_group_magn.transform_bns_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_BNS_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3371,13 +3396,14 @@ save_space_group_magn.transform_og_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
 save_space_group_magn.transform_og_pp_abc
 
     _definition.id                '_space_group_magn.transform_OG_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3399,7 +3425,7 @@ save_space_group_magn.transform_og_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_OG_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3481,7 +3507,7 @@ save_space_group_magn_ssg_transforms.pp_superspace
 
     _definition.id
         '_space_group_magn_ssg_transforms.Pp_superspace'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the superspace
@@ -3679,6 +3705,7 @@ save_space_group_magn_transforms.pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -3706,7 +3733,7 @@ save_space_group_magn_transforms.pp_abc
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -4351,10 +4378,14 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2023-07-17
+         0.9.9                    2024-01-19
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
 
        Changed the object id of the _parent_space_group.name_H-M_alt data item.
+
+       Corrected definitions of _parent_space_group.child_transform_pp_abc and
+       _parent_space_group.transform_pp_abc. Changed the purpose of all *_pp_abc
+       items to 'Encode'.
 ;
