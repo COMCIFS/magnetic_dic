@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2023-07-17
+    _dictionary.date              2024-01-19
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -327,7 +327,7 @@ save_atom_site_moment.spherical_azimuthal
 
     _definition.id                '_atom_site_moment.spherical_azimuthal'
     _alias.definition_id          '_atom_site_moment_spherical_azimuthal'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
     The azimuthal angle of the atom-site magnetic moment vector
@@ -342,8 +342,8 @@ save_atom_site_moment.spherical_azimuthal
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:6.2831854
-    _units.code                   radians
+    _enumeration.range            0.0:360
+    _units.code                   degrees
 
 save_
 
@@ -372,7 +372,7 @@ save_atom_site_moment.spherical_polar
 
     _definition.id                '_atom_site_moment.spherical_polar'
     _alias.definition_id          '_atom_site_moment_spherical_polar'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
     The polar angle of the atom-site magnetic moment vector specified
@@ -386,8 +386,8 @@ save_atom_site_moment.spherical_polar
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:3.1415927
-    _units.code                   radians
+    _enumeration.range            0.0:180.0
+    _units.code                   degrees
 
 save_
 
@@ -727,7 +727,7 @@ save_atom_site_rotation.spherical_azimuthal
 
     _definition.id                '_atom_site_rotation.spherical_azimuthal'
     _alias.definition_id          '_atom_site_rotation_spherical_azimuthal'
-    _definition.update            2018-07-18
+    _definition.update            2023-06-01
     _description.text
 ;
     The azimuthal angle of the atom-site rotation vector
@@ -742,8 +742,8 @@ save_atom_site_rotation.spherical_azimuthal
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:6.2831854
-    _units.code                   radians
+    _enumeration.range            0.0:360.0
+    _units.code                   degrees
 
 save_
 
@@ -772,7 +772,7 @@ save_atom_site_rotation.spherical_polar
 
     _definition.id                '_atom_site_rotation.spherical_polar'
     _alias.definition_id          '_atom_site_rotation_spherical_polar'
-    _definition.update            2018-07-18
+    _definition.update            2023-06-01
     _description.text
 ;
     The polar angle of the atom-site rotation vector specified
@@ -786,8 +786,8 @@ save_atom_site_rotation.spherical_polar
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0.0:3.1415927
-    _units.code                   radians
+    _enumeration.range            0.0:180.0
+    _units.code                   degrees
 
 save_
 
@@ -1649,6 +1649,7 @@ save_atom_type_scat.neutron_magnetic_j0_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1684,6 +1685,7 @@ save_atom_type_scat.neutron_magnetic_j0_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1719,6 +1721,7 @@ save_atom_type_scat.neutron_magnetic_j0_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1754,6 +1757,7 @@ save_atom_type_scat.neutron_magnetic_j0_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1771,6 +1775,7 @@ save_atom_type_scat.neutron_magnetic_j0_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1788,6 +1793,7 @@ save_atom_type_scat.neutron_magnetic_j2_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1823,6 +1829,7 @@ save_atom_type_scat.neutron_magnetic_j2_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1858,6 +1865,7 @@ save_atom_type_scat.neutron_magnetic_j2_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1893,6 +1901,7 @@ save_atom_type_scat.neutron_magnetic_j2_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1910,6 +1919,7 @@ save_atom_type_scat.neutron_magnetic_j2_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1927,6 +1937,7 @@ save_atom_type_scat.neutron_magnetic_j4_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1962,6 +1973,7 @@ save_atom_type_scat.neutron_magnetic_j4_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1997,6 +2009,7 @@ save_atom_type_scat.neutron_magnetic_j4_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2032,6 +2045,7 @@ save_atom_type_scat.neutron_magnetic_j4_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2049,6 +2063,7 @@ save_atom_type_scat.neutron_magnetic_j4_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2066,6 +2081,7 @@ save_atom_type_scat.neutron_magnetic_j6_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2101,6 +2117,7 @@ save_atom_type_scat.neutron_magnetic_j6_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2136,6 +2153,7 @@ save_atom_type_scat.neutron_magnetic_j6_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2171,6 +2189,7 @@ save_atom_type_scat.neutron_magnetic_j6_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2188,6 +2207,7 @@ save_atom_type_scat.neutron_magnetic_j6_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2309,6 +2329,7 @@ save_atom_site_fourier_wave_vector.q1_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -2343,6 +2364,7 @@ save_atom_site_fourier_wave_vector.q2_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -2377,6 +2399,7 @@ save_atom_site_fourier_wave_vector.q3_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -2404,6 +2427,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _type.container               Array
     _type.dimension               '[]'
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -2469,6 +2493,7 @@ save_parent_propagation_vector.kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2506,7 +2531,7 @@ save_
 save_parent_space_group.child_transform_pp_abc
 
     _definition.id                '_parent_space_group.child_transform_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis vectors
@@ -2526,11 +2551,10 @@ save_parent_space_group.child_transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Encode
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -2594,7 +2618,7 @@ save_
 save_parent_space_group.transform_pp_abc
 
     _definition.id                '_parent_space_group.transform_Pp_abc'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     Analogous tags: Notation and usage is analogous to
@@ -2604,11 +2628,10 @@ save_parent_space_group.transform_pp_abc
 ;
     _name.category_id             parent_space_group
     _name.object_id               transform_Pp_abc
-    _type.purpose                 Number
+    _type.purpose                 Encode
     _type.source                  Assigned
-    _type.container               Matrix
-    _type.dimension               '[4,4]'
-    _type.contents                Real
+    _type.container               Single
+    _type.contents                Text
 
 save_
 
@@ -2617,26 +2640,99 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2016-10-10
+    _definition.update            2023-09-13
     _description.text
 ;
     The data items in this category provide identifying and/or
-    descriptive information about the relevant magnetic symmetry
-    group and setting.
+    descriptive information about the relevant space group (MSG) or
+    magnetic superspace group (MSSG) and its setting.
+
+    There are 1651 distinct equivalence classes of MSGs, each of
+    which can be referred to as an MSG "type" following the usage of
+    this word in the International Tables of Crystallography.  Similarly,
+    there are over 300000 distinct equivalence classes of MSSGs with
+    up to 3 independent modulations, each of which can be referred to
+    as an MSSG "type".
+
+    However, it is important to appreciate that the word “type” is commonly
+    used in an entirely different way in the context of MSGs and MSSGs.
+    Any magnetic group can be constructed by starting with
+    a non-magnetic space group F, and then by adding the time-reversal
+    operation to half or all or none of its elements.  The
+    four ways of doing this give rise to four distinct "construct types",
+    which we refer to simply as type-1, type-2, type-3, and type-4,
+    though some refer to type-3 as type-3a and type-4 as and type3b.
+
+    For a type-1 MSG/MSSG, M = F, so that there are no time-reversed elements.
+    For a type-2 MSG/MSSG, M = F + F1', so that there is both a time-reversed
+    and a non-time-reversed copy of each element in F.
+    For a type-3 or type-4 MSG/MSSG, M = D + (F - D)1', where D is an index-2
+    subgroup of F whose elements are not time reversed, whereas every
+    element in F – D (the complement of D in F) is time reversed.
+    For a type-3 MSG/MSSG, F and D have the same translation subgroup (lattice)
+    but different point groups.
+    For a type-4 MSG/MSSG, F and D and the same point groups but different
+    translation subgroups.
+
+    Ref: 'Magnetic Group Tables' by D.B. Litvin at
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               SPACE_GROUP_MAGN
 
 save_
 
+save__space_group_magn.hall_symbol
+
+    _definition.id                '_space_group_magn.Hall_symbol'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The magnetic Hall symbol provides an unambiguous representation
+    of the generators of a three-dimensional MSG, and largely follows
+    the conventions developed for non-magnetic Hall symbols, except
+    that the prime symbol "’" has been replaced by the carat symbol
+    "^" in order to reserve the prime symbol to indicate
+    time-reversal.  For a type-2 or type-4 MSG, the time reversal
+    element is listed separately as "1’" at the end of the magnetic
+    Hall symbol, along with a character to indicate the non-lattice
+    translational component of the anti-translation in the case of a
+    type-4 MSG.
+
+    Ref: González-Platas, Katcho & Rodríguez-Carvajal, J. Appl. Cryst 54,
+    338-342 (2020).
+    Hall, Acta Cryst. A37, 517-525 (1981).
+    Campbell et al., Acta Cryst. A78, 99–106 (2022), Table S3.
+;
+    _name.category_id             space_group_magn
+    _name.object_id               hall_symbol
+    _type.purpose                 Describe
+    _type.source                  Assigned
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         "P 1"                    "BNS = 1.1   UNI = P1.1"
+         "P 1'"                   "BNS = 1.2   UNI = P1.1'"
+         "P 1 1'c"                "BNS = 1.3   UNI = P1.1'_c"
+         "-P 1"                   "BNS = 2.4   UNI = P-1.1"
+         "-P 1'"                  "BNS = 2.5   UNI = P-1.1'"
+         "P -1'"                  "BNS = 2.6   UNI = P -1'"
+         "-P 1 1'c"               "BNS = 2.7   UNI = P-1.1'_c"
+         "P 2y 1'C"               "BNS = 3.6   UNI = P2.1'_C"
+         "I 4bd 2c 3 -1'"         "BNS = 230.1 UNI = Ia'-3'd'"
+
+save_
+
 save_space_group_magn.name_bns
 
     _definition.id                '_space_group_magn.name_BNS'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn_number_OG for a description of magnetic
-    space groups (MSGs).
     The Belov-Neronova-Smirnova (BNS) symbol for a MSG is based on
     the short Hermann-Mauguin space-group symbol of non-magnetic
     space group F for MSGs of types 1-3 or its subgroup D for MSGs of
@@ -2652,14 +2748,16 @@ save_space_group_magn.name_bns
     point group of the MSG. The value of this subscript indicates the
     magnetic lattice of the MSG, and specifically indicates the
     translational part of the generator whose point part is the pure
-    time reversal. Note that OG and BNS symbols are identical for
-    MSGs of types 1-3, but differ substantially  for MSGs of type 4.
+    time reversal.
 
     Analogous tags: symCIF:_space_group.name_H-M_ref
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_BNS
@@ -2670,25 +2768,25 @@ save_space_group_magn.name_bns
 
     loop_
       _description_example.case
-         "P 1"
-         "P 1 1'"
-         "P_S 1"
-         "P -1"
-         "P -1 1'"
-         "P -1'"
-         "P_2s -1"
-         "I a' -3 d'"
+         P1
+         P11'
+         P_S1
+         P-1
+         P-11'
+         P-1'
+         P_S-1
+         P_C2
+         Ia'-3d'
 
 save_
 
 save_space_group_magn.name_og
 
     _definition.id                '_space_group_magn.name_OG'
-    _definition.update            2016-05-24
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn.number_OG for more information on magnetic
-    space groups (MSGs). The Opechowski-Guccione (OG) symbol for an
+    The Opechowski-Guccione (OG) symbol for an
     MSG is based on the short Hermann-Mauguin space-group symbol of
     non-magnetic space group F.   For a type-1 MSG, the OG symbol for
     the MSG is identical with the unprimed symbol of F.  For a type-2
@@ -2704,14 +2802,16 @@ save_space_group_magn.name_og
     character of the symbol of a type-4 MSG, and communicates that a
     pure time-reversal element is included in the point group of the
     MSG. The value of this subscript indicates the magnetic lattice
-    of the MSG. Note that OG and BNS symbols are identical for MSGs
-    of types 1-3, but differ substantially  for MSGs of type 4.
+    of the MSG.
 
     Analogous tags: symCIF:_space_group.name_H-M_ref
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_OG
@@ -2722,25 +2822,90 @@ save_space_group_magn.name_og
 
     loop_
       _description_example.case
-         "P 1"
-         "P 1 1'"
-         "P_S 1"
-         "P -1"
-         "P -1 1'"
-         "P -1'"
-         "P_2s -1"
-         "I a' -3' d'"
+         P1
+         P11'
+         P_S1
+         P-1
+         P-11'
+         P-1'
+         P_2s-1
+         C_P2
+         Ia'-3'd'
+
+save_
+
+save_space_group_magn.name_uni
+
+    _definition.id                '_space_group_magn.name_UNI'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The Unified (UNI) symbol for an MSG is an improvement of the
+    corresponding BNS symbol, and is therefore associated with a BNS
+    setting of the MSG, but also captures some essential features of
+    the OG symbol.  See the entries on _space_group_magn.name_BNS and
+    _space_group_magn.name_OG for more information about those symbols.
+    Like the BNS symbol, the UNI symbol of an MSG is based on the symbol
+    of a non-magnetic space group F (for types 1-3) or of an index-2
+    subgroup D of F (for type4).  The UNI symbol of a type-3 MSG is
+    identical to the corresponding BNS and OG symbols.
+
+    The time-reversal group consists of the identity operation 1
+    and the time-reversal operation 1’.  For type-1, type-2, and
+    type-4 MSGs, the appropriate generator of the time-reversal group
+    is always explicitly displayed after the space-group generators
+    of F, and separated from the generators of F by a dot (".").
+    Furthermore, for a type-4 MSG, the anti-translation subscript is
+    attached to the 1’ generator at the end of the UNI symbol rather
+    than to the lattice symbol at the front, and always conveys an
+    unambiguous translation.
+
+    The complete UNI symbol of a type-4 MSG includes the symbol of
+    space group F in square brackets at the end.  In the extension,
+    the symbol of F is presented in same BNS setting used for subgroup
+    D in the main part of the UNI symbol, when possible, or else in a
+    setting rotated by 45 degrees relative to the BNS setting of D.
+
+    The UNI MPG symbol is obtained directly from the truncated UNI MSG
+    symbol by dropping the lattice symbol at the front, eliminating any
+    subscripts, and replacing each glide-plane symbols with mirror-plane
+    symbol "m".  The explicit presence of the time-reversal generator at
+    the end of the UNI symbol of a type-4 MSG makes it clear that the
+    MPG is of type 2 (grey).
+
+    Analogous tags: symCIF:_space_group.name_H-M_ref
+
+    Ref: Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+;
+    _name.category_id             space_group_magn
+    _name.object_id               name_UNI
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         "P1.1"
+         "P1.1'"
+         "P1.1'_c[P1] or P1.1'_c"
+         "P-1.1"
+         "P-1.1'"
+         "P-1'"
+         "P-1.1'_c[P-1] or P1.1'_c"
+         "P2.1'_C[C2] or P2.1'_C"
+         "Ia'-3d'"
 
 save_
 
 save_space_group_magn.number_bns
 
     _definition.id                '_space_group_magn.number_BNS'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
-    See _space_group_magn.number_OG for a description of magnetic
-    space groups (MSGs). The Belov-Neronova-Smirnova (BNS) number for
+    The Belov-Neronova-Smirnova (BNS) number for
     an MSG is composed of two positive integers separated by a
     period. The first integer lies in the range [1-230] and indicates
     the non-magnetic space group F for MSGs of types 1-3 or the
@@ -2759,8 +2924,12 @@ save_space_group_magn.number_bns
     Analogous tags: symCIF:_space_group.number_IT
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    http://www.iucr.org/publ/978-0-9553602-2-0.
+    Belov, Neronova & Smirnova, Sov. Phys. Crystallogr. 2, 311–322 (1957).
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               number_BNS
@@ -2778,7 +2947,44 @@ save_space_group_magn.number_bns
          2.5
          2.6
          2.7
+         3.6
          230.149
+
+save_
+
+save_space_group_magn.number_og
+
+    _definition.id                '_space_group_magn.number_OG'
+    _definition.update            2023-06-01
+    _description.text
+;
+    The Opechowski-Guccione (OG) number for a MSG comprises three positive
+    integers separated by periods.  The first integer lies in the range
+    [1-230] and indicates the space group F.  The second integer is
+    sequential over all MSGs associated with the same space group F. The
+    third integer is sequential over all MSGs, and therefore lies in the
+    range [1-1651], but is not necessary for uniqueness.
+
+    Analogous tags: symCIF:_space_group.number_IT
+;
+    _name.category_id             space_group_magn
+    _name.object_id               number_OG
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Word
+
+    loop_
+      _description_example.case
+         1.1.1
+         1.2.2
+         1.3.3
+         2.1.4
+         2.2.5
+         2.3.6
+         2.4.7
+         5.5.23
+         230.5.1651
 
 save_
 
@@ -2808,6 +3014,7 @@ save_space_group_magn.og_wavevector_kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2856,6 +3063,62 @@ save_space_group_magn.point_group_name
 
 save_
 
+save_space_group_magn.point_group_name_uni
+
+    _definition.id                '_space_group_magn.point_group_name_UNI'
+    _definition.update            2023-06-01
+    _description.text
+;
+    Any magnetic point group (MPG) can be constructed by starting
+    with a non-magnetic point group P, and then by adding a time-reversal
+    component to some or all or none of its elements. For a
+    type-1 MPG, M = P, there are no time-reversed elements. For a
+    type-2 MPG, M = P + P1', there is both a time-reversed and a
+    non-time-reversed  copy of each element in P. For a type-3 MPG,
+    M = Q + (P - Q)1', there is a subgroup Q of P of index 2 whose
+    elements are not time reversed, whereas the remaining elements
+    in P-Q are time reversed.
+
+    The time-reversal group consists of the identity operation 1
+    and the time-reversal operation 1’.  The UNI symbol of an MPG is a slight
+    modification of the earlier H-M MPG symbol, and only differs from
+    the H-M MPG symbol for type-1 and type2 MPGs, so that
+    the appropriate generator of the time-reversal group
+    is always explicitly displayed after the space-group generators
+    of P, and separated from the generators of P by a dot (".").
+    For a type-1 MPG or type-2 MPG, the UNI symbol is that of
+    non-magnetic point group P, followed by ".1" or ".1’", respectively.
+    For a type-3 MPG, the UNI MPG symbol is that of P with a prime added to each
+    time-reversed generator.
+
+    Analogous tags: symCIF:_space_group.point_group_H-M
+
+    Ref: 'Magnetic Group Tables' by D.B. Litvin at
+    http://www.iucr.org/publ/978-0-9553602-2-0
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
+;
+    _name.category_id             space_group_magn
+    _name.object_id               point_group_name_UNI
+    _type.purpose                 Encode
+    _type.source                  Recorded
+    _type.container               Single
+    _type.contents                Text
+
+    loop_
+      _description_example.case
+         1.1
+         1.1'
+         -1.1
+         -1.1'
+         -1'
+         4mm.1
+         4'm'm
+         4'mm'
+
+save_
+
 save_space_group_magn.point_group_number
 
     _definition.id                '_space_group_magn.point_group_number'
@@ -2876,6 +3139,9 @@ save_space_group_magn.point_group_number
 
     Ref: 'Magnetic Group Tables' by D.B. Litvin at
     http://www.iucr.org/publ/978-0-9553602-2-0
+    Campbell et al., Acta Cryst. A78, 99–106 (2022).
+    https://doi.org/10.1107/S2053273321012912
+    https://www.iucr.org/paper?ib5106
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_number
@@ -2894,31 +3160,30 @@ save_
 save_space_group_magn.ssg_name
 
     _definition.id                '_space_group_magn.ssg_name'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
-    The Belov-Neronova-Smirnova (BNS) symbol for a magnetic
-    superspace group (MSSG) is based on the symbol of the
-    non-magnetic superspace group (SSG) obtained by eliminating all
-    time-reversed operators from the group, as listed in the ISO(3+d)D
-    tables of Stokes and Campbell. If the magnetic basic space group
-    (MBSG) is of type-1 or type-3 (also known as type-3a), its BNS symbol
-    merely replaces that of the basic space-group (BSG).  If the MBSG
-    is of type-2 or type-4  (also known as type-3b), an additional
-    phase-shift symbol associated with the time-reversal generator is added
-    to each modulation vector.  If the MBSG is of type-4, the BNS
-    symbol of the MSSG is further modified to explicitly show the
-    time-reversal generator (1') at the end, and the anti-centering
-    subscript is moved from the lattice symbol to the 1' so as to
-    clearly indicate the fractional external-space translation of
-    this generator.
-    The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
+     The symbol for a magnetic superspace group (MSSG) is based on the UNI
+     symbol of the basic magnetic space group (BMSG), realized in the limit
+     that all modulation amplitudes go to zero, and on the ISO(3+D) symbol
+     of the corresponding non-magnetic superspace group (SSG).  The
+     corresponding SSG symbol is obtained by removing the time-reversal from
+     each time-reversed operation of a type-1 or type-2 MSSG, or by eliminating
+     all time-reversed operations for a type-3 or type-4 MSSG.  For a type-1
+     or type-3 MSSG, the MSSG symbol is obtained from the SSG symbol by
+     simply replacing the symbol of the non-magnetic basic space group (BSG)
+     with the UNI symbol of the BMSG.  For a type-2 or type-4 MSSG, one must
+     further communicate each of the modulation phase shifts associated
+     with the time-reversal generator of the magnetic point group (MPG).
+     The _space_group_magn.ssg_number tag should always be used as the
+     unique MSSG identifier rather than relying on the MSSG symbol alone.
+     The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
 
     Analogous tags: msCIF:_space_group.ssg_name
 
-    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
-    http://iso.byu.edu. ISO(3+d)D tables of H.T. Stokes and B.J.
-    Campbell at http://iso.byu.edu.
+    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_name
@@ -2934,25 +3199,25 @@ save_space_group_magn.ssg_name
 ;
          type-1 MBSG Pmmm
 ;
-         Pmmm1'(0,0,g)ss00
+         Pmmm.1'(0,0,g)ss00
 ;
-         type-2 MBSG Pmmm1', with no basic-cell or
+         type-2 MBSG Pmmm.1', with no basic-cell or
           modulated moments allowed
 ;
-         Pmmm1'(0,0,g)ss0s
+         Pmmm.1'(0,0,g)ss0s
 ;
-         type-2 MBSG Pmmm1', with magnetic modulations
+         type-2 MBSG Pmmm.1', with magnetic modulations
           allowed, but not basic-cell moments
 ;
          Pm'm'm(0,0,g)ss0
 ;
          type-3 MBSG Pm'm'm
 ;
-         Pmmm1'_a(0,0,g)ss00
+         Pmmm.1'_a(0,0,g)ss00
 ;
          type-4 MBSG P_ammm with purely external anti-centering
 ;
-         Pmmm1'_a(0,0,g)ss0s
+         Pmmm.1'_a(0,0,g)ss0s
 ;
          type-4 MBSG P_ammm with superspace anti-centering
 ;
@@ -2962,14 +3227,45 @@ save_
 save_space_group_magn.ssg_number
 
     _definition.id                '_space_group_magn.ssg_number'
-    _definition.update            2016-10-10
+    _definition.update            2023-06-01
     _description.text
 ;
-    The Belov-Neronova-Smirnova (BNS) number for a magnetic
-    superspace group. This tag is being held in reserve until a
-    future numbering scheme is approved.
+    The magnetic superspace group (MSSG) number has six parts,
+    separated by periods:
+    (1-4) the four parts of the superspace group (SSG) number of its
+    family superspace group (FSSG) or maximal superspace subgroup (XSSG),
+    (5) the letter ‘m’ followed by the second part of the BNS number
+    of its basic magnetic space group (BMSG), and
+    (6) an integer that enumerates the MSSGs derived from the same
+    combination of BMSG and FSSG/XSSG.
+
+    The SSG number has four parts, separated by periods:
+    (1) the space group number of its basic space group (BSG) from
+    the International Tables for Crystallography Vol. A (2016),
+    (2) the number d of independent incommensurate modulations,
+    (3) an integer specifying the (3+d)D Bravais class, and
+    (4) an integer that enumerates SSGs that share the same BSG
+    and same number d of independent modulations.
+
+    The BNS number of the BMSG has two parts, separated by a period:
+    (1) the SG number of its FSG/XSG, and
+    (2) an integer that enumerates distinct MSGs of the same crystal system,
+    which was tabulated by Stokes and Campbell (2022).
+
+    Because it is common to employ a user-defined superspace setting for an
+    MSSG, it is strongly recommended that the MSSG number be accompanied by
+    the transformation to the standard MSSG setting of Stokes and Campbell
+    (2022), which is specified with
+    _space_group_magn_ssg_transforms.Pp_superspace.
 
     Analogous tags: msCIF:_space_group.ssg_number
+
+    Ref:
+    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes, B.J. Campbell, and S. van Smaalen, Acta Cryst. A67,
+    45–55 (2011).
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_number
@@ -2977,6 +3273,17 @@ save_space_group_magn.ssg_number
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         47.1.9.3.m249.1   "Pmmm.1(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.249"
+         47.1.9.3.m250.1'  "Pmmm.1'(0,0,g)ss00   SSG = 47.1.9.3, BMSG = 47.250"
+         47.1.9.3.m250.2   "Pmmm.1'(0,0,g)ss0s   SSG = 47.1.9.3, BMSG = 47.250"
+         47.1.9.3.m252.1   "Pm'm'm(0,0,g)ss0     SSG = 47.1.9.3, BMSG = 47.252"
+         47.1.9.3.m254.1   "Pmmm.1'_a(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         47.1.9.3.m254.2   "Pmmm.1'_c(0,0,g)ss00 SSG = 47.1.9.3, BMSG = 47.254"
+         47.1.9.3.m254.3   "Pmmm.1'_a(0,0,g)ss0s SSG = 47.1.9.3, BMSG = 47.254"
 
 save_
 
@@ -3011,6 +3318,7 @@ save_space_group_magn.transform_bns_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
     loop_
       _description_example.case
@@ -3029,7 +3337,7 @@ save_
 save_space_group_magn.transform_bns_pp_abc
 
     _definition.id                '_space_group_magn.transform_BNS_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3051,7 +3359,7 @@ save_space_group_magn.transform_bns_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_BNS_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3089,13 +3397,14 @@ save_space_group_magn.transform_og_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
 save_space_group_magn.transform_og_pp_abc
 
     _definition.id                '_space_group_magn.transform_OG_Pp_abc'
-    _definition.update            2023-01-17
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the basis
@@ -3117,7 +3426,7 @@ save_space_group_magn.transform_og_pp_abc
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_OG_Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3199,7 +3508,7 @@ save_space_group_magn_ssg_transforms.pp_superspace
 
     _definition.id
         '_space_group_magn_ssg_transforms.Pp_superspace'
-    _definition.update            2016-06-09
+    _definition.update            2024-01-19
     _description.text
 ;
     This item specifies the transformation (P,p) of the superspace
@@ -3242,7 +3551,7 @@ save_
 save_space_group_magn_ssg_transforms.source
 
     _definition.id                '_space_group_magn_ssg_transforms.source'
-    _definition.update            2016-06-21
+    _definition.update            2023-06-01
     _description.text
 ;
     A string that describes the source of a reference setting for the
@@ -3254,6 +3563,7 @@ save_space_group_magn_ssg_transforms.source
     http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
     Stokes and B.J. Campbell at http://iso.byu.edu.
     ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
 ;
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               source
@@ -3264,17 +3574,19 @@ save_space_group_magn_ssg_transforms.source
     _enumeration_set.state        ISO(3+d)D-MAG
     _enumeration_set.detail
 ;
-    This superspace transformation simultaneously takes the setting of the
-    basic magnetic space group (BMSG) to the setting of the corresponding entry
-    in the ISO-MAG tables, and takes the setting of the derived non-magnetic
-    superspace group (DNMSG) to within a purely external operation of the
-    setting of the corresponding entry in the ISO(3+d)D tables. The external
-    components of this superspace transformation are those that take the
-    setting of the BMSG to the setting of the corresponding entry in the
-    ISO-MAG tables, while the internal components are those of the
-    transformation that takes the setting of the DNMSG to the setting of the
-    corresponding superspace group in the ISO(3+d)D tables. Such a
-    transformation is unique for any setting of a magnetic superspace group.
+    For any magnetic superspace group (MSSG), as enumerated by Stokes and
+    Campbell (2022), this superspace transformation simultaneously takes the
+    setting of the basic magnetic space group (BMSG) to the setting of the
+    corresponding entry in the ISO-MAG tables, and takes the setting of its
+    family superspace group (FSSG) or maximal superspace subgroup (XSSG) to
+    within a purely external operation of the setting of the corresponding
+    entry in the ISO(3+d)D tables. The external components of this superspace
+    transformation are those that take the setting of the BMSG to the setting
+    of the corresponding entry in the ISO-MAG tables, while the internal
+    components are those of the transformation that takes the setting of the
+    FSSG/XSSG to the setting of the corresponding superspace group in the
+    ISO(3+d)D tables. Such a transformation is unique for any setting of a
+    magnetic superspace group.
 ;
 
 save_
@@ -3394,6 +3706,7 @@ save_space_group_magn_transforms.pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -3421,7 +3734,7 @@ save_space_group_magn_transforms.pp_abc
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp_abc
-    _type.purpose                 Describe
+    _type.purpose                 Encode
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
@@ -3590,7 +3903,7 @@ save_space_group_symop_magn_centering.xyz
     _name.category_id             space_group_symop_magn_centering
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3695,7 +4008,7 @@ save_space_group_symop_magn_og_centering.xyz
     _name.category_id             space_group_symop_magn_OG_centering
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
     _description_example.case     x+1/2,y+1/2,z
@@ -3798,7 +4111,7 @@ save_space_group_symop_magn_operation.xyz
     _name.category_id             space_group_symop_magn_operation
     _name.object_id               xyz
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3858,7 +4171,7 @@ save_space_group_symop_magn_ssg_centering.algebraic
     _name.category_id             space_group_symop_magn_ssg_centering
     _name.object_id               algebraic
     _type.purpose                 Encode
-    _type.source                  Assigned
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -3956,8 +4269,8 @@ save_space_group_symop_magn_ssg_operation.algebraic
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               algebraic
-    _type.purpose                 Describe
-    _type.source                  Assigned
+    _type.purpose                 Encode
+    _type.source                  Recorded
     _type.container               Single
     _type.contents                Text
 
@@ -4066,10 +4379,14 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2023-07-17
+         0.9.9                    2024-01-19
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
 
        Changed the object id of the _parent_space_group.name_H-M_alt data item.
+
+       Corrected definitions of _parent_space_group.child_transform_pp_abc and
+       _parent_space_group.transform_pp_abc. Changed the purpose of all *_pp_abc
+       items to 'Encode'.
 ;
