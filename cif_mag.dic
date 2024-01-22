@@ -1648,6 +1648,7 @@ save_atom_type_scat.neutron_magnetic_j0_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1683,6 +1684,7 @@ save_atom_type_scat.neutron_magnetic_j0_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1718,6 +1720,7 @@ save_atom_type_scat.neutron_magnetic_j0_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1753,6 +1756,7 @@ save_atom_type_scat.neutron_magnetic_j0_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1770,6 +1774,7 @@ save_atom_type_scat.neutron_magnetic_j0_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1787,6 +1792,7 @@ save_atom_type_scat.neutron_magnetic_j2_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1822,6 +1828,7 @@ save_atom_type_scat.neutron_magnetic_j2_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1857,6 +1864,7 @@ save_atom_type_scat.neutron_magnetic_j2_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1892,6 +1900,7 @@ save_atom_type_scat.neutron_magnetic_j2_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1909,6 +1918,7 @@ save_atom_type_scat.neutron_magnetic_j2_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1926,6 +1936,7 @@ save_atom_type_scat.neutron_magnetic_j4_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1961,6 +1972,7 @@ save_atom_type_scat.neutron_magnetic_j4_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -1996,6 +2008,7 @@ save_atom_type_scat.neutron_magnetic_j4_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2031,6 +2044,7 @@ save_atom_type_scat.neutron_magnetic_j4_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2048,6 +2062,7 @@ save_atom_type_scat.neutron_magnetic_j4_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2065,6 +2080,7 @@ save_atom_type_scat.neutron_magnetic_j6_a1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2100,6 +2116,7 @@ save_atom_type_scat.neutron_magnetic_j6_b1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2135,6 +2152,7 @@ save_atom_type_scat.neutron_magnetic_j6_c1
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2170,6 +2188,7 @@ save_atom_type_scat.neutron_magnetic_j6_d
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2187,6 +2206,7 @@ save_atom_type_scat.neutron_magnetic_j6_e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2308,6 +2328,7 @@ save_atom_site_fourier_wave_vector.q1_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -2342,6 +2363,7 @@ save_atom_site_fourier_wave_vector.q2_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
     _method.purpose               Evaluation
     _method.expression
 ;
@@ -2376,6 +2398,7 @@ save_atom_site_fourier_wave_vector.q3_coeff
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -2403,6 +2426,7 @@ save_atom_site_fourier_wave_vector.q_coeff
     _type.container               Array
     _type.dimension               '[]'
     _type.contents                Integer
+    _units.code                   none
 
 save_
 
@@ -2468,6 +2492,7 @@ save_parent_propagation_vector.kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -2990,6 +3015,7 @@ save_space_group_magn.og_wavevector_kxkykz
     _type.container               Matrix
     _type.dimension               '[3]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -3293,6 +3319,7 @@ save_space_group_magn.transform_bns_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
     loop_
       _description_example.case
@@ -3371,6 +3398,7 @@ save_space_group_magn.transform_og_pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
@@ -3679,6 +3707,7 @@ save_space_group_magn_transforms.pp
     _type.container               Matrix
     _type.dimension               '[4,4]'
     _type.contents                Real
+    _units.code                   none
 
 save_
 
