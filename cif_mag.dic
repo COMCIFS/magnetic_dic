@@ -3017,10 +3017,12 @@ save_space_group_magn.og_wavevector_kxkykz
 
 save_
 
-save_space_group_magn.point_group_name
+save_space_group_magn.point_group_name_h-m
 
-    _definition.id                '_space_group_magn.point_group_name'
-    _definition.update            2016-05-24
+    _definition.id                '_space_group_magn.point_group_name_H-M'
+    _alias.definition_id          '_space_group_magn.point_group_name'
+    _alias.deprecation_date       2023-06-01
+    _definition.update            2024-01-19
     _description.text
 ;
     Any magnetic point group (MPG) can be constructed by starting
@@ -3043,7 +3045,7 @@ save_space_group_magn.point_group_name
     http://www.iucr.org/publ/978-0-9553602-2-0
 ;
     _name.category_id             space_group_magn
-    _name.object_id               point_group_name
+    _name.object_id               point_group_name_H_M
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
@@ -3118,10 +3120,12 @@ save_space_group_magn.point_group_name_uni
 
 save_
 
-save_space_group_magn.point_group_number
+save_space_group_magn.point_group_number_litvin
 
-    _definition.id                '_space_group_magn.point_group_number'
-    _definition.update            2016-10-10
+    _definition.id                '_space_group_magn.point_group_number_Litvin'
+    _alias.definition_id          '_space_group_magn.point_group_number'
+    _alias.deprecation_date       2023-06-01
+    _definition.update            2024-01-19
     _description.text
 ;
     Each of the 122 crystallographic magnetic point groups can be
@@ -3143,7 +3147,7 @@ save_space_group_magn.point_group_number
     https://www.iucr.org/paper?ib5106
 ;
     _name.category_id             space_group_magn
-    _name.object_id               point_group_number
+    _name.object_id               point_group_number_Litvin
     _type.purpose                 Describe
     _type.source                  Assigned
     _type.container               Single
@@ -4388,4 +4392,9 @@ save_
        Corrected definitions of _parent_space_group.child_transform_pp_abc and
        _parent_space_group.transform_pp_abc. Changed the purpose of all *_pp_abc
        items to 'Encode'.
+
+       Deprecated _space_group_magn.point_group_name and
+       _space_group_magn.point_group_number in favour of the newly added
+       _space_group_magn.point_group_name_H-M and
+       _space_group_magn.point_group_number_Litvin.
 ;
