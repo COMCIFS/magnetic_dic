@@ -929,7 +929,7 @@ save_atom_site_moment_fourier.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
     loop_
       _description_example.case
@@ -1159,7 +1159,7 @@ save_atom_site_moment_fourier_param.id
     _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -2472,7 +2472,7 @@ save_parent_propagation_vector.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -3503,7 +3503,7 @@ save_space_group_magn_ssg_transforms.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -3675,7 +3675,7 @@ save_space_group_magn_transforms.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -3886,7 +3886,7 @@ save_space_group_symop_magn_centering.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -3988,7 +3988,7 @@ save_space_group_symop_magn_og_centering.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -4230,7 +4230,7 @@ save_space_group_symop_magn_ssg_centering.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
@@ -4326,7 +4326,7 @@ save_space_group_symop_magn_ssg_operation.id
     _type.purpose                 Key
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Word
 
 save_
 
