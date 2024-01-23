@@ -3017,40 +3017,6 @@ save_space_group_magn.og_wavevector_kxkykz
 
 save_
 
-<<<<<<< HEAD
-=======
-save_space_group_magn.point_group_name
-
-    _definition.id                '_space_group_magn.point_group_name'
-    _definition_replaced.id       1
-    _definition_replaced.by       '_space_group_magn.point_group_name_H-M'
-    _definition.update            2024-01-19
-    _description.text
-;
-    This data name is deprecated. Use _space_group_magn.point_group_name_H-M
-    instead.
-;
-    _name.category_id             space_group_magn
-    _name.object_id               point_group_name
-    _type.purpose                 Describe
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Text
-
-    loop_
-      _description_example.case
-         "1"
-         "1 1'"
-         "-1"
-         "-1 1'"
-         "-1'"
-         "4 m m"
-         "4' m' m"
-         "4' m m'"
-
-save_
-
->>>>>>> 375d548b35fa1adacd01435b3613f1f3bd925c07
 save_space_group_magn.point_group_name_h-m
 
     _definition.id                '_space_group_magn.point_group_name_H-M'
