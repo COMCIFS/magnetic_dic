@@ -1167,7 +1167,7 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.id                ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-02-05
     _description.text
 ;
     Data items in this category record details about the
@@ -1189,19 +1189,19 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     _description_example.case
 ;
     loop_
-        _cell_wave_vector_seq_id
-        _cell_wave_vector_x
-        _cell_wave_vector_y
-        _cell_wave_vector_z
+        _cell_wave_vector.seq_id
+        _cell_wave_vector.x
+        _cell_wave_vector.y
+        _cell_wave_vector.z
               1   0.30000   0.30000   0.00000
               2  -0.60000   0.30000   0.00000
     loop_
-        _atom_site_Fourier_wave_vector_seq_id
-        _atom_site_Fourier_wave_vector_x
-        _atom_site_Fourier_wave_vector_y
-        _atom_site_Fourier_wave_vector_z
-        _atom_site_Fourier_wave_vector_q1_coeff
-        _atom_site_Fourier_wave_vector_q2_coeff
+        _atom_site_Fourier_wave_vector.seq_id
+        _atom_site_Fourier_wave_vector.x
+        _atom_site_Fourier_wave_vector.y
+        _atom_site_Fourier_wave_vector.z
+        _atom_site_Fourier_wave_vector.q1_coeff
+        _atom_site_Fourier_wave_vector.q2_coeff
             1   -0.30000   0.60000   0.00000  1  1
             2   -0.60000   0.30000   0.00000  0  1
             3   -0.30000  -0.30000   0.00000 -1  0
@@ -1214,14 +1214,14 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
         _atom_site_moment_Fourier_param.sin
         _atom_site_moment_Fourier_param.cos_symmform
         _atom_site_moment_Fourier_param.sin_symmform
-            1  Fe_1 1 x  0.00000  0.84852  0            mxs
-            2  Fe_1 1 y  0.00000  0.42426  0     0.50000*mxs
+            1  Fe_1 1 x  0.00000  0.84852  0            mxs1
+            2  Fe_1 1 y  0.00000  0.42426  0     0.50000*mxs1
             3  Fe_1 1 z  0.00000  0.00000  0            0
-            4  Fe_1 2 x  0.00000 -0.42426  0    -0.50000*mxs
-            5  Fe_1 2 y  0.00000 -0.84852  0           -mxs
+            4  Fe_1 2 x  0.00000 -0.42426  0    -0.50000*mxs1
+            5  Fe_1 2 y  0.00000 -0.84852  0           -mxs1
             6  Fe_1 2 z  0.00000  0.00000  0            0
-            7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs  0
-            8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs  0
+            7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs1 0
+            8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs1 0
             9  Fe_1 3 z  0.00000  0.00000  0            0
 ;
     _description_example.detail
@@ -1265,7 +1265,7 @@ save_atom_site_moment_fourier_param.cos_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.cos_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_cos_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-05
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form of
@@ -1292,43 +1292,28 @@ save_atom_site_moment_fourier_param.cos_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
-    _description_example.case
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
 ;
-    loop_
-    _cell_wave_vector_seq_id
-    _cell_wave_vector_x
-    _cell_wave_vector_y
-    _cell_wave_vector_z
-      1   0.30000   0.30000   0.00000
-      2  -0.60000   0.30000   0.00000
-    loop_
-    _atom_site_Fourier_wave_vector_seq_id
-    _atom_site_Fourier_wave_vector_x
-    _atom_site_Fourier_wave_vector_y
-    _atom_site_Fourier_wave_vector_z
-    _atom_site_Fourier_wave_vector_q1_coeff
-    _atom_site_Fourier_wave_vector_q2_coeff
-    1   -0.30000   0.60000   0.00000  1  1
-    2   -0.60000   0.30000   0.00000  0  1
-    3   -0.30000  -0.30000   0.00000 -1  0
-    loop_
-    _atom_site_moment_Fourier_id
-    _atom_site_moment_Fourier_atom_site_label
-    _atom_site_moment_Fourier_wave_vector_seq_id
-    _atom_site_moment_Fourier_axis
-    _atom_site_moment_Fourier_param.cos
-    _atom_site_moment_Fourier_param.sin
-    _atom_site_moment_Fourier_param.cos_symmform
-    _atom_site_moment_Fourier_param.sin_symmform
-    1  Fe_1 1 x  0.00000  0.84852  0            mxs1
-    2  Fe_1 1 y  0.00000  0.42426  0            0.50000*mxs1
-    3  Fe_1 1 z  0.00000  0.00000  0            0
-    4  Fe_1 2 x  0.00000 -0.42426  0           -0.50000*mxs1
-    5  Fe_1 2 y  0.00000 -0.84852  0           -mxs1
-    6  Fe_1 2 z  0.00000  0.00000  0            0
-    7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs1 0
-    8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs1 0
-    9  Fe_1 3 z  0.00000  0.00000  0            0
+         Equal to zero.
+;
+         mxm2
+;
+         Equal to the modulus of the x component of the magnetic vector
+         amplitude of modulation number 2.
+;
+         -0.5*mzm1
+;
+         Equal to -0.5 times the modulus of the z component of the magnetic
+         vector amplitude of modulation number 1.
+;
+         0.03271*mym3
+;
+         Equal to 0.03271 times the modulus of the y component of the magnetic
+         vector amplitude of modulation number 3.
 ;
 
 save_
@@ -4472,7 +4457,10 @@ save_
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
 
-       Added examples for the _atom_site_moment_Fourier_param.modulus_symmform,
-       _atom_site_moment_Fourier_param.phase_symmform and
-       _atom_site_moment_Fourier_param_sin_symmform data items.
+       Added or update examples for the
+       _atom_site_moment_Fourier_param.cos_symmform,
+       _atom_site_moment_Fourier_param.sin_symmform,
+       _atom_site_moment_Fourier_param.modulus_symmform and
+       _atom_site_moment_Fourier_param.phase_symmform data items.
+       Update example of the ATOM_SITE_MOMENT_FOURIER_PARAM category.
 ;
