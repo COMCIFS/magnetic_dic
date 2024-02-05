@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-01-19
+    _dictionary.date              2024-02-05
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -1394,7 +1394,7 @@ save_atom_site_moment_fourier_param.modulus_symmform
         '_atom_site_moment_Fourier_param.modulus_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_modulus_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-05
     _description.text
 ;
     See the description and example given for the
@@ -1406,6 +1406,29 @@ save_atom_site_moment_fourier_param.modulus_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         mxm2
+;
+         Equal to the modulus of the x component of the magnetic vector
+         amplitude of modulation number 2.
+;
+         -0.5*mzm1
+;
+         Equal to -0.5 times the modulus of the z component of the magnetic
+         vector amplitude of modulation number 1.
+;
+         0.03271*mym3
+;
+         Equal to 0.03271 times the modulus of the y component of the magnetic
+         vector amplitude of modulation number 3.
+;
 
 save_
 
@@ -1445,7 +1468,7 @@ save_atom_site_moment_fourier_param.phase_symmform
         '_atom_site_moment_Fourier_param.phase_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_phase_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-05
     _description.text
 ;
     See the description and example given for the
@@ -1457,6 +1480,33 @@ save_atom_site_moment_fourier_param.phase_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         -90
+;
+         Equal to 90 degrees.
+;
+         mxp2
+;
+         Equal to the phase of the x component of the magnetic vector amplitude
+         of modulation number 2.
+;
+         -0.38110*mzp1
+;
+         Equal to -0.38110 times the phase of the z component of the magnetic
+         vector amplitude of modulation number 1.
+;
+         180-myp3
+;
+         Equal to 180 degrees minus the phase of the y component of the magnetic
+         vector amplitude of modulation number 3.
+;
 
 save_
 
@@ -1492,7 +1542,7 @@ save_atom_site_moment_fourier_param.sin_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.sin_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_sin_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-05
     _description.text
 ;
     See the description and example given for the
@@ -1504,6 +1554,29 @@ save_atom_site_moment_fourier_param.sin_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         mxc2
+;
+         Equal to the cosine part of the x component of the magnetic vector
+         amplitude of modulation number 2.
+;
+         -0.5*mzs1
+;
+         Equal to -0.5 times the sine part of the z component of the magnetic
+         vector amplitude of modulation number 1.
+;
+         0.03271*myc3
+;
+         Equal to 0.03271 times the cosine part of the y component of the
+         magnetic vector amplitude of modulation number 3.
+;
 
 save_
 
@@ -4383,7 +4456,7 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-01-19
+         0.9.9                    2024-02-05
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4398,4 +4471,8 @@ save_
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
+
+       Added examples for the _atom_site_moment_Fourier_param.modulus_symmform,
+       _atom_site_moment_Fourier_param.phase_symmform and
+       _atom_site_moment_Fourier_param_sin_symmform data items.
 ;
