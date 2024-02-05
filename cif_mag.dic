@@ -1283,6 +1283,8 @@ save_atom_site_moment_fourier_param.cos_symmform
     modulation components belonging to symmetry-distinct atoms,
     axes, or wave vectors cannot be related by symmetry.
 
+    See also the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM category.
+
     Analogous tags: none, though analogous tags are needed for
     displace, occ, U, and aniso waves.
 ;
@@ -1382,8 +1384,9 @@ save_atom_site_moment_fourier_param.modulus_symmform
     _definition.update            2024-02-05
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    See the description of the _atom_site_moment_Fourier_param.cos_symmform
+    data item and the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM
+    category.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               modulus_symmform
@@ -1456,8 +1459,9 @@ save_atom_site_moment_fourier_param.phase_symmform
     _definition.update            2024-02-05
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    See the description of the _atom_site_moment_Fourier_param.cos_symmform
+    data item and the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM
+    category.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               phase_symmform
@@ -1530,8 +1534,9 @@ save_atom_site_moment_fourier_param.sin_symmform
     _definition.update            2024-02-05
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    See the description of the _atom_site_moment_Fourier_param.cos_symmform
+    data item and the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM
+    category.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               sin_symmform
@@ -4457,7 +4462,7 @@ save_
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
 
-       Added or update examples for the
+       Updated definitions and added examples for the
        _atom_site_moment_Fourier_param.cos_symmform,
        _atom_site_moment_Fourier_param.sin_symmform,
        _atom_site_moment_Fourier_param.modulus_symmform and
