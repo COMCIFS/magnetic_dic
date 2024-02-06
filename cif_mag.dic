@@ -1140,9 +1140,9 @@ save_atom_site_moment_fourier.wave_vector_seq_id
     _definition.update            2024-02-06
     _description.text
 ;
-    An arbitrary code that uniquely identifies the wave vector for
-    which magnetic Fourier modulation components are to be described
-    within the ATOM_SITE_MOMENT_FOURIER loop.  It must match one of
+    An arbitrary non-negative integer code that uniquely identifies the wave
+    vector for which magnetic Fourier modulation components are to be described
+    within the ATOM_SITE_MOMENT_FOURIER loop. It must match one of
     the _atom_site_Fourier_wave_vector.seq_id values in the
     ATOM_SITE_FOURIER_WAVE_VECTOR loop.
 
