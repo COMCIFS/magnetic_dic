@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-01-19
+    _dictionary.date              2024-02-06
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -1137,7 +1137,7 @@ save_
 save_atom_site_moment_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_moment_Fourier.wave_vector_seq_id'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-06
     _description.text
 ;
     An arbitrary code that uniquely identifies the wave vector for
@@ -1158,7 +1158,8 @@ save_atom_site_moment_fourier.wave_vector_seq_id
     _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Integer
+    _enumeration.range            0:
 
 save_
 
@@ -4383,7 +4384,7 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-01-19
+         0.9.9                    2024-02-06
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4398,4 +4399,7 @@ save_
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
+
+       Restricted the values of _atom_site_moment_Fourier.wave_vector_seq_id
+       to non-negative integers.
 ;
