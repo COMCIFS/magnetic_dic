@@ -1285,7 +1285,8 @@ save_atom_site_moment_fourier_param.cos_symmform
     (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
         component to be modulated.
     (3) The 3rd character is either "c" for cosine or "s" for sine.
-    (4) The 4th character is an integer that indicates the modulation vector.
+    (4) The 4th character is an integer numeric code that identifies the
+        modulation vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
     To use the same symbol with modulation components belonging to symmetry
     related axes and/or wave vectors, is to point out symmetry relationships
@@ -1411,7 +1412,8 @@ save_atom_site_moment_fourier_param.modulus_symmform
     (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
         component to be modulated.
     (3) The 3rd character is one of "m" for modulus.
-    (4) The 4th character is an integer that indicates the modulation vector.
+    (4) The 4th character is an integer numeric code that identifies the
+        modulation vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
     To use the same symbol with modulation components belonging to symmetry
     related axes and/or wave vectors, is to point out symmetry relationships
@@ -1509,7 +1511,8 @@ save_atom_site_moment_fourier_param.phase_symmform
     (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
         component to be modulated.
     (3) The 3rd character is "p" for phase.
-    (4) The 4th character is an integer that indicates the modulation vector.
+    (4) The 4th character is an integer numeric code that identifies the
+        modulation vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
     To use the same symbol with modulation components belonging to symmetry
     related axes and/or wave vectors, is to point out symmetry relationships
@@ -1600,7 +1603,8 @@ save_atom_site_moment_fourier_param.sin_symmform
     (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
         component to be modulated.
     (3) The 3rd character is either "c" for cosine or "s" for sine.
-    (4) The 4th character is an integer that indicates the modulation vector.
+    (4) The 4th character is an integer numeric code that identifies the
+        modulation vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
     To use the same symbol with modulation components belonging to symmetry
     related axes and/or wave vectors, is to point out symmetry relationships
