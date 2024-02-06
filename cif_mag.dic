@@ -1500,7 +1500,7 @@ save_atom_site_moment_fourier_param.phase_symmform
     linear function of one of the independent phases of the modulation. The
     value of this item indicates both the slope (must be +1, 0, or -1) and
     the intercept of this linear function.
-    
+
     The expression can include a symbol, a numeric intercept constant, or a
     combination of the two in which the symbol is followed by the signed
     constant. The symbol must be prefixed by a minus sign ('-') when the slope
