@@ -1305,17 +1305,17 @@ save_atom_site_moment_fourier_param.cos_symmform
          mxm2
 ;
          Equal to the modulus of the x component of the magnetic vector
-         amplitude of modulation number 2.
+         amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzm1
 ;
          Equal to -0.5 times the modulus of the z component of the magnetic
-         vector amplitude of modulation number 1.
+         vector amplitude of modulation identified by numeric code 1.
 ;
          0.03271*mym3
 ;
          Equal to 0.03271 times the modulus of the y component of the magnetic
-         vector amplitude of modulation number 3.
+         vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1405,17 +1405,17 @@ save_atom_site_moment_fourier_param.modulus_symmform
          mxm2
 ;
          Equal to the modulus of the x component of the magnetic vector
-         amplitude of modulation number 2.
+         amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzm1
 ;
          Equal to -0.5 times the modulus of the z component of the magnetic
-         vector amplitude of modulation number 1.
+         vector amplitude of modulation identified by numeric code 1.
 ;
          0.03271*mym3
 ;
          Equal to 0.03271 times the modulus of the y component of the magnetic
-         vector amplitude of modulation number 3.
+         vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1484,17 +1484,17 @@ save_atom_site_moment_fourier_param.phase_symmform
          mxp2
 ;
          Equal to the phase of the x component of the magnetic vector amplitude
-         of modulation number 2.
+         of modulation identified by numeric code 2.
 ;
          -0.38110*mzp1
 ;
          Equal to -0.38110 times the phase of the z component of the magnetic
-         vector amplitude of modulation number 1.
+         vector amplitude of modulation identified by numeric code 1.
 ;
          180-myp3
 ;
          Equal to 180 degrees minus the phase of the y component of the magnetic
-         vector amplitude of modulation number 3.
+         vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1555,17 +1555,17 @@ save_atom_site_moment_fourier_param.sin_symmform
          mxc2
 ;
          Equal to the cosine part of the x component of the magnetic vector
-         amplitude of modulation number 2.
+         amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzs1
 ;
          Equal to -0.5 times the sine part of the z component of the magnetic
-         vector amplitude of modulation number 1.
+         vector amplitude of modulation identified by numeric code 1.
 ;
          0.03271*myc3
 ;
          Equal to 0.03271 times the cosine part of the y component of the
-         magnetic vector amplitude of modulation number 3.
+         magnetic vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
