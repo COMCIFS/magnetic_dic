@@ -1479,7 +1479,7 @@ save_atom_site_moment_fourier_param.phase_symmform
 ;
          -90
 ;
-         Equal to 90 degrees.
+         Equal to -90 degrees.
 ;
          mxp2
 ;
