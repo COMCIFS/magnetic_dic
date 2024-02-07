@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-01-19
+    _dictionary.date              2024-02-07
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   3.11.09
@@ -182,7 +182,7 @@ save_atom_site_fourier_wave_vector.q3_coeff
 
     _definition.id                '_atom_site_Fourier_wave_vector.q3_coeff'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_q3_coeff'
-    _definition.update            2016-06-21
+    _definition.update            2024-02-07
     _description.text
 ;
     For a given incommensurate modulation that contributes to the
@@ -204,6 +204,12 @@ save_atom_site_fourier_wave_vector.q3_coeff
     _type.container               Single
     _type.contents                Integer
     _units.code                   none
+    _method.purpose               Evaluation
+    _method.expression
+;
+    with a as atom_site_Fourier_wave_vector
+    a.q3_coeff = a.q_coeff[2]
+;
 
 save_
 
@@ -4383,7 +4389,7 @@ save_
        _atom_site_moment .cartesion* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-01-19
+         0.9.9                    2024-02-07
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4398,4 +4404,6 @@ save_
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
+
+       Added evaluation method for _atom_site_Fourier_wave_vector.q3_coeff.
 ;
