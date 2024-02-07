@@ -641,8 +641,8 @@ save_ATOM_SITE_ROTATION
     that rigid bodies be explicitly defined.  Because magnetic moments
     and rotations are both axial rather than polar vectors, their
     descriptive requirements are highly analogous, except that static
-    rotations are insensitive to time-reversal, so that normal (non-
-    magnetic) symmetry groups are appropriate.  This is a child category
+    rotations are insensitive to time-reversal, so that normal (non-magnetic)
+    symmetry groups are appropriate.  This is a child category
     of the ATOM_SITE category, though pivot-site rotations will typically
     be listed in a separate loop; the category items mirror those of defined
     for the ATOM_SITE_MOMENT category.
