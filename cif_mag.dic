@@ -645,7 +645,7 @@ save_ATOM_SITE_ROTATION
     magnetic) symmetry groups are appropriate.  This is a child category
     of the ATOM_SITE category, though pivot-site rotations will typically
     be listed in a separate loop; the category items mirror those of defined
-    for the _ATOM_SITE_MOMENT category.
+    for the ATOM_SITE_MOMENT category.
 ;
     _name.category_id             ATOM_SITE
     _name.object_id               ATOM_SITE_ROTATION
@@ -4371,7 +4371,7 @@ save_
 ;
          0.9.6                    2016-10-10
 ;
-       Moved _space_group.magn_ items to new category _space_group_magn
+       Moved _space_group.magn_ items to new category SPACE_GROUP_MAGN.
 ;
          0.9.7                    2016-12-16
 ;
@@ -4380,7 +4380,7 @@ save_
          0.9.8                    2018-08-24
 ;
        Added _atom_site_moment.magnitude, improved descriptions of
-       _atom_site_moment .cartesion* items, corrected and improved *_symmform
+       _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
          0.9.9                    2024-01-19
