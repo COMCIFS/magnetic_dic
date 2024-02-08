@@ -61,18 +61,18 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
       _description_example.detail
 ;
          loop_
-             _cell_wave_vector_seq_id
-             _cell_wave_vector_x
-             _cell_wave_vector_y
-             _cell_wave_vector_z
+             _cell_wave_vector.seq_id
+             _cell_wave_vector.x
+             _cell_wave_vector.y
+             _cell_wave_vector.z
                    1   0.30000   0.30000   0.00000
                    2  -0.60000   0.30000   0.00000
          loop_
-             _atom_site_Fourier_wave_vector_seq_id
-             _atom_site_Fourier_wave_vector_x
-             _atom_site_Fourier_wave_vector_y
-             _atom_site_Fourier_wave_vector_z
-             _atom_site_Fourier_wave_vector_q_coeff
+             _atom_site_Fourier_wave_vector.seq_id
+             _atom_site_Fourier_wave_vector.x
+             _atom_site_Fourier_wave_vector.y
+             _atom_site_Fourier_wave_vector.z
+             _atom_site_Fourier_wave_vector.q_coeff
                  1   -0.30000   0.60000   0.00000  [1   1]
                  2   -0.60000   0.30000   0.00000  [0   1]
                  3   -0.30000  -0.30000   0.00000  [-1  0]
@@ -80,23 +80,23 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
 ;
          Example 1 - Hypothetical example showing the modulation wave vector
          components expressed using the array data item
-         _atom_site_Fourier_wave_vector_q_coeff.
+         _atom_site_Fourier_wave_vector.q_coeff.
 ;
 ;
          loop_
-         _cell_wave_vector_seq_id
-         _cell_wave_vector_x
-         _cell_wave_vector_y
-         _cell_wave_vector_z
+         _cell_wave_vector.seq_id
+         _cell_wave_vector.x
+         _cell_wave_vector.y
+         _cell_wave_vector.z
            1   0.30000   0.30000   0.00000
            2  -0.60000   0.30000   0.00000
          loop_
-         _atom_site_Fourier_wave_vector_seq_id
-         _atom_site_Fourier_wave_vector_x
-         _atom_site_Fourier_wave_vector_y
-         _atom_site_Fourier_wave_vector_z
-         _atom_site_Fourier_wave_vector_q1_coeff
-         _atom_site_Fourier_wave_vector_q2_coeff
+         _atom_site_Fourier_wave_vector.seq_id
+         _atom_site_Fourier_wave_vector.x
+         _atom_site_Fourier_wave_vector.y
+         _atom_site_Fourier_wave_vector.z
+         _atom_site_Fourier_wave_vector.q1_coeff
+         _atom_site_Fourier_wave_vector.q2_coeff
          1   -0.30000   0.60000   0.00000  1  1
          2   -0.60000   0.30000   0.00000  0  1
          3   -0.30000  -0.30000   0.00000 -1  0
@@ -647,11 +647,11 @@ save_ATOM_SITE_ROTATION
     that rigid bodies be explicitly defined.  Because magnetic moments
     and rotations are both axial rather than polar vectors, their
     descriptive requirements are highly analogous, except that static
-    rotations are insensitive to time-reversal, so that normal (non-
-    magnetic) symmetry groups are appropriate.  This is a child category
+    rotations are insensitive to time-reversal, so that normal (non-magnetic)
+    symmetry groups are appropriate.  This is a child category
     of the ATOM_SITE category, though pivot-site rotations will typically
     be listed in a separate loop; the category items mirror those of defined
-    for the _ATOM_SITE_MOMENT category.
+    for the ATOM_SITE_MOMENT category.
 ;
     _name.category_id             ATOM_SITE
     _name.object_id               ATOM_SITE_ROTATION
@@ -1195,19 +1195,19 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     _description_example.case
 ;
     loop_
-        _cell_wave_vector_seq_id
-        _cell_wave_vector_x
-        _cell_wave_vector_y
-        _cell_wave_vector_z
+        _cell_wave_vector.seq_id
+        _cell_wave_vector.x
+        _cell_wave_vector.y
+        _cell_wave_vector.z
               1   0.30000   0.30000   0.00000
               2  -0.60000   0.30000   0.00000
     loop_
-        _atom_site_Fourier_wave_vector_seq_id
-        _atom_site_Fourier_wave_vector_x
-        _atom_site_Fourier_wave_vector_y
-        _atom_site_Fourier_wave_vector_z
-        _atom_site_Fourier_wave_vector_q1_coeff
-        _atom_site_Fourier_wave_vector_q2_coeff
+        _atom_site_Fourier_wave_vector.seq_id
+        _atom_site_Fourier_wave_vector.x
+        _atom_site_Fourier_wave_vector.y
+        _atom_site_Fourier_wave_vector.z
+        _atom_site_Fourier_wave_vector.q1_coeff
+        _atom_site_Fourier_wave_vector.q2_coeff
             1   -0.30000   0.60000   0.00000  1  1
             2   -0.60000   0.30000   0.00000  0  1
             3   -0.30000  -0.30000   0.00000 -1  0
@@ -1301,27 +1301,27 @@ save_atom_site_moment_fourier_param.cos_symmform
     _description_example.case
 ;
     loop_
-    _cell_wave_vector_seq_id
-    _cell_wave_vector_x
-    _cell_wave_vector_y
-    _cell_wave_vector_z
+    _cell_wave_vector.seq_id
+    _cell_wave_vector.x
+    _cell_wave_vector.y
+    _cell_wave_vector.z
       1   0.30000   0.30000   0.00000
       2  -0.60000   0.30000   0.00000
     loop_
-    _atom_site_Fourier_wave_vector_seq_id
-    _atom_site_Fourier_wave_vector_x
-    _atom_site_Fourier_wave_vector_y
-    _atom_site_Fourier_wave_vector_z
-    _atom_site_Fourier_wave_vector_q1_coeff
-    _atom_site_Fourier_wave_vector_q2_coeff
+    _atom_site_Fourier_wave_vector.seq_id
+    _atom_site_Fourier_wave_vector.x
+    _atom_site_Fourier_wave_vector.y
+    _atom_site_Fourier_wave_vector.z
+    _atom_site_Fourier_wave_vector.q1_coeff
+    _atom_site_Fourier_wave_vector.q2_coeff
     1   -0.30000   0.60000   0.00000  1  1
     2   -0.60000   0.30000   0.00000  0  1
     3   -0.30000  -0.30000   0.00000 -1  0
     loop_
-    _atom_site_moment_Fourier_id
-    _atom_site_moment_Fourier_atom_site_label
-    _atom_site_moment_Fourier_wave_vector_seq_id
-    _atom_site_moment_Fourier_axis
+    _atom_site_moment_Fourier.id
+    _atom_site_moment_Fourier.atom_site_label
+    _atom_site_moment_Fourier.wave_vector_seq_id
+    _atom_site_moment_Fourier.axis
     _atom_site_moment_Fourier_param.cos
     _atom_site_moment_Fourier_param.sin
     _atom_site_moment_Fourier_param.cos_symmform
@@ -4377,7 +4377,7 @@ save_
 ;
          0.9.6                    2016-10-10
 ;
-       Moved _space_group.magn_ items to new category _space_group_magn
+       Moved _space_group.magn_ items to new category SPACE_GROUP_MAGN.
 ;
          0.9.7                    2016-12-16
 ;
@@ -4386,7 +4386,7 @@ save_
          0.9.8                    2018-08-24
 ;
        Added _atom_site_moment.magnitude, improved descriptions of
-       _atom_site_moment .cartesion* items, corrected and improved *_symmform
+       _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
          0.9.9                    2024-02-07
