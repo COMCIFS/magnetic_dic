@@ -13,7 +13,7 @@ data_MAGNETIC_CIF
     _dictionary.date              2024-02-07
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
-    _dictionary.ddl_conformance   3.11.09
+    _dictionary.ddl_conformance   4.1.0
     _dictionary.namespace         CifCore
     _description.text
 ;
@@ -4404,6 +4404,9 @@ save_
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
+
+       Declared the dictionary as conformant to the DDLm reference dictionary
+       version 4.1.0.
 
        Added evaluation method for _atom_site_Fourier_wave_vector.q3_coeff.
 ;
