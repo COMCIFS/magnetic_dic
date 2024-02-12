@@ -10,10 +10,10 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-02-05
+    _dictionary.date              2024-02-07
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
-    _dictionary.ddl_conformance   3.11.09
+    _dictionary.ddl_conformance   4.1.0
     _dictionary.namespace         CifCore
     _description.text
 ;
@@ -1167,7 +1167,7 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.id                ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2024-02-05
+    _definition.update            2024-02-07
     _description.text
 ;
     Data items in this category record details about the
@@ -1265,7 +1265,7 @@ save_atom_site_moment_fourier_param.cos_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.cos_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_cos_symmform'
-    _definition.update            2024-02-05
+    _definition.update            2024-02-07
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form of this
@@ -1392,7 +1392,7 @@ save_atom_site_moment_fourier_param.modulus_symmform
         '_atom_site_moment_Fourier_param.modulus_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_modulus_symmform'
-    _definition.update            2024-02-05
+    _definition.update            2024-02-07
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form of this
@@ -1489,7 +1489,7 @@ save_atom_site_moment_fourier_param.phase_symmform
         '_atom_site_moment_Fourier_param.phase_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_phase_symmform'
-    _definition.update            2024-02-05
+    _definition.update            2024-02-07
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form of this
@@ -1583,7 +1583,7 @@ save_atom_site_moment_fourier_param.sin_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.sin_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_sin_symmform'
-    _definition.update            2024-02-05
+    _definition.update            2024-02-07
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form of this
@@ -4522,7 +4522,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-02-05
+         0.9.9                    2024-02-07
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4537,6 +4537,9 @@ save_
        _space_group_magn.point_group_number in favour of the newly added
        _space_group_magn.point_group_name_H-M and
        _space_group_magn.point_group_number_Litvin.
+
+       Declared the dictionary as conformant to the DDLm reference dictionary
+       version 4.1.0.
 
        Updated definitions and added examples for the
        _atom_site_moment_Fourier_param.cos_symmform,
