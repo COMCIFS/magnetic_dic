@@ -182,7 +182,7 @@ save_atom_site_fourier_wave_vector.q3_coeff
 
     _definition.id                '_atom_site_Fourier_wave_vector.q3_coeff'
     _alias.definition_id          '_atom_site_Fourier_wave_vector_q3_coeff'
-    _definition.update            2016-06-21
+    _definition.update            2024-02-07
     _description.text
 ;
     For a given incommensurate modulation that contributes to the
@@ -204,6 +204,12 @@ save_atom_site_fourier_wave_vector.q3_coeff
     _type.container               Single
     _type.contents                Integer
     _units.code                   none
+    _method.purpose               Evaluation
+    _method.expression
+;
+    with a as atom_site_Fourier_wave_vector
+    a.q3_coeff = a.q_coeff[2]
+;
 
 save_
 
@@ -4401,4 +4407,6 @@ save_
 
        Declared the dictionary as conformant to the DDLm reference dictionary
        version 4.1.0.
+
+       Added evaluation method for _atom_site_Fourier_wave_vector.q3_coeff.
 ;
