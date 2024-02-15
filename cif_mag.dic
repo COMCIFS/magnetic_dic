@@ -1143,12 +1143,12 @@ save_
 save_atom_site_moment_fourier.wave_vector_seq_id
 
     _definition.id                '_atom_site_moment_Fourier.wave_vector_seq_id'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
-    An arbitrary code that uniquely identifies the wave vector for
-    which magnetic Fourier modulation components are to be described
-    within the ATOM_SITE_MOMENT_FOURIER loop.  It must match one of
+    An arbitrary positive integer code that uniquely identifies the wave vector
+    for which magnetic Fourier modulation components are to be described within
+    the ATOM_SITE_MOMENT_FOURIER loop. It must match one of
     the _atom_site_Fourier_wave_vector.seq_id values in the
     ATOM_SITE_FOURIER_WAVE_VECTOR loop.
 
@@ -1164,7 +1164,8 @@ save_atom_site_moment_fourier.wave_vector_seq_id
     _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Text
+    _type.contents                Integer
+    _enumeration.range            1:
 
 save_
 
@@ -4409,4 +4410,7 @@ save_
        version 4.1.0.
 
        Added evaluation method for _atom_site_Fourier_wave_vector.q3_coeff.
+
+       Restricted the values of _atom_site_moment_Fourier.wave_vector_seq_id
+       to positive integers.
 ;
