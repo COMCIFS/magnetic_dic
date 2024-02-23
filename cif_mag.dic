@@ -1174,7 +1174,7 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.id                ATOM_SITE_MOMENT_FOURIER_PARAM
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
     Data items in this category record details about the
@@ -1221,14 +1221,14 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
         _atom_site_moment_Fourier_param.sin
         _atom_site_moment_Fourier_param.cos_symmform
         _atom_site_moment_Fourier_param.sin_symmform
-            1  Fe_1 1 x  0.00000  0.84852  0            mxs
-            2  Fe_1 1 y  0.00000  0.42426  0     0.50000*mxs
+            1  Fe_1 1 x  0.00000  0.84852  0            mxs1
+            2  Fe_1 1 y  0.00000  0.42426  0     0.50000*mxs1
             3  Fe_1 1 z  0.00000  0.00000  0            0
-            4  Fe_1 2 x  0.00000 -0.42426  0    -0.50000*mxs
-            5  Fe_1 2 y  0.00000 -0.84852  0           -mxs
+            4  Fe_1 2 x  0.00000 -0.42426  0    -0.50000*mxs1
+            5  Fe_1 2 y  0.00000 -0.84852  0           -mxs1
             6  Fe_1 2 z  0.00000  0.00000  0            0
-            7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs  0
-            8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs  0
+            7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs1 0
+            8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs1 0
             9  Fe_1 3 z  0.00000  0.00000  0            0
 ;
     _description_example.detail
@@ -1272,23 +1272,36 @@ save_atom_site_moment_fourier_param.cos_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.cos_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_cos_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
-    A symbolic expression that indicates the symmetry-restricted form of
-    this  modulation component for the affected Wyckoff site.  The
-    expression can include a zero, a symbol, or a symbol
-    multiplied ('*') by a numerical prefactor. An allowed symbol is a
-    string that contains the following parts.  (1) The 1st character
-    is "m" for magnetic. (2) The 2nd character is one of "x", "y", or
-    "z", to indicate the magnetic component to be modulated. (3) The
-    3rd character is one of "m" for modulus, "p" for phase, "c" for
-    cosine, or "s" for sine. (4) The 4th character is an integer that
-    indicates the modulation vector. To use the same symbol with modulation
-    components belonging to symmetry related axes and/or wave vectors,
-    is to point out symmetry relationships amongst them. Obviously,
-    modulation components belonging to symmetry-distinct atoms,
-    axes, or wave vectors cannot be related by symmetry.
+    A symbolic expression that indicates the symmetry-restricted form of this
+    modulation component for the affected Wyckoff site.
+
+    For a given magnetic vector component of the modulation corresponding to
+    given propagation vector, symmetry constraints require the cosine part to
+    be proportional to one of the independent cosine or sine parameters of the
+    modulation. The value of this item indicates both the independent parameter
+    and the proportionality constant, which may be zero.
+
+    The expression can include a zero, a symbol, or a symbol multiplied ('*')
+    by a numerical prefactor. An allowed symbol is a string that contains the
+    following parts:
+
+    (1) The 1st character is "m" for magnetic.
+    (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
+        component to be modulated.
+    (3) The 3rd character is either "c" for cosine or "s" for sine.
+    (4) The 4th character is an integer code that identifies the modulation
+        vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
+
+    To use the same symbol with modulation components belonging to symmetry
+    related axes and/or wave vectors, is to point out symmetry relationships
+    amongst them. Obviously, modulation components belonging to
+    symmetry-distinct atoms, axes, or wave vectors cannot be related by
+    symmetry.
+
+    See also the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM category.
 
     Analogous tags: none, though analogous tags are needed for
     displace, occ, U, and aniso waves.
@@ -1299,43 +1312,28 @@ save_atom_site_moment_fourier_param.cos_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
-    _description_example.case
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
 ;
-    loop_
-    _cell_wave_vector.seq_id
-    _cell_wave_vector.x
-    _cell_wave_vector.y
-    _cell_wave_vector.z
-      1   0.30000   0.30000   0.00000
-      2  -0.60000   0.30000   0.00000
-    loop_
-    _atom_site_Fourier_wave_vector.seq_id
-    _atom_site_Fourier_wave_vector.x
-    _atom_site_Fourier_wave_vector.y
-    _atom_site_Fourier_wave_vector.z
-    _atom_site_Fourier_wave_vector.q1_coeff
-    _atom_site_Fourier_wave_vector.q2_coeff
-    1   -0.30000   0.60000   0.00000  1  1
-    2   -0.60000   0.30000   0.00000  0  1
-    3   -0.30000  -0.30000   0.00000 -1  0
-    loop_
-    _atom_site_moment_Fourier.id
-    _atom_site_moment_Fourier.atom_site_label
-    _atom_site_moment_Fourier.wave_vector_seq_id
-    _atom_site_moment_Fourier.axis
-    _atom_site_moment_Fourier_param.cos
-    _atom_site_moment_Fourier_param.sin
-    _atom_site_moment_Fourier_param.cos_symmform
-    _atom_site_moment_Fourier_param.sin_symmform
-    1  Fe_1 1 x  0.00000  0.84852  0            mxs1
-    2  Fe_1 1 y  0.00000  0.42426  0            0.50000*mxs1
-    3  Fe_1 1 z  0.00000  0.00000  0            0
-    4  Fe_1 2 x  0.00000 -0.42426  0           -0.50000*mxs1
-    5  Fe_1 2 y  0.00000 -0.84852  0           -mxs1
-    6  Fe_1 2 z  0.00000  0.00000  0            0
-    7  Fe_1 3 x -0.42426  0.00000 -0.50000*mxs1 0
-    8  Fe_1 3 y  0.42426  0.00000  0.50000*mxs1 0
-    9  Fe_1 3 z  0.00000  0.00000  0            0
+         Equal to zero.
+;
+         mxm2
+;
+         Equal to the modulus of the x component of the magnetic vector
+         amplitude of modulation identified by numeric code 2.
+;
+         -0.5*mzm1
+;
+         Equal to -0.5 times the modulus of the z component of the magnetic
+         vector amplitude of modulation identified by numeric code 1.
+;
+         0.03271*mym3
+;
+         Equal to 0.03271 times the modulus of the y component of the magnetic
+         vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1401,11 +1399,34 @@ save_atom_site_moment_fourier_param.modulus_symmform
         '_atom_site_moment_Fourier_param.modulus_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_modulus_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    A symbolic expression that indicates the symmetry-restricted form of this
+    modulation component for the affected Wyckoff site.
+
+    For a given magnetic vector component of the modulation corresponding to
+    given propagation vector, symmetry constraints require the modulus to either
+    be zero or equal to one of the independent moduli of the modulation. The
+    value of this item indicates both the independent modulus and the
+    proportionality constant.
+
+    The expression can include a zero, a symbol, or a symbol multiplied ('*')
+    by a numerical prefactor. An allowed symbol is a string that contains the
+    following parts:
+
+    (1) The 1st character is "m" for magnetic.
+    (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
+        component to be modulated.
+    (3) The 3rd character is one of "m" for modulus.
+    (4) The 4th character is an integer code that identifies the modulation
+        vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
+
+    To use the same symbol with modulation components belonging to symmetry
+    related axes and/or wave vectors, is to point out symmetry relationships
+    amongst them. Obviously, modulation components belonging to
+    symmetry-distinct atoms, axes, or wave vectors cannot be related by
+    symmetry.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               modulus_symmform
@@ -1413,6 +1434,29 @@ save_atom_site_moment_fourier_param.modulus_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         mxm2
+;
+         Equal to the modulus of the x component of the magnetic vector
+         amplitude of modulation identified by numeric code 2.
+;
+         -0.5*mzm1
+;
+         Equal to -0.5 times the modulus of the z component of the magnetic
+         vector amplitude of modulation identified by numeric code 1.
+;
+         0.03271*mym3
+;
+         Equal to 0.03271 times the modulus of the y component of the magnetic
+         vector amplitude of modulation identified by numeric code 3.
+;
 
 save_
 
@@ -1452,11 +1496,36 @@ save_atom_site_moment_fourier_param.phase_symmform
         '_atom_site_moment_Fourier_param.phase_symmform'
     _alias.definition_id
         '_atom_site_moment_Fourier_param_phase_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    A symbolic expression that indicates the symmetry-restricted form of this
+    modulation component for the affected Wyckoff site.
+
+    For a given magnetic vector component of the modulation corresponding to
+    given propagation vector, symmetry constraints require the phase to be a
+    linear function of one of the independent phases of the modulation. The
+    value of this item indicates both the slope (must be +1, 0, or -1) and
+    the intercept of this linear function.
+
+    The expression can include a symbol, a numeric intercept constant, or a
+    combination of the two in which the symbol is followed by the signed
+    constant. The symbol must be prefixed by a minus sign ('-') when the slope
+    is -1, and must be omitted when the slope is 0. An allowed symbol is a
+    string that contains the following parts:
+
+    (1) The 1st character is "m" for magnetic.
+    (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
+        component to be modulated.
+    (3) The 3rd character is "p" for phase.
+    (4) The 4th character is an integer code that identifies the modulation
+        vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
+
+    To use the same symbol with modulation components belonging to symmetry
+    related axes and/or wave vectors, is to point out symmetry relationships
+    amongst them. Obviously, modulation components belonging to
+    symmetry-distinct atoms, axes, or wave vectors cannot be related by
+    symmetry.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               phase_symmform
@@ -1464,6 +1533,28 @@ save_atom_site_moment_fourier_param.phase_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         -90
+;
+         Equal to -90 degrees.
+;
+         mxp2
+;
+         Equal to the phase of the x component of the magnetic vector amplitude
+         of modulation identified by numeric code 2.
+;
+         -myp3+15.01938
+;
+         Equal to 15.01938 degrees minus the phase of the y component of the
+         magnetic vector amplitude of modulation identified by numeric code 3.
+;
 
 save_
 
@@ -1499,11 +1590,36 @@ save_atom_site_moment_fourier_param.sin_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.sin_symmform'
     _alias.definition_id          '_atom_site_moment_Fourier_param_sin_symmform'
-    _definition.update            2016-05-24
+    _definition.update            2024-02-07
     _description.text
 ;
-    See the description and example given for the
-    _atom_site_moment_Fourier_param.cos_symmform item.
+    A symbolic expression that indicates the symmetry-restricted form of this
+    modulation component for the affected Wyckoff site.
+
+    For a given magnetic vector component of the modulation corresponding to
+    given propagation vector, symmetry constraints require the sine part to be
+    proportional to one of the independent cosine or sine parameters of the
+    modulation. The value of this item indicates both the independent parameter
+    and the proportionality constant, which may be zero.
+
+    The expression can include a zero, a symbol, or a symbol multiplied ('*')
+    by a numerical prefactor. An allowed symbol is a string that contains the
+    following parts:
+
+    (1) The 1st character is "m" for magnetic.
+    (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
+        component to be modulated.
+    (3) The 3rd character is either "c" for cosine or "s" for sine.
+    (4) The 4th character is an integer code that identifies the modulation
+        vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
+
+    To use the same symbol with modulation components belonging to symmetry
+    related axes and/or wave vectors, is to point out symmetry relationships
+    amongst them. Obviously, modulation components belonging to
+    symmetry-distinct atoms, axes, or wave vectors cannot be related by
+    symmetry.
+
+    See also the example given for the ATOM_SITE_MOMENT_FOURIER_PARAM category.
 ;
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               sin_symmform
@@ -1511,6 +1627,29 @@ save_atom_site_moment_fourier_param.sin_symmform
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Text
+
+    loop_
+      _description_example.case
+      _description_example.detail
+         0
+;
+         Equal to zero.
+;
+         mxc2
+;
+         Equal to the cosine part of the x component of the magnetic vector
+         amplitude of modulation identified by numeric code 2.
+;
+         -0.5*mzs1
+;
+         Equal to -0.5 times the sine part of the z component of the magnetic
+         vector amplitude of modulation identified by numeric code 1.
+;
+         0.03271*myc3
+;
+         Equal to 0.03271 times the cosine part of the y component of the
+         magnetic vector amplitude of modulation identified by numeric code 3.
+;
 
 save_
 
@@ -4413,4 +4552,11 @@ save_
 
        Restricted the values of _atom_site_moment_Fourier.wave_vector_seq_id
        to positive integers.
+
+       Updated definitions and added examples for the
+       _atom_site_moment_Fourier_param.cos_symmform,
+       _atom_site_moment_Fourier_param.sin_symmform,
+       _atom_site_moment_Fourier_param.modulus_symmform and
+       _atom_site_moment_Fourier_param.phase_symmform data items.
+       Update example of the ATOM_SITE_MOMENT_FOURIER_PARAM category.
 ;
