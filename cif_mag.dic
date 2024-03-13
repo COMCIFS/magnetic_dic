@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-02-07
+    _dictionary.date              2024-03-13
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -4525,7 +4525,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-02-07
+         0.9.9                    2024-03-13
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4555,4 +4555,12 @@ save_
        _atom_site_moment_Fourier_param.modulus_symmform and
        _atom_site_moment_Fourier_param.phase_symmform data items.
        Update example of the ATOM_SITE_MOMENT_FOURIER_PARAM category.
+
+       2024-03-13 editorial changes by B. McMahon:
+       Frame header for _space_group_magn.hall_symbol fixed (save__ -> save_).
+
+       Analogous tags in symCIF changed to coreCIF where appropriate. Not
+       all symCIF items yet in coreCIF.
+
+       Many style changes, typos and spelling errors fixed.
 ;
