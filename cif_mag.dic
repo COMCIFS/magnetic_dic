@@ -61,21 +61,21 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
       _description_example.detail
 ;
          loop_
-             _cell_wave_vector.seq_id
-             _cell_wave_vector.x
-             _cell_wave_vector.y
-             _cell_wave_vector.z
-                   1   0.30000   0.30000   0.00000
-                   2  -0.60000   0.30000   0.00000
+           _cell_wave_vector.seq_id
+           _cell_wave_vector.x
+           _cell_wave_vector.y
+           _cell_wave_vector.z
+              1   0.30000   0.30000   0.00000
+              2  -0.60000   0.30000   0.00000
          loop_
-             _atom_site_Fourier_wave_vector.seq_id
-             _atom_site_Fourier_wave_vector.x
-             _atom_site_Fourier_wave_vector.y
-             _atom_site_Fourier_wave_vector.z
-             _atom_site_Fourier_wave_vector.q_coeff
-                 1   -0.30000   0.60000   0.00000  [1   1]
-                 2   -0.60000   0.30000   0.00000  [0   1]
-                 3   -0.30000  -0.30000   0.00000  [-1  0]
+           _atom_site_Fourier_wave_vector.seq_id
+           _atom_site_Fourier_wave_vector.x
+           _atom_site_Fourier_wave_vector.y
+           _atom_site_Fourier_wave_vector.z
+           _atom_site_Fourier_wave_vector.q_coeff
+              1   -0.30000   0.60000   0.00000  [1   1]
+              2   -0.60000   0.30000   0.00000  [0   1]
+              3   -0.30000  -0.30000   0.00000  [-1  0]
 ;
 ;
          Example 1 - Hypothetical example showing the modulation wave vector
@@ -84,25 +84,25 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
 ;
 ;
          loop_
-         _cell_wave_vector.seq_id
-         _cell_wave_vector.x
-         _cell_wave_vector.y
-         _cell_wave_vector.z
-           1   0.30000   0.30000   0.00000
-           2  -0.60000   0.30000   0.00000
+           _cell_wave_vector.seq_id
+           _cell_wave_vector.x
+           _cell_wave_vector.y
+           _cell_wave_vector.z
+              1   0.30000   0.30000   0.00000
+              2  -0.60000   0.30000   0.00000
          loop_
-         _atom_site_Fourier_wave_vector.seq_id
-         _atom_site_Fourier_wave_vector.x
-         _atom_site_Fourier_wave_vector.y
-         _atom_site_Fourier_wave_vector.z
-         _atom_site_Fourier_wave_vector.q1_coeff
-         _atom_site_Fourier_wave_vector.q2_coeff
-         1   -0.30000   0.60000   0.00000  1  1
-         2   -0.60000   0.30000   0.00000  0  1
-         3   -0.30000  -0.30000   0.00000 -1  0
+           _atom_site_Fourier_wave_vector.seq_id
+           _atom_site_Fourier_wave_vector.x
+           _atom_site_Fourier_wave_vector.y
+           _atom_site_Fourier_wave_vector.z
+           _atom_site_Fourier_wave_vector.q1_coeff
+           _atom_site_Fourier_wave_vector.q2_coeff
+              1   -0.30000   0.60000   0.00000  1  1
+              2   -0.60000   0.30000   0.00000  0  1
+              3   -0.30000  -0.30000   0.00000 -1  0
 ;
 ;
-         Example 1 - As example 1, but using separate data items for each
+         Example 2 - As example 1, but using separate data items for each
          individual component of the modulation wave vector.
 ;
 
@@ -268,7 +268,7 @@ save_atom_site_moment.cartn
     _definition.update            2016-05-24
     _description.text
 ;
-    The atom-site magnetic moment vector specified according to a set
+    The atom-site magnetic-moment vector specified according to a set
     of orthogonal Cartesian axes where x||a and z||c* with y
     completing a right-hand set.
 ;
@@ -296,7 +296,7 @@ save_atom_site_moment.cartn_x
     _definition.update            2016-05-24
     _description.text
 ;
-    The x component of the atom-site magnetic moment vector
+    The x component of the atom-site magnetic-moment vector
     (see _atom_site_moment.Cartn).
 ;
     _name.category_id             atom_site_moment
@@ -316,7 +316,7 @@ save_atom_site_moment.cartn_y
     _definition.update            2016-05-24
     _description.text
 ;
-    The y component of the atom-site magnetic moment vector
+    The y component of the atom-site magnetic-moment vector
     (see _atom_site_moment.Cartn).
 ;
     _name.category_id             atom_site_moment
@@ -336,7 +336,7 @@ save_atom_site_moment.cartn_z
     _definition.update            2016-05-24
     _description.text
 ;
-    The z component of the atom-site magnetic moment vector
+    The z component of the atom-site magnetic-moment vector
     (see _atom_site_moment.Cartn).
 ;
     _name.category_id             atom_site_moment
@@ -356,8 +356,8 @@ save_atom_site_moment.crystalaxis
     _definition.update            2016-05-24
     _description.text
 ;
-    The atom-site magnetic moment vector specified using components
-    parallel to each of the unit cell axes.  This is the recommended
+    The atom-site magnetic-moment vector specified using components
+    parallel to each of the unit-cell axes.  This is the recommended
     coordinate system for  most magnetic structures.
 ;
     _name.category_id             atom_site_moment
@@ -455,7 +455,7 @@ save_atom_site_moment.magnitude
     _definition.update            2018-07-18
     _description.text
 ;
-    The magnitude of a magnetic moment vector.
+    The magnitude of a magnetic-moment vector.
 ;
     _name.category_id             atom_site_moment
     _name.object_id               magnitude
@@ -515,7 +515,7 @@ save_atom_site_moment.refinement_flags_magnetic
       _enumeration_set.state
       _enumeration_set.detail
          .                 'no constraint on magnetic moment'
-         S                 'special position constraint on magnetic moment'
+         S                 'special-position constraint on magnetic moment'
          M                 'modulus restraint on magnetic moment'
          A                 'direction restraints on magnetic moment'
          SM                'superposition of S and M constraints/restraints'
@@ -532,7 +532,7 @@ save_atom_site_moment.spherical_azimuthal
     _definition.update            2023-06-01
     _description.text
 ;
-    The azimuthal angle of the atom-site magnetic moment vector
+    The azimuthal angle of the atom-site magnetic-moment vector
     specified in spherical coordinates relative to a set of
     orthogonal Cartesian axes where x||a and z||c* with y completing
     a right-hand set.  The azimuthal angle is a right-handed rotation
@@ -556,7 +556,7 @@ save_atom_site_moment.spherical_modulus
     _definition.update            2016-05-24
     _description.text
 ;
-    The modulus of the atom-site magnetic moment vector specified in
+    The modulus of the atom-site magnetic-moment vector specified in
     spherical coordinates relative to a set of orthogonal Cartesian
     axes where x||a and z||c* with y completing a right-hand set.
 ;
@@ -577,7 +577,7 @@ save_atom_site_moment.spherical_polar
     _definition.update            2023-06-01
     _description.text
 ;
-    The polar angle of the atom-site magnetic moment vector specified
+    The polar angle of the atom-site magnetic-moment vector specified
     in spherical coordinates relative to a set of orthogonal
     Cartesian axes where x||a and z||c* with y completing a
     right-hand set. The polar angle is measured relative to the +z axis.
@@ -601,7 +601,7 @@ save_atom_site_moment.symmform
     _description.text
 ;
     A symbolic expression that indicates the symmetry-restricted form
-    of the components of  the magnetic moment vector of the atom.
+    of the components of  the magnetic-moment vector of the atom.
     Unlike the positional coordinates of an atom, its magnetic moment
     has no translational component to be represented.
 ;
@@ -643,14 +643,14 @@ save_ATOM_SITE_ROTATION
     rotations in several coordinate systems.  Such axial vectors can
     be applied to describe the rotations of molecular or polyhedral
     rigid bodies about their pivot atoms or sites, though the use of this
-    category to describe patterns of rotations does not require the
-    that rigid bodies be explicitly defined.  Because magnetic moments
+    category to describe patterns of rotations does not require that
+    the rigid bodies be explicitly defined.  Because magnetic moments
     and rotations are both axial rather than polar vectors, their
     descriptive requirements are highly analogous, except that static
     rotations are insensitive to time-reversal, so that normal (non-magnetic)
     symmetry groups are appropriate.  This is a child category
     of the ATOM_SITE category, though pivot-site rotations will typically
-    be listed in a separate loop; the category items mirror those of defined
+    be listed in a separate loop; the category items mirror those defined
     for the ATOM_SITE_MOMENT category.
 ;
     _name.category_id             ATOM_SITE
@@ -755,7 +755,7 @@ save_atom_site_rotation.crystalaxis
     _description.text
 ;
     The atom-site rotation vector specified using the components parallel
-    to each of the unit cell axes.  This is the recommended coordinate
+    to each of the unit-cell axes.  This is the recommended coordinate
     system for presenting axial rotation vectors.
 ;
     _name.category_id             atom_site_rotation
@@ -802,7 +802,7 @@ save_atom_site_rotation.crystalaxis_y
     _definition.update            2018-07-18
     _description.text
 ;
-         The component of the atom-site rotation vector parallel to the second
+    The component of the atom-site rotation vector parallel to the second
     unit-cell axis.  See _atom_site_rotation.crystalaxis.
 ;
     _name.category_id             atom_site_rotation
@@ -915,7 +915,7 @@ save_atom_site_rotation.refinement_flags_rotational
       _enumeration_set.state
       _enumeration_set.detail
          .                 'no constraint on rotation'
-         S                 'special position constraint on rotation'
+         S                 'special-position constraint on rotation'
          M                 'modulus restraint on rotation'
          A                 'direction restraints on rotation'
          SM                'superposition of S and M constraints/restraints'
@@ -1087,7 +1087,7 @@ save_atom_site_moment_fourier.axis
 
     Analogous tags: msCIF:_atom_site_displace_Fourier.axis,
     msCIF:_atom_site_rot_Fourier.axis,
-    msCIF:_atom_site_U_Fourier.tens_elem
+    msCIF:_atom_site_U_Fourier.tens_elem.
 ;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               axis
@@ -1156,7 +1156,7 @@ save_atom_site_moment_fourier.wave_vector_seq_id
     msCIF:_atom_site_displace_Fourier_wave_vector.seq_id,
     msCIF:_atom_site_rot_Fourier_wave_vector.seq_id,
     msCIF:_atom_site_occ_Fourier_wave_vector.seq_id,
-    msCIF:_atom_site_U_Fourier_wave_vector.seq_id
+    msCIF:_atom_site_U_Fourier_wave_vector.seq_id.
 ;
     _name.category_id             atom_site_moment_Fourier
     _name.object_id               wave_vector_seq_id
@@ -1188,7 +1188,7 @@ save_ATOM_SITE_MOMENT_FOURIER_PARAM
     Analogous tags: _atom_site_displace_Fourier_param.*,
     _atom_site_rot_Fourier_param.*,
     _atom_site_occ_Fourier_param.*,
-    _atom_site_U_Fourier_param.*
+    _atom_site_U_Fourier_param.*.
 ;
     _name.category_id             ATOM_SITE_MOMENT_FOURIER
     _name.object_id               ATOM_SITE_MOMENT_FOURIER_PARAM
@@ -1255,7 +1255,7 @@ save_atom_site_moment_fourier_param.cos
     Analogous tags: msCIF:_atom_site_displace_Fourier_param.cos,
     msCIF:_atom_site_rot_Fourier_param.cos,
     msCIF:_atom_site_occ_Fourier_param.cos,
-    msCIF:_atom_site_U_Fourier_param.cos
+    msCIF:_atom_site_U_Fourier_param.cos.
     Also see the technical descriptions of the analogous tags.
 ;
     _name.category_id             atom_site_moment_Fourier_param
@@ -1278,8 +1278,8 @@ save_atom_site_moment_fourier_param.cos_symmform
     A symbolic expression that indicates the symmetry-restricted form of this
     modulation component for the affected Wyckoff site.
 
-    For a given magnetic vector component of the modulation corresponding to
-    given propagation vector, symmetry constraints require the cosine part to
+    For a given magnetic-vector component of the modulation corresponding to
+    a given propagation vector, symmetry constraints require the cosine part to
     be proportional to one of the independent cosine or sine parameters of the
     modulation. The value of this item indicates both the independent parameter
     and the proportionality constant, which may be zero.
@@ -1295,9 +1295,9 @@ save_atom_site_moment_fourier_param.cos_symmform
     (4) The 4th character is an integer code that identifies the modulation
         vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
-    To use the same symbol with modulation components belonging to symmetry
-    related axes and/or wave vectors, is to point out symmetry relationships
-    amongst them. Obviously, modulation components belonging to
+    To use the same symbol with modulation components belonging to
+    symmetry-related axes and/or wave vectors, is to point out symmetry
+    relationships amongst them. Obviously, modulation components belonging to
     symmetry-distinct atoms, axes, or wave vectors cannot be related by
     symmetry.
 
@@ -1322,7 +1322,7 @@ save_atom_site_moment_fourier_param.cos_symmform
 ;
          mxm2
 ;
-         Equal to the modulus of the x component of the magnetic vector
+         Equal to the modulus of the x component of the magnetic-vector
          amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzm1
@@ -1380,7 +1380,7 @@ save_atom_site_moment_fourier_param.modulus
     Analogous tags: msCIF:_atom_site_displace_Fourier_param.modulus,
     msCIF:_atom_site_rot_Fourier_param.modulus,
     msCIF:_atom_site_occ_Fourier_param.modulus,
-    msCIF:_atom_site_U_Fourier_param.modulus
+    msCIF:_atom_site_U_Fourier_param.modulus.
     Also see the technical descriptions of the analogous tags.
 ;
     _name.category_id             atom_site_moment_Fourier_param
@@ -1405,10 +1405,10 @@ save_atom_site_moment_fourier_param.modulus_symmform
     A symbolic expression that indicates the symmetry-restricted form of this
     modulation component for the affected Wyckoff site.
 
-    For a given magnetic vector component of the modulation corresponding to
-    given propagation vector, symmetry constraints require the modulus to either
-    be zero or equal to one of the independent moduli of the modulation. The
-    value of this item indicates both the independent modulus and the
+    For a given magnetic-vector component of the modulation corresponding to
+    a given propagation vector, symmetry constraints require the modulus to
+    be either zero or equal to one of the independent moduli of the modulation.
+    The value of this item indicates both the independent modulus and the
     proportionality constant.
 
     The expression can include a zero, a symbol, or a symbol multiplied ('*')
@@ -1418,13 +1418,13 @@ save_atom_site_moment_fourier_param.modulus_symmform
     (1) The 1st character is "m" for magnetic.
     (2) The 2nd character is one of "x", "y", or "z", to indicate the magnetic
         component to be modulated.
-    (3) The 3rd character is one of "m" for modulus.
+    (3) The 3rd character is "m" for modulus.
     (4) The 4th character is an integer code that identifies the modulation
         vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
-    To use the same symbol with modulation components belonging to symmetry
-    related axes and/or wave vectors, is to point out symmetry relationships
-    amongst them. Obviously, modulation components belonging to
+    To use the same symbol with modulation components belonging to
+    symmetry-related axes and/or wave vectors, is to point out symmetry
+    relationships amongst them. Obviously, modulation components belonging to
     symmetry-distinct atoms, axes, or wave vectors cannot be related by
     symmetry.
 ;
@@ -1444,7 +1444,7 @@ save_atom_site_moment_fourier_param.modulus_symmform
 ;
          mxm2
 ;
-         Equal to the modulus of the x component of the magnetic vector
+         Equal to the modulus of the x component of the magnetic-vector
          amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzm1
@@ -1476,7 +1476,7 @@ save_atom_site_moment_fourier_param.phase
     Analogous tags: msCIF:_atom_site_displacive_Fourier_param.phase,
     msCIF:_atom_site_rot_Fourier_param.phase,
     msCIF:_atom_site_occ_Fourier_param.phase,
-    msCIF:_atom_site_U_Fourier_param.phase
+    msCIF:_atom_site_U_Fourier_param.phase.
     Also see the technical descriptions of the analogous tags.
 ;
     _name.category_id             atom_site_moment_Fourier_param
@@ -1502,8 +1502,8 @@ save_atom_site_moment_fourier_param.phase_symmform
     A symbolic expression that indicates the symmetry-restricted form of this
     modulation component for the affected Wyckoff site.
 
-    For a given magnetic vector component of the modulation corresponding to
-    given propagation vector, symmetry constraints require the phase to be a
+    For a given magnetic-vector component of the modulation corresponding to
+    a given propagation vector, symmetry constraints require the phase to be a
     linear function of one of the independent phases of the modulation. The
     value of this item indicates both the slope (must be +1, 0, or -1) and
     the intercept of this linear function.
@@ -1521,9 +1521,9 @@ save_atom_site_moment_fourier_param.phase_symmform
     (4) The 4th character is an integer code that identifies the modulation
         vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
-    To use the same symbol with modulation components belonging to symmetry
-    related axes and/or wave vectors, is to point out symmetry relationships
-    amongst them. Obviously, modulation components belonging to
+    To use the same symbol with modulation components belonging to
+    symmetry-related axes and/or wave vectors, is to point out symmetry
+    relationships amongst them. Obviously, modulation components belonging to
     symmetry-distinct atoms, axes, or wave vectors cannot be related by
     symmetry.
 ;
@@ -1547,13 +1547,13 @@ save_atom_site_moment_fourier_param.phase_symmform
 ;
          mxp2
 ;
-         Equal to the phase of the x component of the magnetic vector amplitude
+         Equal to the phase of the x component of the magnetic-vector amplitude
          of modulation identified by numeric code 2.
 ;
          -myp3+15.01938
 ;
          Equal to 15.01938 degrees minus the phase of the y component of the
-         magnetic vector amplitude of modulation identified by numeric code 3.
+         magnetic-vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1573,7 +1573,7 @@ save_atom_site_moment_fourier_param.sin
     Analogous tags: msCIF:_atom_site_displace_Fourier_param.sin,
     msCIF:_atom_site_rot_Fourier_param.sin,
     msCIF:_atom_site_occ_Fourier_param.sin,
-    msCIF:_atom_site_U_Fourier_param.sin
+    msCIF:_atom_site_U_Fourier_param.sin.
     Also see the technical descriptions of the analogous tags.
 ;
     _name.category_id             atom_site_moment_Fourier_param
@@ -1596,8 +1596,8 @@ save_atom_site_moment_fourier_param.sin_symmform
     A symbolic expression that indicates the symmetry-restricted form of this
     modulation component for the affected Wyckoff site.
 
-    For a given magnetic vector component of the modulation corresponding to
-    given propagation vector, symmetry constraints require the sine part to be
+    For a given magnetic-vector component of the modulation corresponding to
+    a given propagation vector, symmetry constraints require the sine part to be
     proportional to one of the independent cosine or sine parameters of the
     modulation. The value of this item indicates both the independent parameter
     and the proportionality constant, which may be zero.
@@ -1613,9 +1613,9 @@ save_atom_site_moment_fourier_param.sin_symmform
     (4) The 4th character is an integer code that identifies the modulation
         vector (see _atom_site_moment_Fourier.wave_vector_seq_id).
 
-    To use the same symbol with modulation components belonging to symmetry
-    related axes and/or wave vectors, is to point out symmetry relationships
-    amongst them. Obviously, modulation components belonging to
+    To use the same symbol with modulation components belonging to
+    symmetry-related axes and/or wave vectors, is to point out symmetry
+    relationships amongst them. Obviously, modulation components belonging to
     symmetry-distinct atoms, axes, or wave vectors cannot be related by
     symmetry.
 
@@ -1637,18 +1637,19 @@ save_atom_site_moment_fourier_param.sin_symmform
 ;
          mxc2
 ;
-         Equal to the cosine part of the x component of the magnetic vector
+         Equal to the cosine part of the x component of the magnetic-vector
          amplitude of modulation identified by numeric code 2.
 ;
          -0.5*mzs1
 ;
-         Equal to -0.5 times the sine part of the z component of the magnetic
-         vector amplitude of modulation identified by numeric code 1.
+         Equal to -0.5 times the sine part of the z component of the
+         magnetic-vector amplitude of modulation identified by numeric
+         code 1.
 ;
          0.03271*myc3
 ;
          Equal to 0.03271 times the cosine part of the y component of the
-         magnetic vector amplitude of modulation identified by numeric code 3.
+         magnetic-vector amplitude of modulation identified by numeric code 3.
 ;
 
 save_
@@ -1681,8 +1682,8 @@ save_ATOM_SITE_MOMENT_SPECIAL_FUNC
     and rigid groups. Both of these only apply to
     one-dimensional modulated structures.
 
-    Analogous tags: _atom_site_displace_special_func.*,
-    _atom_site_occ_special_func.*
+    Analogous tags: msCIF:_atom_site_displace_special_func.*,
+    msCIF:_atom_site_occ_special_func.*
 ;
     _name.category_id             MAGNETIC
     _name.object_id               ATOM_SITE_MOMENT_SPECIAL_FUNC
@@ -1709,29 +1710,29 @@ save_atom_site_moment_special_func.sawtooth_ax
     _definition.update            2016-05-24
     _description.text
 ;
-    _atom_site_moment_special_func.sawtooth items are the
-    adjustable parameters of a magnetic sawtooth function.    A
-    magnetic sawtooth function is only used when working    in the
-    crystal-axis coordinate system.  It is defined    along the
+    _atom_site_moment_special_func.sawtooth_* items are the
+    adjustable parameters of a magnetic sawtooth function. A
+    magnetic sawtooth function is only used when working in the
+    crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
     mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
-       with x4 belonging to the interval [c-(w/2), c+(w/2)], where
-    ax,    ay and az are the amplitudes (maximum magnetic moments)
+    with x4 belonging to the interval [c-(w/2), c+(w/2)], where
+    ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
     internal coordinate and c is the centre of the function in
-    internal space.  The use of this function is restricted to
-    one-dimensional modulated structures. For more details,     see
+    internal space. The use of this function is restricted to
+    one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
-       Calculated parameters mx, my and mz must be in Bohr-magneton
+    Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
     The crystallographic computing system. Institute of Physics, Prague,
     Czech Republic.
 
-    Analogous tags: _atom_site_displace_special_func.sawtooth_*,
-    _atom_site_occ_special_func.cresnel_*
+    Analogous tags: msCIF:_atom_site_displace_special_func.sawtooth_*,
+    msCIF:_atom_site_occ_special_func.crenel_*.
 ;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_ax
@@ -1750,29 +1751,29 @@ save_atom_site_moment_special_func.sawtooth_ay
     _definition.update            2016-05-24
     _description.text
 ;
-    _atom_site_moment_special_func.sawtooth_ items are the
-    adjustable parameters of a magnetic sawtooth function.    A
-    magnetic sawtooth function is only used when working    in the
-    crystal-axis coordinate system.  It is defined    along the
+    _atom_site_moment_special_func.sawtooth_* items are the
+    adjustable parameters of a magnetic sawtooth function. A
+    magnetic sawtooth function is only used when working in the
+    crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
     mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
-       with x4 belonging to the interval [c-(w/2), c+(w/2)], where
-    ax,    ay and az are the amplitudes (maximum magnetic moments)
+    with x4 belonging to the interval [c-(w/2), c+(w/2)], where
+    ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
     internal coordinate and c is the centre of the function in
-    internal space.  The use of this function is restricted to
-    one-dimensional modulated structures. For more details,     see
+    internal space. The use of this function is restricted to
+    one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
-       Calculated parameters mx, my and mz must be in Bohr-magneton
+    Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
     The crystallographic computing system. Institute of Physics, Prague,
     Czech Republic.
 
-    Analogous tags: _atom_site_displace_special_func.sawtooth_*,
-    _atom_site_occ_special_func.cresnel_*
+    Analogous tags: msCIF:_atom_site_displace_special_func.sawtooth_*,
+    msCIF:_atom_site_occ_special_func.crenel_*.
 ;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_ay
@@ -1791,29 +1792,29 @@ save_atom_site_moment_special_func.sawtooth_az
     _definition.update            2016-05-24
     _description.text
 ;
-    _atom_site_moment_special_func.sawtooth_ items are the
-    adjustable parameters of a magnetic sawtooth function.    A
-    magnetic sawtooth function is only used when working    in the
-    crystal-axis coordinate system.  It is defined    along the
+    _atom_site_moment_special_func.sawtooth_* items are the
+    adjustable parameters of a magnetic sawtooth function. A
+    magnetic sawtooth function is only used when working in the
+    crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
     mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
-       with x4 belonging to the interval [c-(w/2), c+(w/2)], where
-    ax,    ay and az are the amplitudes (maximum magnetic moments)
+    with x4 belonging to the interval [c-(w/2), c+(w/2)], where
+    ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
     internal coordinate and c is the centre of the function in
-    internal space.  The use of this function is restricted to
-    one-dimensional modulated structures. For more details,     see
+    internal space. The use of this function is restricted to
+    one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
-       Calculated parameters mx, my and mz must be in Bohr-magneton
+    Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
     The crystallographic computing system. Institute of Physics, Prague,
     Czech Republic.
 
-    Analogous tags: _atom_site_displace_special_func.sawtooth_*,
-    _atom_site_occ_special_func.cresnel_*
+    Analogous tags: msCIF:_atom_site_displace_special_func.sawtooth_*,
+    msCIF:_atom_site_occ_special_func.crenel_*.
 ;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_az
@@ -1832,29 +1833,29 @@ save_atom_site_moment_special_func.sawtooth_c
     _definition.update            2016-05-24
     _description.text
 ;
-    _atom_site_moment_special_func.sawtooth_ items are the
-    adjustable parameters of a magnetic sawtooth function.    A
-    magnetic sawtooth function is only used when working    in the
-    crystal-axis coordinate system.  It is defined    along the
+    _atom_site_moment_special_func.sawtooth_* items are the
+    adjustable parameters of a magnetic sawtooth function. A
+    magnetic sawtooth function is only used when working in the
+    crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
     mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
-       with x4 belonging to the interval [c-(w/2), c+(w/2)], where
-    ax,    ay and az are the amplitudes (maximum magnetic moments)
+    with x4 belonging to the interval [c-(w/2), c+(w/2)], where
+    ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
     internal coordinate and c is the centre of the function in
-    internal space.  The use of this function is restricted to
-    one-dimensional modulated structures. For more details,     see
+    internal space. The use of this function is restricted to
+    one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
-       Calculated parameters mx, my and mz must be in Bohr-magneton
+    Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
     The crystallographic computing system. Institute of Physics, Prague,
     Czech Republic.
 
-    Analogous tags: _atom_site_displace_special_func.sawtooth_*,
-    _atom_site_occ_special_func.cresnel_*
+    Analogous tags: msCIF:_atom_site_displace_special_func.sawtooth_*,
+    msCIF:_atom_site_occ_special_func.crenel_*.
 ;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_c
@@ -1873,29 +1874,29 @@ save_atom_site_moment_special_func.sawtooth_w
     _definition.update            2016-05-24
     _description.text
 ;
-    _atom_site_moment_special_func.sawtooth_ items are the
-    adjustable parameters of a magnetic sawtooth function.    A
-    magnetic sawtooth function is only used when working    in the
-    crystal-axis coordinate system.  It is defined    along the
+    _atom_site_moment_special_func.sawtooth_* items are the
+    adjustable parameters of a magnetic sawtooth function. A
+    magnetic sawtooth function is only used when working in the
+    crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
     mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
-       with x4 belonging to the interval [c-(w/2), c+(w/2)], where
-    ax,    ay and az are the amplitudes (maximum magnetic moments)
+    with x4 belonging to the interval [c-(w/2), c+(w/2)], where
+    ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
     internal coordinate and c is the centre of the function in
     internal space.  The use of this function is restricted to
-    one-dimensional modulated structures. For more details,     see
+    one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
-       Calculated parameters mx, my and mz must be in Bohr-magneton
+    Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
     Ref: Petricek, V. & Dusek, M. (2000). JANA2000.
     The crystallographic computing system. Institute of Physics, Prague,
     Czech Republic.
 
-    Analogous tags: _atom_site_displace_special_func.sawtooth_*,
-    _atom_site_occ_special_func.cresnel_*
+    Analogous tags: msCIF:_atom_site_displace_special_func.sawtooth_*,
+    msCIF:_atom_site_occ_special_func.crenel_*.
 ;
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_w
@@ -1921,9 +1922,9 @@ save_ATOM_SITES_MOMENT_FOURIER
     Details for individual atom sites are described by data items in
     the ATOM_SITE_MOMENT_FOURIER category.
 
-    Analogous tags: _atom_sites_displace_Fourier.*,
-    _atom_sites_rot_Fourier.*,     _atom_sites_occ_Fourier.*,
-    _atom_sites_U_Fourier.*
+    Analogous tags: msCIF:_atom_sites_displace_Fourier.*,
+    msCIF:_atom_sites_rot_Fourier.*,     msCIF:_atom_sites_occ_Fourier.*,
+    msCIF:_atom_sites_U_Fourier.*.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               ATOM_SITES_MOMENT_FOURIER
@@ -1942,7 +1943,7 @@ save_atom_sites_moment_fourier.axes_description
     _atom_site_moment_Fourier.axis.
 
     Analogous tags:
-    msCIF:_atom_sites_displace_Fourier.axes_description
+    msCIF:_atom_sites_displace_Fourier.axes_description.
 
     It is not difficult to imagine an
     _atom_sites_rot_Fourier.axes_description tag.
@@ -1974,13 +1975,15 @@ save_atom_type_scat.neutron_magnetic_j0_a1
     averages of  spherical Bessel functions over the electronic wave
     functions of unpaired  electrons of the given atom type as a
     function of s = sin(theta)/lambda.
-    <jn(s)> = [A1*e^(-a2*s^2) + B1*e^(-b2*s^2) + C1*e^(-c2*s^2) +
+
+    <jn(s)> = [A1*exp(-a2*s^2) + B1*exp(-b2*s^2) + C1*exp(-c2*s^2) +
     D]*[1 if n=0, s^2 if n=2,4,6]
+
     The <jn(s)> are then combined to determine the spin and orbital
     contributions to the magnetic form factor of the atom.  The "e"
     parameter is a measure of error in the approximation.
 
-    Analogous tags: coreCIF:_atom_site.scat_Cromer_Mann_*
+    Analogous tags: coreCIF:_atom_site.scat_Cromer_Mann_*.
 
     Ref: International Tables for Crystallography (2006). Vol.
     C, Sections 4.4.5 and 6.1.2.3 (and references therein).
@@ -2562,7 +2565,7 @@ save_atom_type_scat.neutron_magnetic_source
     Reference to the source of magnetic neutron scattering factors
     for a given atom type.
 
-    Analogous tags: coreCIF:_atom_site.scat_source
+    Analogous tags: coreCIF:_atom_site.scat_source.
 ;
     _name.category_id             atom_type_scat
     _name.object_id               neutron_magnetic_source
@@ -2667,7 +2670,7 @@ save_PARENT_SPACE_GROUP
     space-group settings by conveying an appropriate inter-data-block
     basis transformation in each data block.
 
-    Analogous tags: none
+    Analogous tags: none.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               PARENT_SPACE_GROUP
@@ -2693,7 +2696,7 @@ save_parent_space_group.child_transform_pp_abc
     transformation applies to the present setting of the basic
     space group of the incommensurate structure.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc
+    Analogous tags: symCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             parent_space_group
     _name.object_id               child_transform_Pp_abc
@@ -2707,11 +2710,11 @@ save_
 save_parent_space_group.it_number
 
     _definition.id                '_parent_space_group.IT_number'
-    _definition.update            2016-06-09
+    _definition.update            2024-03-13
     _description.text
 ;
     Analogous tags: Perfectly analogous to
-    symCIF:_space_group.IT_number except that it applies to the
+    coreCIF:_space_group.IT_number except that it applies to the
     parent structure.
 ;
     _name.category_id             parent_space_group
@@ -2726,11 +2729,11 @@ save_
 save_parent_space_group.name_h-m_alt
 
     _definition.id                '_parent_space_group.name_H-M_alt'
-    _definition.update            2023-07-17
+    _definition.update            2024-03-13
     _description.text
 ;
     Analogous tags: Perfectly analogous to
-    symCIF:_space_group.name_H-M_alt except that it applies
+    coreCIF:_space_group.name_H-M_alt except that it applies
     to the parent structure.
 ;
     _name.category_id             parent_space_group
@@ -2795,19 +2798,19 @@ save_SPACE_GROUP_MAGN
 
     There are 1651 distinct equivalence classes of MSGs, each of
     which can be referred to as an MSG "type" following the usage of
-    this word in the International Tables of Crystallography.  Similarly,
-    there are over 300000 distinct equivalence classes of MSSGs with
+    this word in the International Tables for Crystallography.  Similarly,
+    there are over 300,000 distinct equivalence classes of MSSGs with
     up to 3 independent modulations, each of which can be referred to
     as an MSSG "type".
 
-    However, it is important to appreciate that the word “type” is commonly
+    However, it is important to appreciate that the word "type" is commonly
     used in an entirely different way in the context of MSGs and MSSGs.
     Any magnetic group can be constructed by starting with
     a non-magnetic space group F, and then by adding the time-reversal
     operation to half or all or none of its elements.  The
     four ways of doing this give rise to four distinct "construct types",
     which we refer to simply as type-1, type-2, type-3, and type-4,
-    though some refer to type-3 as type-3a and type-4 as and type3b.
+    though some refer to type-3 as type-3a and type-4 as type3b.
 
     For a type-1 MSG/MSSG, M = F, so that there are no time-reversed elements.
     For a type-2 MSG/MSSG, M = F + F1', so that there is both a time-reversed
@@ -2817,19 +2820,19 @@ save_SPACE_GROUP_MAGN
     element in F – D (the complement of D in F) is time reversed.
     For a type-3 MSG/MSSG, F and D have the same translation subgroup (lattice)
     but different point groups.
-    For a type-4 MSG/MSSG, F and D and the same point groups but different
+    For a type-4 MSG/MSSG, F and D have the same point groups but different
     translation subgroups.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0.
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               SPACE_GROUP_MAGN
 
 save_
 
-save__space_group_magn.hall_symbol
+save_space_group_magn.hall_symbol
 
     _definition.id                '_space_group_magn.Hall_symbol'
     _definition.update            2023-06-01
@@ -2838,7 +2841,7 @@ save__space_group_magn.hall_symbol
     The magnetic Hall symbol provides an unambiguous representation
     of the generators of a three-dimensional MSG, and largely follows
     the conventions developed for non-magnetic Hall symbols, except
-    that the prime symbol "’" has been replaced by the carat symbol
+    that the prime symbol "’" has been replaced by the caret symbol
     "^" in order to reserve the prime symbol to indicate
     time-reversal.  For a type-2 or type-4 MSG, the time reversal
     element is listed separately as "1’" at the end of the magnetic
@@ -2846,10 +2849,10 @@ save__space_group_magn.hall_symbol
     translational component of the anti-translation in the case of a
     type-4 MSG.
 
-    Ref: González-Platas, Katcho & Rodríguez-Carvajal, J. Appl. Cryst 54,
-    338-342 (2020).
-    Hall, Acta Cryst. A37, 517-525 (1981).
-    Campbell et al., Acta Cryst. A78, 99–106 (2022), Table S3.
+    Ref: González-Platas, J., Katcho, N. A. & Rodríguez-Carvajal, J.
+    (2021). J. Appl. Cryst. 54, 338-342.
+    Hall. S. R. (1981). Acta Cryst. A37, 517-525.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106, Table S3.
 ;
     _name.category_id             space_group_magn
     _name.object_id               hall_symbol
@@ -2876,7 +2879,7 @@ save_
 save_space_group_magn.name_bns
 
     _definition.id                '_space_group_magn.name_BNS'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     The Belov-Neronova-Smirnova (BNS) symbol for a MSG is based on
@@ -2896,14 +2899,12 @@ save_space_group_magn.name_bns
     translational part of the generator whose point part is the pure
     time reversal.
 
-    Analogous tags: symCIF:_space_group.name_H-M_ref
+    Analogous tags: coreCIF:_space_group.name_H-M_ref.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0.
-    Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    https://doi.org/10.1107/S2053273321012912
-    https://www.iucr.org/paper?ib5106
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_BNS
@@ -2929,7 +2930,7 @@ save_
 save_space_group_magn.name_og
 
     _definition.id                '_space_group_magn.name_OG'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     The Opechowski-Guccione (OG) symbol for an
@@ -2950,14 +2951,12 @@ save_space_group_magn.name_og
     MSG. The value of this subscript indicates the magnetic lattice
     of the MSG.
 
-    Analogous tags: symCIF:_space_group.name_H-M_ref
+    Analogous tags: coreCIF:_space_group.name_H-M_ref.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0.
-    Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    https://doi.org/10.1107/S2053273321012912
-    https://www.iucr.org/paper?ib5106
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99–106.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_OG
@@ -2983,7 +2982,7 @@ save_
 save_space_group_magn.name_uni
 
     _definition.id                '_space_group_magn.name_UNI'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     The Unified (UNI) symbol for an MSG is an improvement of the
@@ -2997,12 +2996,12 @@ save_space_group_magn.name_uni
     identical to the corresponding BNS and OG symbols.
 
     The time-reversal group consists of the identity operation 1
-    and the time-reversal operation 1’.  For type-1, type-2, and
+    and the time-reversal operation 1'.  For type-1, type-2, and
     type-4 MSGs, the appropriate generator of the time-reversal group
     is always explicitly displayed after the space-group generators
     of F, and separated from the generators of F by a dot (".").
     Furthermore, for a type-4 MSG, the anti-translation subscript is
-    attached to the 1’ generator at the end of the UNI symbol rather
+    attached to the 1' generator at the end of the UNI symbol rather
     than to the lattice symbol at the front, and always conveys an
     unambiguous translation.
 
@@ -3019,10 +3018,10 @@ save_space_group_magn.name_uni
     the end of the UNI symbol of a type-4 MSG makes it clear that the
     MPG is of type 2 (grey).
 
-    Analogous tags: symCIF:_space_group.name_H-M_ref
+    Analogous tags: coreCIF:_space_group.name_H-M_ref.
 
-    Ref: Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu
+    Ref: Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu
 ;
     _name.category_id             space_group_magn
     _name.object_id               name_UNI
@@ -3048,12 +3047,12 @@ save_
 save_space_group_magn.number_bns
 
     _definition.id                '_space_group_magn.number_BNS'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     The Belov-Neronova-Smirnova (BNS) number for
     an MSG is composed of two positive integers separated by a
-    period. The first integer lies in the range [1-230] and indicates
+    period. The first integer lies in the range 1-230 and indicates
     the non-magnetic space group F for MSGs of types 1-3 or the
     non-magnetic space group of the subgroup D for MSGs of type 4.  The
     second integer is sequential over all MSGs associated  with the
@@ -3067,15 +3066,14 @@ save_space_group_magn.number_bns
     To avoid confusion, the word "type" is only used in the latter
     sense here.
 
-    Analogous tags: symCIF:_space_group.number_IT
+    Analogous tags: coreCIF:_space_group.IT_number.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0.
-    Belov, Neronova & Smirnova, Sov. Phys. Crystallogr. 2, 311–322 (1957).
-    Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    https://doi.org/10.1107/S2053273321012912
-    https://www.iucr.org/paper?ib5106
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    Belov, N. V., Neronova, N. N. & Smirnova, T. S. (1957). Sov. Phys.
+    Crystallogr. 2, 311–322.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               number_BNS
@@ -3101,17 +3099,17 @@ save_
 save_space_group_magn.number_og
 
     _definition.id                '_space_group_magn.number_OG'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     The Opechowski-Guccione (OG) number for a MSG comprises three positive
     integers separated by periods.  The first integer lies in the range
-    [1-230] and indicates the space group F.  The second integer is
+    1-230 and indicates the space group F.  The second integer is
     sequential over all MSGs associated with the same space group F. The
     third integer is sequential over all MSGs, and therefore lies in the
-    range [1-1651], but is not necessary for uniqueness.
+    range 1-1651, but is not necessary for uniqueness.
 
-    Analogous tags: symCIF:_space_group.number_IT
+    Analogous tags: coreCIF:_space_group.IT_number.
 ;
     _name.category_id             space_group_magn
     _name.object_id               number_OG
@@ -3148,8 +3146,8 @@ save_space_group_magn.og_wavevector_kxkykz
     of the direct-space OG lattice and k is defined in the unitless
     coordinates of the corresponding reciprocal-space lattice.  If 2*k.x
     has a non-integer value for any OG lattice (or centering) translation,
-    the definition of k is incorrect.  The value of OG wave vector is
-    essential to the OG(k) description of the magnetic space group
+    the definition of k is incorrect.  The value of the OG wave vector is
+    essential to the OG(k) description of the magnetic space-group
     symmetry; it cannot be omitted from such a description without
     ambiguity.
 ;
@@ -3169,7 +3167,7 @@ save_space_group_magn.point_group_name_h-m
     _definition.id                '_space_group_magn.point_group_name_H-M'
     _alias.definition_id          '_space_group_magn.point_group_name'
     _alias.deprecation_date       2023-06-01
-    _definition.update            2024-01-19
+    _definition.update            2024-03-13
     _description.text
 ;
     Any magnetic point group (MPG) can be constructed by starting
@@ -3186,10 +3184,10 @@ save_space_group_magn.point_group_name_h-m
     type-3 MPG, the symbol is that of P with a prime added to each
     time-reversed generator.
 
-    Analogous tags: symCIF:_space_group.point_group_H-M
+    Analogous tags: coreCIF:_space_group.point_group_H-M.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_name_H_M
@@ -3214,7 +3212,7 @@ save_
 save_space_group_magn.point_group_name_uni
 
     _definition.id                '_space_group_magn.point_group_name_UNI'
-    _definition.update            2023-06-01
+    _definition.update            2024-03-13
     _description.text
 ;
     Any magnetic point group (MPG) can be constructed by starting
@@ -3228,7 +3226,7 @@ save_space_group_magn.point_group_name_uni
     in P-Q are time reversed.
 
     The time-reversal group consists of the identity operation 1
-    and the time-reversal operation 1’.  The UNI symbol of an MPG is a slight
+    and the time-reversal operation 1'.  The UNI symbol of an MPG is a slight
     modification of the earlier H-M MPG symbol, and only differs from
     the H-M MPG symbol for type-1 and type2 MPGs, so that
     the appropriate generator of the time-reversal group
@@ -3239,13 +3237,11 @@ save_space_group_magn.point_group_name_uni
     For a type-3 MPG, the UNI MPG symbol is that of P with a prime added to each
     time-reversed generator.
 
-    Analogous tags: symCIF:_space_group.point_group_H-M
+    Analogous tags: coreCIF:_space_group.point_group_H-M.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0
-    Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    https://doi.org/10.1107/S2053273321012912
-    https://www.iucr.org/paper?ib5106
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106.
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_name_UNI
@@ -3280,18 +3276,16 @@ save_space_group_magn.point_group_number_litvin
     group by removing the time-reversal component from each group
     operator.  The identifying number for each such group is taken
     from the "Survey of 3-dimensional magnetic point group types"
-    from the "Magnetic Group Tables" of D.B. Litvin.  This number is
+    from the "Magnetic Group Tables" of D. B. Litvin.  This number is
     composed of three integers: (1) an integer from 1 to 32 that
     corresponds to the non-magnetic point group; (2) an integer that
     runs sequentially over each of the magnetic point groups
     associated with a given non-magnetic point group; and (3) a
     redundant third integer that runs from 1 to 122.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0
-    Campbell et al., Acta Cryst. A78, 99–106 (2022).
-    https://doi.org/10.1107/S2053273321012912
-    https://www.iucr.org/paper?ib5106
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    Campbell, B. J. et al. (2022). Acta Cryst. A78, 99-106.
 ;
     _name.category_id             space_group_magn
     _name.object_id               point_group_number_Litvin
@@ -3329,11 +3323,12 @@ save_space_group_magn.ssg_name
      unique MSSG identifier rather than relying on the MSSG symbol alone.
      The examples are based on SSG 47.1.9.3 Pmmm(0,0,g)ss0 in (3+1)D.
 
-    Analogous tags: msCIF:_space_group.ssg_name
+    Analogous tags: msCIF:_space_group.ssg_name.
 
-    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
-    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
-    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
+    Ref: ISO-MAG tables of H. T. Stokes and B. J. Campbell at
+    https://iso.byu.edu.
+    ISO(3+d)D tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    Stokes, H. T. & Campbell, B. J. (2022). Acta Cryst. A78, 364-370.
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_name
@@ -3384,7 +3379,7 @@ save_space_group_magn.ssg_number
     separated by periods:
     (1-4) the four parts of the superspace group (SSG) number of its
     family superspace group (FSSG) or maximal superspace subgroup (XSSG),
-    (5) the letter ‘m’ followed by the second part of the BNS number
+    (5) the letter 'm’ followed by the second part of the BNS number
     of its basic magnetic space group (BMSG), and
     (6) an integer that enumerates the MSSGs derived from the same
     combination of BMSG and FSSG/XSSG.
@@ -3400,22 +3395,22 @@ save_space_group_magn.ssg_number
     The BNS number of the BMSG has two parts, separated by a period:
     (1) the SG number of its FSG/XSG, and
     (2) an integer that enumerates distinct MSGs of the same crystal system,
-    which was tabulated by Stokes and Campbell (2022).
+    which was tabulated by Stokes & Campbell (2022).
 
     Because it is common to employ a user-defined superspace setting for an
     MSSG, it is strongly recommended that the MSSG number be accompanied by
-    the transformation to the standard MSSG setting of Stokes and Campbell
+    the transformation to the standard MSSG setting of Stokes & Campbell
     (2022), which is specified with
     _space_group_magn_ssg_transforms.Pp_superspace.
 
-    Analogous tags: msCIF:_space_group.ssg_number
+    Analogous tags: msCIF:_space_group.ssg_number.
 
     Ref:
-    ISO-MAG tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
-    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
-    H.T. Stokes, B.J. Campbell, and S. van Smaalen, Acta Cryst. A67,
-    45–55 (2011).
-    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    ISO(3+d)D tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    Stokes, H. T., Campbell, B. J. & van Smaalen, S. (2011). Acta Cryst. A67,
+    45–55.
+    Stokes, H. T. & Campbell, B. J. (2022). Acta Cryst. A78, 364-370.
 ;
     _name.category_id             space_group_magn
     _name.object_id               ssg_number
@@ -3453,13 +3448,13 @@ save_space_group_magn.transform_bns_pp
 
     where (a,b,c) are the current basis vectors.
 
-    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
-    http://iso.byu.edu
+    Ref: ISO-MAG tables of H. T. Stokes and B. J. Campbell at
+    https://iso.byu.edu.
 
-    Wondratschek, H., Aroyo, M. I., Souvignier, B. and Chapuis, G.
+    Wondratschek, H., Aroyo, M. I., Souvignier, B. & Chapuis, G. (2016).
     Transformation of coordinate systems. In International Tables for
-    Crystallography (2016). Volume A, Space-group symmetry, edited
-    by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
+    Crystallography. Volume A, Space-group symmetry, edited
+    by M. Aroyo, 6th ed. ch. 1.5. Chichester: Wiley.
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_BNS_Pp
@@ -3502,10 +3497,10 @@ save_space_group_magn.transform_bns_pp_abc
     except that the point and translational components are separated
     by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc
+    Analogous tags: symCIF:_space_group.transform_Pp_abc.
 
-    Ref: ISO-MAG tables of H.T. Stokes and B.J. Campbell at
-    http://iso.byu.edu
+    Ref: ISO-MAG tables of H. T. Stokes and B. J. Campbell at
+    https://iso.byu.edu.
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_BNS_Pp_abc
@@ -3525,20 +3520,20 @@ save_space_group_magn.transform_og_pp
     This item specifies the transformation (P,p) of the basis
     vectors and origin of  the current setting to those of
     the Opechowski-Guccione setting presented  in the
-    Magnetic Group Tables of D.B. Litvin. The basis vectors
+    Magnetic Group Tables of D. B. Litvin. The basis vectors
     (a',b',c') of the OG setting are obtained as
 
     (a',b',c',1) = Pp (a,b,c,1)
 
     where (a,b,c) are the current basis vectors.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
 
-    Wondratschek, H., Maroto, M. I., Souvignier, B. and Chapuis, G.
+    Wondratschek, H., Maroto, M. I., Souvignier, B. & Chapuis, G. (2016).
     Transformation of coordinate systems. In International Tables for
-    Crystallography (2016). Volume A, Space-group symmetry, edited
-    by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
+    Crystallography. Volume A, Space-group symmetry, edited
+    by M. Aroyo, 6th ed. ch. 1.5. Chichester: Wiley.
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_OG_Pp
@@ -3560,7 +3555,7 @@ save_space_group_magn.transform_og_pp_abc
     This item specifies the transformation (P,p) of the basis
     vectors and origin of  the current setting to those of the
     Opechowski-Guccione setting presented  in the
-    Magnetic Group Tables of D.B. Litvin. The basis vectors
+    Magnetic Group Tables of D. B. Litvin. The basis vectors
     (a',b',c') of the reference setting are
     described as  linear combinations of the current basis vectors
     (a,b,c), and the origin shift (ox,oy,oz) is displayed in the
@@ -3569,10 +3564,10 @@ save_space_group_magn.transform_og_pp_abc
     symCIF:_space_group.transform_Pp_abc, except that the point and
     translational components are separated by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc
+    Analogous tags: symCIF:_space_group.transform_Pp_abc.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
 ;
     _name.category_id             space_group_magn
     _name.object_id               transform_OG_Pp_abc
@@ -3669,11 +3664,11 @@ save_space_group_magn_ssg_transforms.pp_superspace
     setting.
     The notation and usage are analogous to those of
     _space_group.transform_Pp_abc, except that P now represents a
-    superspace point operation, that p now represents a superspace
-    translation, and that the point and translational components
+    superspace point operation, p now represents a superspace
+    translation, and the point and translational components
     are now separated with a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc
+    Analogous tags: symCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               Pp_superspace
@@ -3709,11 +3704,11 @@ save_space_group_magn_ssg_transforms.source
     If the reference source does not appear in the list below, use
     _space_group_magn_ssg_transforms.description
 
-    Ref: 'Magnetic Group Tables' of D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
-    ISO(3+d)D tables of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
-    H.T. Stokes and B.J. Campbell, Acta Cryst. A 78, 364-370 (2022).
+    Ref: 'Magnetic Group Tables' of D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    ISO(3+d)D tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    Stokes, H. T. & Campbell, B. J. (2022). Acta Cryst. A78, 364-370.
 ;
     _name.category_id             space_group_magn_ssg_transforms
     _name.object_id               source
@@ -3724,7 +3719,7 @@ save_space_group_magn_ssg_transforms.source
     _enumeration_set.state        ISO(3+d)D-MAG
     _enumeration_set.detail
 ;
-    For any magnetic superspace group (MSSG), as enumerated by Stokes and
+    For any magnetic superspace group (MSSG), as enumerated by Stokes &
     Campbell (2022), this superspace transformation simultaneously takes the
     setting of the basic magnetic space group (BMSG) to the setting of the
     corresponding entry in the ISO-MAG tables, and takes the setting of its
@@ -3760,17 +3755,17 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
     _category_key.name            '_space_group_magn_transforms.id'
     _description_example.case
 ;
-    loop_
-        _space_group_magn_transforms.id
-        _space_group_magn_transforms.Pp_abc
-        _space_group_magn_transforms.description
-        _space_group_magn_transforms.source
-            1  'a,b,c;0,0,0'    .                "data_block_CURRENT"
+       loop_
+         _space_group_magn_transforms.id
+         _space_group_magn_transforms.Pp_abc
+         _space_group_magn_transforms.description
+         _space_group_magn_transforms.source
+            1  'a,b,c;0,0,0'    .            "data_block_CURRENT"
             2  'a/2,b,c;0,0,0'  "data_block_205763"  .
             3  'a,b,c;0,0,0'    .                    "BNS"
             4  'a/2,b,c;0,0,0'  .                    "OG"
             5  'a/4,b,c;0,0,0'
-               "literature citation to a nuclear parent structure"  .
+           "literature citation to a nuclear parent structure"  .
 ;
 
 save_
@@ -3844,10 +3839,10 @@ save_space_group_magn_transforms.pp
 
     where (a,b,c) are the current basis vectors.
 
-    Ref: Wondratschek, H., Maroto, M. I., Souvignier, B. and Chapuis, G.
+    Ref: Wondratschek, H., Maroto, M. I., Souvignier, B. & Chapuis, G. (2016).
     Transformation of coordinate systems. In International Tables for
-    Crystallography (2016). Volume A, Space-group symmetry, edited
-    by M. Aroyo, 6th ed. ch 1.5. Chichester: Wiley.
+    Crystallography. Volume A, Space-group symmetry, edited
+    by M. Aroyo, 6th ed. ch. 1.5. Chichester: Wiley.
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp
@@ -3880,7 +3875,7 @@ save_space_group_magn_transforms.pp_abc
     except that the point and translational components are separated
     by a semicolon.
 
-    Analogous tags: symCIF:_space_group.transform_Pp_abc
+    Analogous tags: symCIF:_space_group.transform_Pp_abc.
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               Pp_abc
@@ -3902,10 +3897,10 @@ save_space_group_magn_transforms.source
     tag. If the reference source does not appear in the list below, use
     _space_group_magn_transforms.description
 
-    Ref: 'Magnetic Group Tables' of D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu. ISO(3+d)D tables
-    of H.T. Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' of D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    ISO(3+d)D tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             space_group_magn_transforms
     _name.object_id               source
@@ -3932,7 +3927,7 @@ save_space_group_magn_transforms.source
          'OG'
 ;
          The Opechowski-Guccione group setting presented in the Magnetic Group
-         Tables of D.B. Litvin.
+         Tables of D. B. Litvin.
 ;
 
 save_
@@ -3965,7 +3960,7 @@ save_SPACE_GROUP_SYMOP_MAGN_CENTERING
     resulting list of operators very long and unintuitive, especially
     when working  in non-standard settings.
     One could argue that anti-centering operations belong in the main
-    representative- point-operation loop since they are not actually
+    representative-point-operation loop since they are not actually
     translations of the magnetic lattice.   In fact, a pure time
     reversal is a generator of the magnetic point group of a  type-4
     magnetic space group.  Nevertheless, this centering loop is
@@ -3997,7 +3992,7 @@ save_space_group_symop_magn_centering.description
     _definition.update            2016-05-24
     _description.text
 ;
-    An optional free text description of a particular centering or
+    An optional free-text description of a particular centering or
     anti-centering translation in the BNS-supercell description of a
     magnetic space group.
 ;
@@ -4186,23 +4181,24 @@ save_space_group_symop_magn_operation.description
 
     _definition.id
         '_space_group_symop_magn_operation.description'
-    _definition.update            2016-05-24
+    _definition.update            2024-03-13
     _description.text
 ;
     The description of a particular symmetry operation of
-    the magnetic space group, which can be presented in
-    either the geometric notation presented in the
-    International Tables for Crystallography (2006),
-    Volume A, section 11.1.2, or the Seitz notation as
-    presented in  Acta Cryst. (2014), A70, 300-302.
+    the magnetic space group, which can be given in either
+    the geometric notation presented by Fischer & Koch (2006)
+    or the Seitz notation as presented by Glazer et al. (2014).
     This tag is intended for use with the BNS-supercell
     description of a magnetic structure.
 
-    Analogous tags: symCIF:_space_group_symop.operation_description
+    Analogous tags: coreCIF:_space_group_symop.operation_description.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
+    Fischer, W. & Koch, E. (2006). International Tables for Crystallography.
+    Volume A, Space-group symmetry, section 11.1.2. Dordrecht: Springer.
+    Glazer, A. M., Aroyo, M. I. & Authier, A. (2014). Acta Cryst. A70, 300-302.
 ;
     _name.category_id             space_group_symop_magn_operation
     _name.object_id               description
@@ -4240,7 +4236,7 @@ save_
 save_space_group_symop_magn_operation.xyz
 
     _definition.id                '_space_group_symop_magn_operation.xyz'
-    _definition.update            2016-05-24
+    _definition.update            2024-03-13
     _description.text
 ;
     A parsable string giving one of the symmetry operations of the
@@ -4252,11 +4248,11 @@ save_space_group_symop_magn_operation.xyz
     This tag is intended for use with the BNS-supercell description
     of a magnetic structure.
 
-    Analogous tags: symCIF:_space_group_symop.operation_xyz
+    Analogous tags: coreCIF:_space_group_symop.operation_xyz.
 
-    Ref: 'Magnetic Group Tables' by D.B. Litvin at
-    http://www.iucr.org/publ/978-0-9553602-2-0. ISO-MAG tables of H.T.
-    Stokes and B.J. Campbell at http://iso.byu.edu.
+    Ref: 'Magnetic Group Tables' by D. B. Litvin at
+    https://www.iucr.org/publ/978-0-9553602-2-0.
+    ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
     _name.category_id             space_group_symop_magn_operation
     _name.object_id               xyz
@@ -4293,7 +4289,7 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
     _description.text
 ;
     This loop provides a list of the centering and anti-centering
-    translations of a magnetic superspace-group.
+    translations of a magnetic superspace group.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
@@ -4360,7 +4356,7 @@ save_space_group_symop_magn_ssg_centering.id
     _description.text
 ;
     An arbitrary identifier that uniquely labels each centering or
-    anti-centering translations in a looped list of magnetic
+    anti-centering translation in a looped list of magnetic
     superspace-group symmetry operations. Most commonly, a sequence
     of positive integers is used for this identification.   This tag
     is intended for use with the BNS description of the magnetic
@@ -4391,7 +4387,7 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
 ;
     A looped list of magnetic superspace-group symmetry operations.
 
-    Analogous tags: msCIF:_space_group_symop.ssg_*
+    Analogous tags: msCIF:_space_group_symop.ssg_*.
 ;
     _name.category_id             MAGNETIC
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
@@ -4415,7 +4411,7 @@ save_space_group_symop_magn_ssg_operation.algebraic
     respectively. This tag is intended for use with the BNS
     description of the magnetic basic cell.
 
-    Analogous tags: msCIF:_space_group_symop.ssg_operation_algebraic
+    Analogous tags: msCIF:_space_group_symop.ssg_operation_algebraic.
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               algebraic
@@ -4466,7 +4462,7 @@ save_space_group_symop_magn_ssg_operation.id
     The _space_group_symop_magn_ssg.id alias provides backwards
     compatibility with the established magCIF prototype.
 
-    Analogous tags: msCIF:_space_group_symop_ssg_id
+    Analogous tags: msCIF:_space_group_symop_ssg_id.
 ;
     _name.category_id             space_group_symop_magn_ssg_operation
     _name.object_id               id
