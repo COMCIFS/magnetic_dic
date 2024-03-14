@@ -1727,6 +1727,7 @@ save_atom_site_moment_special_func.sawtooth_ax
     internal space. The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
