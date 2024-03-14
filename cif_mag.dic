@@ -3379,7 +3379,7 @@ save_space_group_magn.ssg_number
     separated by periods:
     (1-4) the four parts of the superspace group (SSG) number of its
     family superspace group (FSSG) or maximal superspace subgroup (XSSG),
-    (5) the letter 'm’ followed by the second part of the BNS number
+    (5) the letter 'm' followed by the second part of the BNS number
     of its basic magnetic space group (BMSG), and
     (6) an integer that enumerates the MSSGs derived from the same
     combination of BMSG and FSSG/XSSG.
