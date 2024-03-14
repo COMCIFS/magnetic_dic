@@ -1715,8 +1715,11 @@ save_atom_site_moment_special_func.sawtooth_ax
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
