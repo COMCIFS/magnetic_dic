@@ -1715,8 +1715,11 @@ save_atom_site_moment_special_func.sawtooth_ax
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
@@ -1724,6 +1727,7 @@ save_atom_site_moment_special_func.sawtooth_ax
     internal space. The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
@@ -1756,8 +1760,11 @@ save_atom_site_moment_special_func.sawtooth_ay
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
@@ -1765,6 +1772,7 @@ save_atom_site_moment_special_func.sawtooth_ay
     internal space. The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
@@ -1797,8 +1805,11 @@ save_atom_site_moment_special_func.sawtooth_az
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
@@ -1806,6 +1817,7 @@ save_atom_site_moment_special_func.sawtooth_az
     internal space. The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
@@ -1838,8 +1850,11 @@ save_atom_site_moment_special_func.sawtooth_c
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
@@ -1847,6 +1862,7 @@ save_atom_site_moment_special_func.sawtooth_c
     internal space. The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
@@ -1879,8 +1895,11 @@ save_atom_site_moment_special_func.sawtooth_w
     magnetic sawtooth function is only used when working in the
     crystal-axis coordinate system.  It is defined along the
     internal space direction as follows:
-    mx=2*ax[(x4-c)/w]                      my=2*ay[(x4-c)/w]
+
+    mx=2*ax[(x4-c)/w]
+    my=2*ay[(x4-c)/w]
     mz=2*az[(x4-c)/w]
+
     with x4 belonging to the interval [c-(w/2), c+(w/2)], where
     ax, ay and az are the amplitudes (maximum magnetic moments)
     along each crystallographic axis, w is its width, x4 is the
@@ -1888,6 +1907,7 @@ save_atom_site_moment_special_func.sawtooth_w
     internal space.  The use of this function is restricted to
     one-dimensional modulated structures. For more details, see
     the manual for JANA2000 (Petricek & Dusek, 2000).
+
     Calculated parameters mx, my and mz must be in Bohr-magneton
     units and can vary in the range (-infinity,infinity).
 
@@ -2841,10 +2861,10 @@ save_space_group_magn.hall_symbol
     The magnetic Hall symbol provides an unambiguous representation
     of the generators of a three-dimensional MSG, and largely follows
     the conventions developed for non-magnetic Hall symbols, except
-    that the prime symbol "’" has been replaced by the caret symbol
+    that the prime symbol "'" has been replaced by the caret symbol
     "^" in order to reserve the prime symbol to indicate
     time-reversal.  For a type-2 or type-4 MSG, the time reversal
-    element is listed separately as "1’" at the end of the magnetic
+    element is listed separately as "1'" at the end of the magnetic
     Hall symbol, along with a character to indicate the non-lattice
     translational component of the anti-translation in the case of a
     type-4 MSG.
@@ -3233,7 +3253,7 @@ save_space_group_magn.point_group_name_uni
     is always explicitly displayed after the space-group generators
     of P, and separated from the generators of P by a dot (".").
     For a type-1 MPG or type-2 MPG, the UNI symbol is that of
-    non-magnetic point group P, followed by ".1" or ".1’", respectively.
+    non-magnetic point group P, followed by ".1" or ".1'", respectively.
     For a type-3 MPG, the UNI MPG symbol is that of P with a prime added to each
     time-reversed generator.
 
@@ -3379,7 +3399,7 @@ save_space_group_magn.ssg_number
     separated by periods:
     (1-4) the four parts of the superspace group (SSG) number of its
     family superspace group (FSSG) or maximal superspace subgroup (XSSG),
-    (5) the letter 'm’ followed by the second part of the BNS number
+    (5) the letter 'm' followed by the second part of the BNS number
     of its basic magnetic space group (BMSG), and
     (6) an integer that enumerates the MSSGs derived from the same
     combination of BMSG and FSSG/XSSG.
