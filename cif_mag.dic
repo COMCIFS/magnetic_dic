@@ -1963,10 +1963,8 @@ save_atom_sites_moment_fourier.axes_description
     _atom_site_moment_Fourier.axis.
 
     Analogous tags:
-    msCIF:_atom_sites_displace_Fourier.axes_description.
-
-    It is not difficult to imagine an
-    _atom_sites_rot_Fourier.axes_description tag.
+    msCIF:_atom_sites_displace_Fourier.axes_description,
+    msCIF:_atom_sites_rot_Fourier.axes_description.
 ;
     _name.category_id             atom_sites_moment_Fourier
     _name.object_id               axes_description
