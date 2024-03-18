@@ -479,10 +479,10 @@ save_atom_site_moment.modulation_flag
 ;
     _name.category_id             atom_site_moment
     _name.object_id               modulation_flag
-    _type.purpose                 Describe
+    _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
     loop_
       _enumeration_set.state
@@ -509,7 +509,7 @@ save_atom_site_moment.refinement_flags_magnetic
     _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
     loop_
       _enumeration_set.state
@@ -877,10 +877,10 @@ save_atom_site_rotation.modulation_flag
 ;
     _name.category_id             atom_site_rotation
     _name.object_id               modulation_flag
-    _type.purpose                 Describe
+    _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
     loop_
       _enumeration_set.state
@@ -909,7 +909,7 @@ save_atom_site_rotation.refinement_flags_rotational
     _type.purpose                 State
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
     loop_
       _enumeration_set.state
