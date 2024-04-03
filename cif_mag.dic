@@ -1867,10 +1867,9 @@ save_atom_site_moment_fourier_param.modulus_su
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               modulus_su
     _name.linked_item_id          '_atom_site_moment_Fourier_param.modulus'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -1983,10 +1982,9 @@ save_atom_site_moment_fourier_param.phase_su
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               phase_su
     _name.linked_item_id          '_atom_site_moment_Fourier_param.phase'
+    _units.code                   cycles
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   cycles
 
 save_
 
@@ -2098,10 +2096,9 @@ save_atom_site_moment_fourier_param.sin_su
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               sin_su
     _name.linked_item_id          '_atom_site_moment_Fourier_param.sin'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -2269,8 +2266,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_ax_su
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_ax_su'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ax_su'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_ax_su'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_ax_su'
     _definition.update            2024-04-03
     _description.text
 ;
@@ -2279,19 +2278,16 @@ save_atom_site_moment_special_func.sawtooth_ax_su
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_ax_su
     _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_ax'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
 save_atom_site_moment_special_func.sawtooth_ay
 
-    _definition.id
-        '_atom_site_moment_special_func.sawtooth_ay'
-    _alias.definition_id
-        '_atom_site_moment_special_func_sawtooth_ay'
+    _definition.id                '_atom_site_moment_special_func.sawtooth_ay'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ay'
     _definition.update            2016-05-24
     _description.text
 ;
@@ -2335,8 +2331,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_ay_su
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_ay_su'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ay_su'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_ay_su'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_ay_su'
     _definition.update            2024-04-03
     _description.text
 ;
@@ -2345,19 +2343,16 @@ save_atom_site_moment_special_func.sawtooth_ay_su
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_ay_su
     _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_ay'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
 save_atom_site_moment_special_func.sawtooth_az
 
-    _definition.id
-        '_atom_site_moment_special_func.sawtooth_az'
-    _alias.definition_id
-        '_atom_site_moment_special_func_sawtooth_az'
+    _definition.id                '_atom_site_moment_special_func.sawtooth_az'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_az'
     _definition.update            2016-05-24
     _description.text
 ;
@@ -2401,8 +2396,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_az_su
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_az_su'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_az_su'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_az_su'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_az_su'
     _definition.update            2024-04-03
     _description.text
 ;
@@ -2411,19 +2408,16 @@ save_atom_site_moment_special_func.sawtooth_az_su
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_az_su
     _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_az'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
 save_atom_site_moment_special_func.sawtooth_c
 
-    _definition.id
-        '_atom_site_moment_special_func.sawtooth_c'
-    _alias.definition_id
-        '_atom_site_moment_special_func_sawtooth_c'
+    _definition.id                '_atom_site_moment_special_func.sawtooth_c'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_c'
     _definition.update            2016-05-24
     _description.text
 ;
@@ -2477,10 +2471,9 @@ save_atom_site_moment_special_func.sawtooth_c_su
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_c_su
     _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_c'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -2541,10 +2534,9 @@ save_atom_site_moment_special_func.sawtooth_w_su
     _name.category_id             atom_site_moment_special_func
     _name.object_id               sawtooth_w_su
     _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_w'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
