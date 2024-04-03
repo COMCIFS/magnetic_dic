@@ -299,7 +299,7 @@ save_atom_site_moment.cartn_su
     Standard uncertainty of _atom_site_moment.Cartn.
 ;
     _name.category_id             atom_site_moment
-    _name.object_id               Cartn_su_su
+    _name.object_id               Cartn_su
     _name.linked_item_id          '_atom_site_moment.Cartn'
     _type.purpose                 SU
     _type.source                  Related
@@ -465,7 +465,7 @@ save_atom_site_moment.crystalaxis_su
     Standard uncertainty of _atom_site_moment.crystalaxis.
 ;
     _name.category_id             atom_site_moment
-    _name.object_id               crystalaxis_su_su
+    _name.object_id               crystalaxis_su
     _name.linked_item_id          '_atom_site_moment.crystalaxis'
     _type.purpose                 SU
     _type.source                  Related
@@ -929,7 +929,7 @@ save_atom_site_rotation.cartn_su
     Standard uncertainty of _atom_site_rotation.Cartn.
 ;
     _name.category_id             atom_site_rotation
-    _name.object_id               Cartn_su_su
+    _name.object_id               Cartn_su
     _name.linked_item_id          '_atom_site_rotation.Cartn'
     _type.purpose                 SU
     _type.source                  Related
@@ -1095,7 +1095,7 @@ save_atom_site_rotation.crystalaxis_su
     Standard uncertainty of _atom_site_rotation.crystalaxis.
 ;
     _name.category_id             atom_site_rotation
-    _name.object_id               crystalaxis_su_su
+    _name.object_id               crystalaxis_su
     _name.linked_item_id          '_atom_site_rotation.crystalaxis'
     _type.purpose                 SU
     _type.source                  Related
