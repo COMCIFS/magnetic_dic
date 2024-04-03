@@ -768,7 +768,7 @@ save_atom_site_moment.spherical_modulus_su
     _name.category_id             atom_site_moment
     _name.object_id               spherical_modulus_su
     _name.linked_item_id          '_atom_site_moment.spherical_modulus'
-    _units.code                   radians
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
