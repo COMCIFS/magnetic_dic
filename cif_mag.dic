@@ -342,10 +342,9 @@ save_atom_site_moment.cartn_x_su
     _name.category_id             atom_site_moment
     _name.object_id               Cartn_x_su
     _name.linked_item_id          '_atom_site_moment.Cartn_x'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -381,10 +380,9 @@ save_atom_site_moment.cartn_y_su
     _name.category_id             atom_site_moment
     _name.object_id               Cartn_y_su
     _name.linked_item_id          '_atom_site_moment.Cartn_y'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -420,10 +418,9 @@ save_atom_site_moment.cartn_z_su
     _name.category_id             atom_site_moment
     _name.object_id               Cartn_z_su
     _name.linked_item_id          '_atom_site_moment.Cartn_z'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -508,10 +505,9 @@ save_atom_site_moment.crystalaxis_x_su
     _name.category_id             atom_site_moment
     _name.object_id               crystalaxis_x_su
     _name.linked_item_id          '_atom_site_moment.crystalaxis_x'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -547,10 +543,9 @@ save_atom_site_moment.crystalaxis_y_su
     _name.category_id             atom_site_moment
     _name.object_id               crystalaxis_y_su
     _name.linked_item_id          '_atom_site_moment.crystalaxis_y'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -586,10 +581,9 @@ save_atom_site_moment.crystalaxis_z_su
     _name.category_id             atom_site_moment
     _name.object_id               crystalaxis_z_su
     _name.linked_item_id          '_atom_site_moment.crystalaxis_z'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -635,10 +629,9 @@ save_atom_site_moment.magnitude_su
     _name.category_id             atom_site_moment
     _name.object_id               magnitude_su
     _name.linked_item_id          '_atom_site_moment.magnitude'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -736,10 +729,9 @@ save_atom_site_moment.spherical_azimuthal_su
     _name.category_id             atom_site_moment
     _name.object_id               spherical_azimuthal_su
     _name.linked_item_id          '_atom_site_moment.spherical_azimuthal'
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   degrees
 
 save_
 
@@ -776,10 +768,9 @@ save_atom_site_moment.spherical_modulus_su
     _name.category_id             atom_site_moment
     _name.object_id               spherical_modulus_su
     _name.linked_item_id          '_atom_site_moment.spherical_modulus'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -818,10 +809,9 @@ save_atom_site_moment.spherical_polar_su
     _name.category_id             atom_site_moment
     _name.object_id               spherical_polar_su
     _name.linked_item_id          '_atom_site_moment.spherical_polar'
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   degrees
 
 save_
 
@@ -972,10 +962,9 @@ save_atom_site_rotation.cartn_x_su
     _name.category_id             atom_site_rotation
     _name.object_id               Cartn_x_su
     _name.linked_item_id          '_atom_site_rotation.Cartn_x'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1011,10 +1000,9 @@ save_atom_site_rotation.cartn_y_su
     _name.category_id             atom_site_rotation
     _name.object_id               Cartn_y_su
     _name.linked_item_id          '_atom_site_rotation.Cartn_y'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1050,10 +1038,9 @@ save_atom_site_rotation.cartn_z_su
     _name.category_id             atom_site_rotation
     _name.object_id               Cartn_z_su
     _name.linked_item_id          '_atom_site_rotation.Cartn_z'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1138,10 +1125,9 @@ save_atom_site_rotation.crystalaxis_x_su
     _name.category_id             atom_site_rotation
     _name.object_id               crystalaxis_x_su
     _name.linked_item_id          '_atom_site_rotation.crystalaxis_x'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1177,10 +1163,9 @@ save_atom_site_rotation.crystalaxis_y_su
     _name.category_id             atom_site_rotation
     _name.object_id               crystalaxis_y_su
     _name.linked_item_id          '_atom_site_rotation.crystalaxis_y'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1216,10 +1201,9 @@ save_atom_site_rotation.crystalaxis_z_su
     _name.category_id             atom_site_rotation
     _name.object_id               crystalaxis_z_su
     _name.linked_item_id          '_atom_site_rotation.crystalaxis_z'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1265,10 +1249,9 @@ save_atom_site_rotation.magnitude_su
     _name.category_id             atom_site_rotation
     _name.object_id               magnitude_su
     _name.linked_item_id          '_atom_site_rotation.magnitude'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1368,10 +1351,9 @@ save_atom_site_rotation.spherical_azimuthal_su
     _name.category_id             atom_site_rotation
     _name.object_id               spherical_azimuthal_su
     _name.linked_item_id          '_atom_site_rotation.spherical_azimuthal'
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   degrees
 
 save_
 
@@ -1408,10 +1390,9 @@ save_atom_site_rotation.spherical_modulus_su
     _name.category_id             atom_site_rotation
     _name.object_id               spherical_modulus_su
     _name.linked_item_id          '_atom_site_rotation.spherical_modulus'
+    _units.code                   radians
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   radians
 
 save_
 
@@ -1450,10 +1431,9 @@ save_atom_site_rotation.spherical_polar_su
     _name.category_id             atom_site_rotation
     _name.object_id               spherical_polar_su
     _name.linked_item_id          '_atom_site_rotation.spherical_polar'
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   degrees
 
 save_
 
@@ -1744,10 +1724,9 @@ save_atom_site_moment_fourier_param.cos_su
     _name.category_id             atom_site_moment_Fourier_param
     _name.object_id               cos_su
     _name.linked_item_id          '_atom_site_moment_Fourier_param.cos'
+    _units.code                   Bohr_magnetons
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
-
-    _units.code                   Bohr_magnetons
 
 save_
 
@@ -2309,8 +2288,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_ay
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_ay'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ay'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_ay'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_ay'
     _definition.update            2016-05-24
     _description.text
 ;
@@ -2373,8 +2354,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_az
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_az'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_az'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_az'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_az'
     _definition.update            2016-05-24
     _description.text
 ;
@@ -2437,8 +2420,10 @@ save_
 
 save_atom_site_moment_special_func.sawtooth_c
 
-    _definition.id                '_atom_site_moment_special_func.sawtooth_c'
-    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_c'
+    _definition.id
+        '_atom_site_moment_special_func.sawtooth_c'
+    _alias.definition_id
+        '_atom_site_moment_special_func_sawtooth_c'
     _definition.update            2016-05-24
     _description.text
 ;
