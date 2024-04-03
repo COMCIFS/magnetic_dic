@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-03-13
+    _dictionary.date              2024-04-03
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -289,6 +289,27 @@ save_atom_site_moment.cartn
 
 save_
 
+save_atom_site_moment.cartn_su
+
+    _definition.id                '_atom_site_moment.Cartn_su'
+    _alias.definition_id          '_atom_site_moment_Cartn_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.Cartn.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               Cartn_su_su
+    _name.linked_item_id          '_atom_site_moment.Cartn'
+    _type.purpose                 SU
+    _type.source                  Related
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment.cartn_x
 
     _definition.id                '_atom_site_moment.Cartn_x'
@@ -305,6 +326,25 @@ save_atom_site_moment.cartn_x
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.cartn_x_su
+
+    _definition.id                '_atom_site_moment.Cartn_x_su'
+    _alias.definition_id          '_atom_site_moment_Cartn_x_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.Cartn_x.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               Cartn_x_su
+    _name.linked_item_id          '_atom_site_moment.Cartn_x'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -329,6 +369,25 @@ save_atom_site_moment.cartn_y
 
 save_
 
+save_atom_site_moment.cartn_y_su
+
+    _definition.id                '_atom_site_moment.Cartn_y_su'
+    _alias.definition_id          '_atom_site_moment_Cartn_y_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.Cartn_y.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               Cartn_y_su
+    _name.linked_item_id          '_atom_site_moment.Cartn_y'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment.cartn_z
 
     _definition.id                '_atom_site_moment.Cartn_z'
@@ -345,6 +404,25 @@ save_atom_site_moment.cartn_z
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.cartn_z_su
+
+    _definition.id                '_atom_site_moment.Cartn_z_su'
+    _alias.definition_id          '_atom_site_moment_Cartn_z_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.Cartn_z.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               Cartn_z_su
+    _name.linked_item_id          '_atom_site_moment.Cartn_z'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -377,6 +455,27 @@ save_atom_site_moment.crystalaxis
 
 save_
 
+save_atom_site_moment.crystalaxis_su
+
+    _definition.id                '_atom_site_moment.crystalaxis_su'
+    _alias.definition_id          '_atom_site_moment_crystalaxis_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.crystalaxis.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               crystalaxis_su_su
+    _name.linked_item_id          '_atom_site_moment.crystalaxis'
+    _type.purpose                 SU
+    _type.source                  Related
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment.crystalaxis_x
 
     _definition.id                '_atom_site_moment.crystalaxis_x'
@@ -393,6 +492,25 @@ save_atom_site_moment.crystalaxis_x
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.crystalaxis_x_su
+
+    _definition.id                '_atom_site_moment.crystalaxis_x_su'
+    _alias.definition_id          '_atom_site_moment_crystalaxis_x_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.crystalaxis_x.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               crystalaxis_x_su
+    _name.linked_item_id          '_atom_site_moment.crystalaxis_x'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -417,6 +535,25 @@ save_atom_site_moment.crystalaxis_y
 
 save_
 
+save_atom_site_moment.crystalaxis_y_su
+
+    _definition.id                '_atom_site_moment.crystalaxis_y_su'
+    _alias.definition_id          '_atom_site_moment_crystalaxis_y_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.crystalaxis_y.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               crystalaxis_y_su
+    _name.linked_item_id          '_atom_site_moment.crystalaxis_y'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment.crystalaxis_z
 
     _definition.id                '_atom_site_moment.crystalaxis_z'
@@ -433,6 +570,25 @@ save_atom_site_moment.crystalaxis_z
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.crystalaxis_z_su
+
+    _definition.id                '_atom_site_moment.crystalaxis_z_su'
+    _alias.definition_id          '_atom_site_moment_crystalaxis_z_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.crystalaxis_z.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               crystalaxis_z_su
+    _name.linked_item_id          '_atom_site_moment.crystalaxis_z'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -463,6 +619,25 @@ save_atom_site_moment.magnitude
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.magnitude_su
+
+    _definition.id                '_atom_site_moment.magnitude_su'
+    _alias.definition_id          '_atom_site_moment_magnitude_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.magnitude.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               magnitude_su
+    _name.linked_item_id          '_atom_site_moment.magnitude'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -549,6 +724,25 @@ save_atom_site_moment.spherical_azimuthal
 
 save_
 
+save_atom_site_moment.spherical_azimuthal_su
+
+    _definition.id                '_atom_site_moment.spherical_azimuthal_su'
+    _alias.definition_id          '_atom_site_moment_spherical_azimuthal_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.spherical_azimuthal.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               spherical_azimuthal_su
+    _name.linked_item_id          '_atom_site_moment.spherical_azimuthal'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   degrees
+
+save_
+
 save_atom_site_moment.spherical_modulus
 
     _definition.id                '_atom_site_moment.spherical_modulus'
@@ -567,6 +761,25 @@ save_atom_site_moment.spherical_modulus
     _type.container               Single
     _type.contents                Real
     _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment.spherical_modulus_su
+
+    _definition.id                '_atom_site_moment.spherical_modulus_su'
+    _alias.definition_id          '_atom_site_moment_spherical_modulus_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.spherical_modulus.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               spherical_modulus_su
+    _name.linked_item_id          '_atom_site_moment.spherical_modulus'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   radians
 
 save_
 
@@ -589,6 +802,25 @@ save_atom_site_moment.spherical_polar
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0.0:180.0
+    _units.code                   degrees
+
+save_
+
+save_atom_site_moment.spherical_polar_su
+
+    _definition.id                '_atom_site_moment.spherical_polar_su'
+    _alias.definition_id          '_atom_site_moment_spherical_polar_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment.spherical_polar.
+;
+    _name.category_id             atom_site_moment
+    _name.object_id               spherical_polar_su
+    _name.linked_item_id          '_atom_site_moment.spherical_polar'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   degrees
 
 save_
@@ -687,6 +919,27 @@ save_atom_site_rotation.cartn
 
 save_
 
+save_atom_site_rotation.cartn_su
+
+    _definition.id                '_atom_site_rotation.Cartn_su'
+    _alias.definition_id          '_atom_site_rotation_Cartn_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.Cartn.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               Cartn_su_su
+    _name.linked_item_id          '_atom_site_rotation.Cartn'
+    _type.purpose                 SU
+    _type.source                  Related
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   radians
+
+save_
+
 save_atom_site_rotation.cartn_x
 
     _definition.id                '_atom_site_rotation.Cartn_x'
@@ -703,6 +956,25 @@ save_atom_site_rotation.cartn_x
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.cartn_x_su
+
+    _definition.id                '_atom_site_rotation.Cartn_x_su'
+    _alias.definition_id          '_atom_site_rotation_Cartn_x_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.Cartn_x.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               Cartn_x_su
+    _name.linked_item_id          '_atom_site_rotation.Cartn_x'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -727,6 +999,25 @@ save_atom_site_rotation.cartn_y
 
 save_
 
+save_atom_site_rotation.cartn_y_su
+
+    _definition.id                '_atom_site_rotation.Cartn_y_su'
+    _alias.definition_id          '_atom_site_rotation_Cartn_y_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.Cartn_y.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               Cartn_y_su
+    _name.linked_item_id          '_atom_site_rotation.Cartn_y'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   radians
+
+save_
+
 save_atom_site_rotation.cartn_z
 
     _definition.id                '_atom_site_rotation.Cartn_z'
@@ -743,6 +1034,25 @@ save_atom_site_rotation.cartn_z
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.cartn_z_su
+
+    _definition.id                '_atom_site_rotation.Cartn_z_su'
+    _alias.definition_id          '_atom_site_rotation_Cartn_z_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.Cartn_z.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               Cartn_z_su
+    _name.linked_item_id          '_atom_site_rotation.Cartn_z'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -775,6 +1085,27 @@ save_atom_site_rotation.crystalaxis
 
 save_
 
+save_atom_site_rotation.crystalaxis_su
+
+    _definition.id                '_atom_site_rotation.crystalaxis_su'
+    _alias.definition_id          '_atom_site_rotation_crystalaxis_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.crystalaxis.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               crystalaxis_su_su
+    _name.linked_item_id          '_atom_site_rotation.crystalaxis'
+    _type.purpose                 SU
+    _type.source                  Related
+    _type.container               Matrix
+    _type.dimension               '[3]'
+    _type.contents                Real
+    _units.code                   radians
+
+save_
+
 save_atom_site_rotation.crystalaxis_x
 
     _definition.id                '_atom_site_rotation.crystalaxis_x'
@@ -791,6 +1122,25 @@ save_atom_site_rotation.crystalaxis_x
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.crystalaxis_x_su
+
+    _definition.id                '_atom_site_rotation.crystalaxis_x_su'
+    _alias.definition_id          '_atom_site_rotation_crystalaxis_x_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.crystalaxis_x.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               crystalaxis_x_su
+    _name.linked_item_id          '_atom_site_rotation.crystalaxis_x'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -815,6 +1165,25 @@ save_atom_site_rotation.crystalaxis_y
 
 save_
 
+save_atom_site_rotation.crystalaxis_y_su
+
+    _definition.id                '_atom_site_rotation.crystalaxis_y_su'
+    _alias.definition_id          '_atom_site_rotation_crystalaxis_y_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.crystalaxis_y.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               crystalaxis_y_su
+    _name.linked_item_id          '_atom_site_rotation.crystalaxis_y'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   radians
+
+save_
+
 save_atom_site_rotation.crystalaxis_z
 
     _definition.id                '_atom_site_rotation.crystalaxis_z'
@@ -831,6 +1200,25 @@ save_atom_site_rotation.crystalaxis_z
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.crystalaxis_z_su
+
+    _definition.id                '_atom_site_rotation.crystalaxis_z_su'
+    _alias.definition_id          '_atom_site_rotation_crystalaxis_z_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.crystalaxis_z.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               crystalaxis_z_su
+    _name.linked_item_id          '_atom_site_rotation.crystalaxis_z'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -861,6 +1249,25 @@ save_atom_site_rotation.magnitude
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.magnitude_su
+
+    _definition.id                '_atom_site_rotation.magnitude_su'
+    _alias.definition_id          '_atom_site_rotation_magnitude_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.magnitude.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               magnitude_su
+    _name.linked_item_id          '_atom_site_rotation.magnitude'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -949,6 +1356,25 @@ save_atom_site_rotation.spherical_azimuthal
 
 save_
 
+save_atom_site_rotation.spherical_azimuthal_su
+
+    _definition.id                '_atom_site_rotation.spherical_azimuthal_su'
+    _alias.definition_id          '_atom_site_rotation_spherical_azimuthal_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.spherical_azimuthal.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               spherical_azimuthal_su
+    _name.linked_item_id          '_atom_site_rotation.spherical_azimuthal'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   degrees
+
+save_
+
 save_atom_site_rotation.spherical_modulus
 
     _definition.id                '_atom_site_rotation.spherical_modulus'
@@ -966,6 +1392,25 @@ save_atom_site_rotation.spherical_modulus
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   radians
+
+save_
+
+save_atom_site_rotation.spherical_modulus_su
+
+    _definition.id                '_atom_site_rotation.spherical_modulus_su'
+    _alias.definition_id          '_atom_site_rotation_spherical_modulus_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.spherical_modulus.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               spherical_modulus_su
+    _name.linked_item_id          '_atom_site_rotation.spherical_modulus'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   radians
 
 save_
@@ -989,6 +1434,25 @@ save_atom_site_rotation.spherical_polar
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0.0:180.0
+    _units.code                   degrees
+
+save_
+
+save_atom_site_rotation.spherical_polar_su
+
+    _definition.id                '_atom_site_rotation.spherical_polar_su'
+    _alias.definition_id          '_atom_site_rotation_spherical_polar_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_rotation.spherical_polar.
+;
+    _name.category_id             atom_site_rotation
+    _name.object_id               spherical_polar_su
+    _name.linked_item_id          '_atom_site_rotation.spherical_polar'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   degrees
 
 save_
@@ -1268,6 +1732,25 @@ save_atom_site_moment_fourier_param.cos
 
 save_
 
+save_atom_site_moment_fourier_param.cos_su
+
+    _definition.id                '_atom_site_moment_Fourier_param.cos_su'
+    _alias.definition_id          '_atom_site_moment_Fourier_param_cos_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_Fourier_param.cos.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               cos_su
+    _name.linked_item_id          '_atom_site_moment_Fourier_param.cos'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment_fourier_param.cos_symmform
 
     _definition.id                '_atom_site_moment_Fourier_param.cos_symmform'
@@ -1393,6 +1876,25 @@ save_atom_site_moment_fourier_param.modulus
 
 save_
 
+save_atom_site_moment_fourier_param.modulus_su
+
+    _definition.id                '_atom_site_moment_Fourier_param.modulus_su'
+    _alias.definition_id          '_atom_site_moment_Fourier_param_modulus_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_Fourier_param.modulus.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               modulus_su
+    _name.linked_item_id          '_atom_site_moment_Fourier_param.modulus'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment_fourier_param.modulus_symmform
 
     _definition.id
@@ -1490,6 +1992,25 @@ save_atom_site_moment_fourier_param.phase
 
 save_
 
+save_atom_site_moment_fourier_param.phase_su
+
+    _definition.id                '_atom_site_moment_Fourier_param.phase_su'
+    _alias.definition_id          '_atom_site_moment_Fourier_param_phase_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_Fourier_param.phase.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               phase_su
+    _name.linked_item_id          '_atom_site_moment_Fourier_param.phase'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   cycles
+
+save_
+
 save_atom_site_moment_fourier_param.phase_symmform
 
     _definition.id
@@ -1582,6 +2103,25 @@ save_atom_site_moment_fourier_param.sin
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment_fourier_param.sin_su
+
+    _definition.id                '_atom_site_moment_Fourier_param.sin_su'
+    _alias.definition_id          '_atom_site_moment_Fourier_param_sin_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_Fourier_param.sin.
+;
+    _name.category_id             atom_site_moment_Fourier_param
+    _name.object_id               sin_su
+    _name.linked_item_id          '_atom_site_moment_Fourier_param.sin'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -1748,6 +2288,25 @@ save_atom_site_moment_special_func.sawtooth_ax
 
 save_
 
+save_atom_site_moment_special_func.sawtooth_ax_su
+
+    _definition.id                '_atom_site_moment_special_func.sawtooth_ax_su'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ax_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_special_func.sawtooth_ax.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               sawtooth_ax_su
+    _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_ax'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment_special_func.sawtooth_ay
 
     _definition.id                '_atom_site_moment_special_func.sawtooth_ay'
@@ -1789,6 +2348,25 @@ save_atom_site_moment_special_func.sawtooth_ay
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment_special_func.sawtooth_ay_su
+
+    _definition.id                '_atom_site_moment_special_func.sawtooth_ay_su'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_ay_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_special_func.sawtooth_ay.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               sawtooth_ay_su
+    _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_ay'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -1838,6 +2416,25 @@ save_atom_site_moment_special_func.sawtooth_az
 
 save_
 
+save_atom_site_moment_special_func.sawtooth_az_su
+
+    _definition.id                '_atom_site_moment_special_func.sawtooth_az_su'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_az_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_special_func.sawtooth_az.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               sawtooth_az_su
+    _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_az'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment_special_func.sawtooth_c
 
     _definition.id                '_atom_site_moment_special_func.sawtooth_c'
@@ -1883,6 +2480,25 @@ save_atom_site_moment_special_func.sawtooth_c
 
 save_
 
+save_atom_site_moment_special_func.sawtooth_c_su
+
+    _definition.id                '_atom_site_moment_special_func.sawtooth_c_su'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_c_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_special_func.sawtooth_c.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               sawtooth_c_su
+    _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_c'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
+    _units.code                   Bohr_magnetons
+
+save_
+
 save_atom_site_moment_special_func.sawtooth_w
 
     _definition.id                '_atom_site_moment_special_func.sawtooth_w'
@@ -1924,6 +2540,25 @@ save_atom_site_moment_special_func.sawtooth_w
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
+    _units.code                   Bohr_magnetons
+
+save_
+
+save_atom_site_moment_special_func.sawtooth_w_su
+
+    _definition.id                '_atom_site_moment_special_func.sawtooth_w_su'
+    _alias.definition_id          '_atom_site_moment_special_func_sawtooth_w_su'
+    _definition.update            2024-04-03
+    _description.text
+;
+    Standard uncertainty of _atom_site_moment_special_func.sawtooth_w.
+;
+    _name.category_id             atom_site_moment_special_func
+    _name.object_id               sawtooth_w_su
+    _name.linked_item_id          '_atom_site_moment_special_func.sawtooth_w'
+
+    _import.get                   [{'file':templ_attr.cif  'save':general_su}]
+
     _units.code                   Bohr_magnetons
 
 save_
@@ -4543,7 +5178,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-03-13
+         0.9.9                    2024-04-03
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -4581,4 +5216,6 @@ save_
        all symCIF items yet in coreCIF.
 
        Many style changes, typos and spelling errors fixed.
+
+       2024-04-03 (bm): Added *_su terms for Measurand quantities.
 ;
