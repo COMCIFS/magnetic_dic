@@ -10,7 +10,7 @@ data_MAGNETIC_CIF
     _dictionary.title             MAGNETIC_CIF
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-04-03
+    _dictionary.date              2024-05-17
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -26,6 +26,7 @@ save_MAGNETIC
     _definition.id                MAGNETIC
     _definition.scope             Category
     _definition.class             Head
+    _definition.update            2024-05-17
     _description.text
 ;
     This category is the parent of all categories in the dictionary.
@@ -35,7 +36,7 @@ save_MAGNETIC
     _name.object_id               MAGNETIC
 
     _import.get
-        [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':MS_GROUP}]
+        [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':CIF_MS_HEAD}]
 
 save_
 
@@ -5155,7 +5156,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-04-03
+         0.9.9                    2024-05-17
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5195,4 +5196,7 @@ save_
        Many style changes, typos and spelling errors fixed.
 
        2024-04-03 (bm): Added *_su terms for Measurand quantities.
+
+       Updated the CIF_MS dictionary import statement with the new head
+       category name.
 ;
