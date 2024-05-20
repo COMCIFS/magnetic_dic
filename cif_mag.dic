@@ -5,9 +5,9 @@
 #                                                                    #
 ######################################################################
 
-data_MAGNETIC_CIF
+data_CIF_MAG
 
-    _dictionary.title             MAGNETIC_CIF
+    _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
     _dictionary.date              2024-05-17
@@ -21,19 +21,20 @@ data_MAGNETIC_CIF
     It defines datanames for describing magnetic structures.
 ;
 
-save_MAGNETIC
+save_CIF_MAG_HEAD
 
-    _definition.id                MAGNETIC
+    _definition.id                CIF_MAG_HEAD
     _definition.scope             Category
     _definition.class             Head
     _definition.update            2024-05-17
     _description.text
 ;
-    This category is the parent of all categories in the dictionary.
-    Head categories from other dictionaries are reparented to this category.
+    The CIF_MAG_HEAD category is the top-level category for all categories
+    in the CIF_MAG dictionary. Head categories from other dictionaries are
+    reparented to this category.
 ;
-    _name.category_id             MAGNETIC_CIF
-    _name.object_id               MAGNETIC
+    _name.category_id             CIF_MAG
+    _name.object_id               CIF_MAG_HEAD
 
     _import.get
         [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':CIF_MS_HEAD}]
@@ -45,7 +46,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
     _definition.id                ATOM_SITE_FOURIER_WAVE_VECTOR
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     Data items in the ATOM_SITE_FOURIER_WAVE_VECTOR category record
@@ -53,7 +54,7 @@ save_ATOM_SITE_FOURIER_WAVE_VECTOR
     structural model. This category is fully defined in the modulated
     structures dictionary.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_FOURIER_WAVE_VECTOR
     _category_key.name            '_atom_site_Fourier_wave_vector.seq_id'
 
@@ -1481,7 +1482,7 @@ save_ATOM_SITE_MOMENT_FOURIER
     _definition.id                ATOM_SITE_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     Data items in the ATOM_SITE_MOMENT_FOURIER category record
@@ -1491,7 +1492,7 @@ save_ATOM_SITE_MOMENT_FOURIER
     child category ATOM_SITE_MOMENT_FOURIER_PARAM, which may be
     listed separately.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_MOMENT_FOURIER
     _category_key.name            '_atom_site_moment_Fourier.id'
 
@@ -2176,7 +2177,7 @@ save_ATOM_SITE_MOMENT_SPECIAL_FUNC
     _definition.id                ATOM_SITE_MOMENT_SPECIAL_FUNC
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     Data items in the ATOM_SITE_MOMENT_SPECIAL_FUNC category record
@@ -2202,7 +2203,7 @@ save_ATOM_SITE_MOMENT_SPECIAL_FUNC
     Analogous tags: msCIF:_atom_site_displace_special_func.*,
     msCIF:_atom_site_occ_special_func.*
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITE_MOMENT_SPECIAL_FUNC
     _category_key.name
         '_atom_site_moment_special_func.atom_site_label'
@@ -2546,7 +2547,7 @@ save_ATOM_SITES_MOMENT_FOURIER
     _definition.id                ATOM_SITES_MOMENT_FOURIER
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     Data items in the ATOM_SITES_MOMENT_FOURIER category record
@@ -2559,7 +2560,7 @@ save_ATOM_SITES_MOMENT_FOURIER
     msCIF:_atom_sites_rot_Fourier.*,     msCIF:_atom_sites_occ_Fourier.*,
     msCIF:_atom_sites_U_Fourier.*.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               ATOM_SITES_MOMENT_FOURIER
 
 save_
@@ -3216,7 +3217,7 @@ save_PARENT_PROPAGATION_VECTOR
     _definition.id                PARENT_PROPAGATION_VECTOR
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-06-09
+    _definition.update            2024-05-17
     _description.text
 ;
     This looped category allows for the presentation of the
@@ -3225,7 +3226,7 @@ save_PARENT_PROPAGATION_VECTOR
     magnetic wave vector. See the PARENT_SPACE_GROUP category for
     more information about parent space groups.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_PROPAGATION_VECTOR
     _category_key.name            '_parent_propagation_vector.id'
     _description_example.case
@@ -3282,7 +3283,7 @@ save_PARENT_SPACE_GROUP
     _definition.id                PARENT_SPACE_GROUP
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2016-06-09
+    _definition.update            2024-05-17
     _description.text
 ;
     This category provides information about the space group and
@@ -3303,7 +3304,7 @@ save_PARENT_SPACE_GROUP
 
     Analogous tags: none.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               PARENT_SPACE_GROUP
 
 save_
@@ -3420,7 +3421,7 @@ save_SPACE_GROUP_MAGN
     _definition.id                SPACE_GROUP_MAGN
     _definition.scope             Category
     _definition.class             Set
-    _definition.update            2023-09-13
+    _definition.update            2024-05-17
     _description.text
 ;
     The data items in this category provide identifying and/or
@@ -3458,7 +3459,7 @@ save_SPACE_GROUP_MAGN
     https://www.iucr.org/publ/978-0-9553602-2-0.
     ISO-MAG tables of H. T. Stokes and B. J. Campbell at https://iso.byu.edu.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_MAGN
 
 save_
@@ -4214,7 +4215,7 @@ save_SPACE_GROUP_MAGN_SSG_TRANSFORMS
     _definition.id                SPACE_GROUP_MAGN_SSG_TRANSFORMS
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-06-09
+    _definition.update            2024-05-17
     _description.text
 ;
     This loop provides a list of matrix transformations to one or
@@ -4227,7 +4228,7 @@ save_SPACE_GROUP_MAGN_SSG_TRANSFORMS
     Analogous tags: transform loops have not yet been approved in
     other dictionaries.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_MAGN_SSG_TRANSFORMS
     _category_key.name            '_space_group_magn_ssg_transforms.id'
 
@@ -4372,7 +4373,7 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
     _definition.id                SPACE_GROUP_MAGN_TRANSFORMS
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-06-09
+    _definition.update            2024-05-17
     _description.text
 ;
     This category provides a list of matrix transformations to multiple
@@ -4381,7 +4382,7 @@ save_SPACE_GROUP_MAGN_TRANSFORMS
     loop is  particularly helpful for a magnetic space group, which
     often have several reference settings of interest.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_MAGN_TRANSFORMS
     _category_key.name            '_space_group_magn_transforms.id'
     _description_example.case
@@ -4568,7 +4569,7 @@ save_SPACE_GROUP_SYMOP_MAGN_CENTERING
     _definition.id                SPACE_GROUP_SYMOP_MAGN_CENTERING
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     This loop provides a list of centering or anti-centering
@@ -4599,7 +4600,7 @@ save_SPACE_GROUP_SYMOP_MAGN_CENTERING
     practice of referring to a "black and white" lattice of
     centerings and anti-centerings.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_CENTERING
     _category_key.name            '_space_group_symop_magn_centering.id'
     _description_example.case
@@ -4690,7 +4691,7 @@ save_SPACE_GROUP_SYMOP_MAGN_OG_CENTERING
     _definition.id                SPACE_GROUP_SYMOP_MAGN_OG_CENTERING
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     This loop provides a list of centering translations in an
@@ -4711,7 +4712,7 @@ save_SPACE_GROUP_SYMOP_MAGN_OG_CENTERING
     only representative point operations remain in the main
     SPACE_GROUP_SYMOP_MAGN_OPERATION loop.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_OG_CENTERING
     _category_key.name            '_space_group_symop_magn_OG_centering.id'
 
@@ -4797,12 +4798,12 @@ save_SPACE_GROUP_SYMOP_MAGN_OPERATION
     _definition.id                SPACE_GROUP_SYMOP_MAGN_OPERATION
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     A list of magnetic space-group symmetry operations.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_OPERATION
     _category_key.name            '_space_group_symop_magn_operation.id'
 
@@ -4916,13 +4917,13 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
     _definition.id                SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     This loop provides a list of the centering and anti-centering
     translations of a magnetic superspace group.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_SSG_CENTERING
     _category_key.name            '_space_group_symop_magn_ssg_centering.id'
 
@@ -5013,14 +5014,14 @@ save_SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
     _definition.id                SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-05-24
+    _definition.update            2024-05-17
     _description.text
 ;
     A looped list of magnetic superspace-group symmetry operations.
 
     Analogous tags: msCIF:_space_group_symop.ssg_*.
 ;
-    _name.category_id             MAGNETIC
+    _name.category_id             CIF_MAG_HEAD
     _name.object_id               SPACE_GROUP_SYMOP_MAGN_SSG_OPERATION
     _category_key.name            '_space_group_symop_magn_ssg_operation.id'
 
@@ -5197,6 +5198,10 @@ save_
 
        2024-04-03 (bm): Added *_su terms for Measurand quantities.
 
+       Renamed the dictionary from 'MAGNETIC_CIF' to 'CIF_MAG'.
+       Renamed the head category from 'MAGNETIC' to 'CIF_MAG_HEAD'.
+
        Updated the CIF_MS dictionary import statement with the new head
        category name.
+
 ;
