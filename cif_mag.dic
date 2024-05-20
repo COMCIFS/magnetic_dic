@@ -37,7 +37,7 @@ save_CIF_MAG_HEAD
     _name.object_id               CIF_MAG_HEAD
 
     _import.get
-        [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':MS_GROUP}]
+        [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':CIF_MS_HEAD}]
 
 save_
 
@@ -5200,4 +5200,8 @@ save_
 
        Renamed the dictionary from 'MAGNETIC_CIF' to 'CIF_MAG'.
        Renamed the head category from 'MAGNETIC' to 'CIF_MAG_HEAD'.
+
+       Updated the CIF_MS dictionary import statement with the new head
+       category name.
+
 ;
