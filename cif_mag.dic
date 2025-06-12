@@ -10,7 +10,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2024-05-17
+    _dictionary.date              2025-06-12
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -267,12 +267,15 @@ save_atom_site_moment.cartn
 
     _definition.id                '_atom_site_moment.Cartn'
     _alias.definition_id          '_atom_site_moment_Cartn'
-    _definition.update            2016-05-24
+    _definition.update            2025-06-12
     _description.text
 ;
-    The atom-site magnetic-moment vector specified according to a set
-    of orthogonal Cartesian axes where x||a and z||c* with y
-    completing a right-hand set.
+    The atom-site magnetic moment vector specified as a scaled triplet,
+    M = (Mx, My, Mz), according to a set of orthogonal Cartesian axes where
+    x||a and z||c* with y completing a right-hand set. The scalar magnetic
+    moment is calculated in Bohr magnetons as the vector magnitude,
+    |M| = sqrt(Mx^2+My^2+Mz^2). The unit-vector direction of the moment is
+    calculated as (Mx/|M|, My/|M|, Mz/|M|).
 ;
     _name.category_id             atom_site_moment
     _name.object_id               Cartn
@@ -430,12 +433,19 @@ save_atom_site_moment.crystalaxis
 
     _definition.id                '_atom_site_moment.crystalaxis'
     _alias.definition_id          '_atom_site_moment_crystalaxis'
-    _definition.update            2016-05-24
+    _definition.update            2025-06-12
     _description.text
 ;
-    The atom-site magnetic-moment vector specified using components
-    parallel to each of the unit-cell axes.  This is the recommended
-    coordinate system for  most magnetic structures.
+    The atom-site magnetic moment vector specified as a scaled triplet,
+    m = (mx, my, mz), according to a right-handed basis of unit vectors
+    parallel to the unit-cell basis vectors: A along the +a axis, B along
+    the +b axis, and C along the +c axis. The crystal-axis metric tensor is
+    then calculated as G = {{A.A, A.B, A.C},{B.A, B.B, B.C},{C.A, C.B, C.C}} =
+    {{1, cos(gamma), cos(beta)},{cos(gamma), 1, cos(alpha)},{cos(beta),
+    cos(alpha), 1}}.  The scalar magnetic moment is calculated in Bohr
+    magnetons as the vector magnitude, |m| = sqrt(m.G.m).  The unit-vector
+    direction of the moment is calculated as (mx/|m|, my/|m|, mz/|m|). This
+    is the recommended coordinate system for most magnetic crystal structures.
 ;
     _name.category_id             atom_site_moment
     _name.object_id               crystalaxis
@@ -887,12 +897,17 @@ save_atom_site_rotation.cartn
 
     _definition.id                '_atom_site_rotation.Cartn'
     _alias.definition_id          '_atom_site_rotation_Cartn'
-    _definition.update            2018-07-18
+    _definition.update            2025-06-12
     _description.text
 ;
-    The atom-site rotation vector specified according to a set
-    of orthogonal Cartesian axes where x||a and z||c* with y
-    completing a right-hand set.
+    The atom-site rotation vector specified as a scaled triplet,
+    R = (Rx, Ry, Rz), according to a set of orthogonal Cartesian axes where
+    x||a and z||c* with y completing a right-hand set. The scalar rotation
+    angle is calculated in radians as the vector magnitude,
+    |R| = sqrt(Rx^2+Ry^2+Rz^2).
+
+    The unit-vector pointing along the right-handed rotation axis is
+    calculated as (Rx/|R|, Ry/|R|, Rz/|R|).
 ;
     _name.category_id             atom_site_rotation
     _name.object_id               Cartn
@@ -1050,12 +1065,20 @@ save_atom_site_rotation.crystalaxis
 
     _definition.id                '_atom_site_rotation.crystalaxis'
     _alias.definition_id          '_atom_site_rotation_crystalaxis'
-    _definition.update            2018-07-18
+    _definition.update            2025-06-12
     _description.text
 ;
-    The atom-site rotation vector specified using the components parallel
-    to each of the unit-cell axes.  This is the recommended coordinate
-    system for presenting axial rotation vectors.
+    The atom-site rotation vector specified as a scaled triplet,
+    r = (rx, ry, rz), according to a right-handed basis of unit vectors
+    parallel to the unit-cell basis vectors: A along the +a axis, B along
+    the +b axis, and C along the +c axis. The crystal-axis metric tensor is
+    then calculated as G = {{A.A, A.B, A.C},{B.A, B.B, B.C},{C.A, C.B, C.C}}
+    = {{1, cos(gamma), cos(beta)},{cos(gamma), 1, cos(alpha)},{cos(beta),
+    cos(alpha), 1}}.  The scalar rotation angle is calculated in radians as
+    the vector magnitude, |r| = sqrt(r.G.r). The unit-vector pointing along
+    the right-handed rotation axis is calculated as (rx/|r|, ry/|r|, rz/|r|).
+    This is the recommended coordinate system for presenting atom-site
+    rotation vectors.
 ;
     _name.category_id             atom_site_rotation
     _name.object_id               crystalaxis
@@ -5157,7 +5180,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2024-05-17
+         0.9.9                    2025-06-12
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5203,5 +5226,8 @@ save_
 
        Updated the CIF_MS dictionary import statement with the new head
        category name.
+
+       Clarified the crystalaxis and Cartn definitions for rotations and
+       moments.
 
 ;
