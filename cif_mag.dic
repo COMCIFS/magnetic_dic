@@ -5030,5 +5030,5 @@ save_
        moments.
 
        2025-12-04 (bm): Removed ATOM_SITE_FOURIER_WAVE_VECTOR category
-       because defined in cif_ms.dic.
+       because it is defined in cif_ms.dic.
 ;
