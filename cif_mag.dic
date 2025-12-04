@@ -1,4 +1,5 @@
 #\#CIF_2.0
+# SPDX-License-Identifier: CC-BY-4.0
 ######################################################################
 #                                                                    #
 #    MAGNETIC CIF DICTIONARY                                         #
@@ -10,7 +11,7 @@ data_CIF_MAG
     _dictionary.title             CIF_MAG
     _dictionary.class             Instance
     _dictionary.version           0.9.9
-    _dictionary.date              2025-06-12
+    _dictionary.date              2025-12-04
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/magnetic_dic/main/cif_mag.dic
     _dictionary.ddl_conformance   4.1.0
@@ -38,208 +39,6 @@ save_CIF_MAG_HEAD
 
     _import.get
         [{'dupl':Ignore  'file':cif_ms.dic  'mode':Full  'save':CIF_MS_HEAD}]
-
-save_
-
-save_ATOM_SITE_FOURIER_WAVE_VECTOR
-
-    _definition.id                ATOM_SITE_FOURIER_WAVE_VECTOR
-    _definition.scope             Category
-    _definition.class             Loop
-    _definition.update            2024-05-17
-    _description.text
-;
-    Data items in the ATOM_SITE_FOURIER_WAVE_VECTOR category record
-    details about the wave vectors of the Fourier terms used in the
-    structural model. This category is fully defined in the modulated
-    structures dictionary.
-;
-    _name.category_id             CIF_MAG_HEAD
-    _name.object_id               ATOM_SITE_FOURIER_WAVE_VECTOR
-    _category_key.name            '_atom_site_Fourier_wave_vector.seq_id'
-
-    loop_
-      _description_example.case
-      _description_example.detail
-;
-         loop_
-           _cell_wave_vector.seq_id
-           _cell_wave_vector.x
-           _cell_wave_vector.y
-           _cell_wave_vector.z
-              1   0.30000   0.30000   0.00000
-              2  -0.60000   0.30000   0.00000
-         loop_
-           _atom_site_Fourier_wave_vector.seq_id
-           _atom_site_Fourier_wave_vector.x
-           _atom_site_Fourier_wave_vector.y
-           _atom_site_Fourier_wave_vector.z
-           _atom_site_Fourier_wave_vector.q_coeff
-              1   -0.30000   0.60000   0.00000  [1   1]
-              2   -0.60000   0.30000   0.00000  [0   1]
-              3   -0.30000  -0.30000   0.00000  [-1  0]
-;
-;
-         Example 1 - Hypothetical example showing the modulation wave vector
-         components expressed using the array data item
-         _atom_site_Fourier_wave_vector.q_coeff.
-;
-;
-         loop_
-           _cell_wave_vector.seq_id
-           _cell_wave_vector.x
-           _cell_wave_vector.y
-           _cell_wave_vector.z
-              1   0.30000   0.30000   0.00000
-              2  -0.60000   0.30000   0.00000
-         loop_
-           _atom_site_Fourier_wave_vector.seq_id
-           _atom_site_Fourier_wave_vector.x
-           _atom_site_Fourier_wave_vector.y
-           _atom_site_Fourier_wave_vector.z
-           _atom_site_Fourier_wave_vector.q1_coeff
-           _atom_site_Fourier_wave_vector.q2_coeff
-              1   -0.30000   0.60000   0.00000  1  1
-              2   -0.60000   0.30000   0.00000  0  1
-              3   -0.30000  -0.30000   0.00000 -1  0
-;
-;
-         Example 2 - As example 1, but using separate data items for each
-         individual component of the modulation wave vector.
-;
-
-save_
-
-save_atom_site_fourier_wave_vector.q1_coeff
-
-    _definition.id                '_atom_site_Fourier_wave_vector.q1_coeff'
-    _alias.definition_id          '_atom_site_Fourier_wave_vector_q1_coeff'
-    _definition.update            2016-06-21
-    _description.text
-;
-    For a given incommensurate modulation that contributes to the
-    structure, the wave vector of the modulation can be expressed as an
-    integer linear combination of the d independent wave vectors that
-    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
-    integer coefficient of the contribution of the first independent wave
-    vector, the q2_coeff tag holds the integer coefficient of the
-    contribution of the second independent wave vector, and so on.  At the
-    time of this writing, no examples with more than three independent
-    wave vectors are known, though there is no theoretical limit to the
-    number that could occur.  These tags are not explicitly magnetic; they
-    are equally applicable to any incommensurate modulation.
-;
-    _name.category_id             atom_site_Fourier_wave_vector
-    _name.object_id               q1_coeff
-    _type.purpose                 Describe
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Integer
-    _units.code                   none
-    _method.purpose               Evaluation
-    _method.expression
-;
-    with a as atom_site_Fourier_wave_vector
-    a.q1_coeff = a.q_coeff[0]
-;
-
-save_
-
-save_atom_site_fourier_wave_vector.q2_coeff
-
-    _definition.id                '_atom_site_Fourier_wave_vector.q2_coeff'
-    _alias.definition_id          '_atom_site_Fourier_wave_vector_q2_coeff'
-    _definition.update            2016-06-21
-    _description.text
-;
-    For a given incommensurate modulation that contributes to the
-    structure, the wave vector of the modulation can be expressed as an
-    integer linear combination of the d independent wave vectors that
-    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
-    integer coefficient of the contribution of the first independent wave
-    vector, the q2_coeff tag holds the integer coefficient of the
-    contribution of the second independent wave vector, and so on.  At the
-    time of this writing, no examples with more than three independent
-    wave vectors are known, though there is no theoretical limit to the
-    number that could occur.  These tags are not explicitly magnetic; they
-    are equally applicable to any incommensurate modulation.
-;
-    _name.category_id             atom_site_Fourier_wave_vector
-    _name.object_id               q2_coeff
-    _type.purpose                 Describe
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Integer
-    _units.code                   none
-    _method.purpose               Evaluation
-    _method.expression
-;
-    with a as atom_site_Fourier_wave_vector
-    a.q2_coeff = a.q_coeff[1]
-;
-
-save_
-
-save_atom_site_fourier_wave_vector.q3_coeff
-
-    _definition.id                '_atom_site_Fourier_wave_vector.q3_coeff'
-    _alias.definition_id          '_atom_site_Fourier_wave_vector_q3_coeff'
-    _definition.update            2024-02-07
-    _description.text
-;
-    For a given incommensurate modulation that contributes to the
-    structure, the wave vector of the modulation can be expressed as an
-    integer linear combination of the d independent wave vectors that
-    define the (3+d)-dimensional superspace.  The q1_coeff tag holds the
-    integer coefficient of the contribution of the first independent wave
-    vector, the q2_coeff tag holds the integer coefficient of the
-    contribution of the second independent wave vector, and so on.  At the
-    time of this writing, no examples with more than three independent
-    wave vectors are known, though there is no theoretical limit to the
-    number that could occur.  These tags are not explicitly magnetic; they
-    are equally applicable to any incommensurate modulation.
-;
-    _name.category_id             atom_site_Fourier_wave_vector
-    _name.object_id               q3_coeff
-    _type.purpose                 Describe
-    _type.source                  Assigned
-    _type.container               Single
-    _type.contents                Integer
-    _units.code                   none
-    _method.purpose               Evaluation
-    _method.expression
-;
-    with a as atom_site_Fourier_wave_vector
-    a.q3_coeff = a.q_coeff[2]
-;
-
-save_
-
-save_atom_site_fourier_wave_vector.q_coeff
-
-    _definition.id                '_atom_site_Fourier_wave_vector.q_coeff'
-    _alias.definition_id          '_atom_site_Fourier_wave_vector_q_coeff'
-    _definition.update            2016-06-21
-    _description.text
-;
-    For a given incommensurate modulation that contributes to the
-    structure, the wave vector of the modulation can be expressed as an
-    integer linear combination of the d independent wave vectors that
-    define the (3+d)-dimensional superspace.  This tag holds each of
-    the integer coefficients as an array. At the
-    time of this writing, no examples with more than three independent
-    wave vectors are known, though there is no theoretical limit to the
-    number that could occur.  These tags are not explicitly magnetic; they
-    are equally applicable to any incommensurate modulation.
-;
-    _name.category_id             atom_site_Fourier_wave_vector
-    _name.object_id               q_coeff
-    _type.purpose                 Describe
-    _type.source                  Assigned
-    _type.container               Array
-    _type.dimension               '[]'
-    _type.contents                Integer
-    _units.code                   none
 
 save_
 
@@ -5180,7 +4979,7 @@ save_
        _atom_site_moment.Cartn* items, corrected and improved *_symmform
        descriptions. Created the atom_site_rotation category. (B Campbell)
 ;
-         0.9.9                    2025-06-12
+         0.9.9                    2025-12-04
 ;
        Changed several instances of "Jones-Faithful notation" to
        "Jones faithful notation".
@@ -5230,4 +5029,6 @@ save_
        Clarified the crystalaxis and Cartn definitions for rotations and
        moments.
 
+       2025-12-04 (bm): Removed ATOM_SITE_FOURIER_WAVE_VECTOR category
+       because defined in cif_ms.dic.
 ;
